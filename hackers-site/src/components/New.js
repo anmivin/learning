@@ -4,27 +4,54 @@ import { useNavigate } from "react-router-dom";
 import axios from 'axios'
 import Context from '../TheContext';
 import {useQuery} from 'react-query';
+/* import NewTwo from './NewTwo';
+import NewThree from './NewThree';
+import NewFour from './NewFour' */
 
 const NewsTitle = styled.div `
-background-color: GreenYellow;
+background-color: PaleGreen;
 padding: 10px;
-`
+`;
 const Wrapper = styled.div `
 display: flex;
 justify-content: flex-start;
 
-`
+`;
+
+const TheButton = styled.button `
+
+border: thick double Cyan;
+width: 100px;
+height: 30px;
+&:hover {
+  cursor: pointer;
+}
+`;
+
+const TheLi = styled.li `
+padding: 10px;
+
+&:hover {
+  cursor: pointer;
+}
+
+`;
+
+
 
 function New() {
     const[context, setContext] = useContext(Context);
     const navigate = useNavigate(); 
     
-    
-
-    const {isLoading, error, data, refetch} = useQuery(['newses'], 
+   
+  
+    const {isLoading, error, data: first, refetch} = useQuery(['newses'], 
     async () => { 
-      const res = await axios.get('https://api.hnpwa.com/v0/newest/1.json')
-      return res.data },
+      
+        const res = await axios.get('https://api.hnpwa.com/v0/newest/1.json');
+        return res.data
+            
+       },
       {
         enable: false,
       },
@@ -33,6 +60,45 @@ function New() {
         refetchInterval: 60000,
       }
       );
+      
+
+      const { data: second } = useQuery(['newses'], 
+        async () => { 
+      
+        const res = await axios.get('https://api.hnpwa.com/v0/newest/2.json');
+        return res.data
+            
+       }
+    
+      );
+      
+     
+      const { data: third } = useQuery(['newses'], 
+    async () => { 
+      
+        const res = await axios.get('https://api.hnpwa.com/v0/newest/3.json');
+        return res.data
+            
+       }
+    
+      );
+      
+      
+      const { data: fourth } = useQuery(['newses'], 
+    async () => { 
+      
+        const res = await axios.get(`https://api.hnpwa.com/v0/newest/4.json?_limit=10`);
+        return res.data
+            
+       }
+    
+      );
+     
+     
+
+
+     
+      
   
     const refreshPage = () => {
        refetch();
@@ -53,28 +119,83 @@ function New() {
     return (
       <div>
         
-        <button onClick={() => refreshPage()}> Refresh </button>
+        <TheButton onClick={() => refreshPage()}> Refresh </TheButton>
+        <ol>
         <div> 
+          
                                   
             {
-              data.map((newses) =>
-                  <div key={newses.id} >
-                                
+              first.map((newses) =>
+              <div key={newses.id} >
+                   <TheLi>           
                   <NewsTitle onClick={() => goToNew(newses.id)}>{newses.title}</NewsTitle>
+                  </TheLi>
                   <Wrapper>
                     <div>{newses.points} points &nbsp;</div>
                     <div>by {newses.user} &nbsp;</div>
-                    <div>{newses.time_ago}</div>
+                    <div>{newses.time_ago} &nbsp;</div>
+                    <div>{newses.comments_count}&nbsp; comments</div>
+                  </Wrapper>
+                            </div>
+                            
+                        )
+                    } 
+                    {
+              second.map((newses) =>
+              
+                  <div key={newses.id} >
+                                
+                                <TheLi> <NewsTitle onClick={() => goToNew(newses.id)}>{newses.title}</NewsTitle></TheLi>
+                  <Wrapper>
+                    <div>{newses.points} points &nbsp;</div>
+                    <div>by {newses.user} &nbsp;</div>
+                    <div>{newses.time_ago}&nbsp;</div>
+                    <div>{newses.comments_count}&nbsp; comments</div>
+                  </Wrapper>
+                            </div>
+                            
+                        )
+                    }
+                    {
+              third.map((newses) =>
+              
+                  <div key={newses.id} >
+                                
+              <TheLi><NewsTitle onClick={() => goToNew(newses.id)}>{newses.title}</NewsTitle></TheLi>
+                  <Wrapper>
+                    <div>{newses.points} points &nbsp;</div>
+                    <div>by {newses.user} &nbsp;</div>
+                    <div>{newses.time_ago}&nbsp;</div>
+                    <div>{newses.comments_count}&nbsp; comments</div>
+                  </Wrapper>
+                            </div> 
+                        )
+                    }
+                    {
+              fourth.map((newses) =>
+              
+                  <div key={newses.id} >
+                                
+                                <TheLi><NewsTitle onClick={() => goToNew(newses.id)}>{newses.title}</NewsTitle></TheLi>
+                  <Wrapper>
+                    <div>{newses.points} points &nbsp;</div>
+                    <div>by {newses.user} &nbsp;</div>
+                    <div>{newses.time_ago}&nbsp;</div>
+                    <div>{newses.comments_count}&nbsp; comments</div>
                   </Wrapper>
                             </div>
                         )
-                    } 
+                    }
               
                   </div>
+                  {/* <NewTwo/>
+                  <NewThree/>
+                  <NewFour/> */}
                  
-              
+                 </ol>
                 
             </div>
+            
       
     
     );

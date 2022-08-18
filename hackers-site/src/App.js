@@ -1,13 +1,33 @@
-import { StyledComponent } from 'styled-components';
+import styled from 'styled-components';
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
 import New from './components/New';
 import NewData from './components/NewData';
 import Context from './TheContext';
 import {QueryClient, QueryClientProvider} from 'react-query';
 
+const TheHeader = styled.div `
+font-size: 50px;
+font-weight: 300;
+box-sizing: border-box;
+text-align: center;
 
+`
+const Navi = styled.nav `
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+`
+const Pages = styled.li `
+  
+  
+padding: 10px 10px 10px 20px;
+background-color: lightpink;
+
+
+
+`
 
 const queryClient = new QueryClient();
 function App() {
@@ -17,14 +37,15 @@ function App() {
   return (
     <>
      <QueryClientProvider client={queryClient}>
-    <div>Hackers news</div>
+    <TheHeader>Hackers news</TheHeader>
     <Context.Provider value={[context, setContext]}>
     <BrowserRouter>
     
-    <nav>
-      <li><Link to='/'>Main</Link></li>
-      <li><Link to='/news'>New data</Link></li>
-    </nav>
+    <Navi>
+      <Pages><Link to='/'>Main page</Link></Pages>
+      <Pages><Link to = '/news'>Last Seen New</Link></Pages>
+      
+    </Navi>
         
     
     <Routes>
