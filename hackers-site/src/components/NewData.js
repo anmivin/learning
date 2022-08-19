@@ -14,18 +14,16 @@ boarder: 2 solid black;
 const Wrapp = styled.div `
 display: flex;
 justify-content: flex-start;
-padding: 5px;
 
+padding: 5px 5px 5px 50px;
 `
 
 const ComSec = styled.div `
 font-weight: 600;
 background-color: lightpink;
 padding: 5px;
-
 `
 const TheButton = styled.button `
-
 border: thick double Cyan;
 width: 100px;
 height: 30px;
@@ -39,52 +37,41 @@ const TheDiv = styled.div `
  text-align: right;
  font-size: 15px;
 `
-
-
-
 function New() {
     
-    const[context, setContext] = useContext(Context);
-    const param = context;
+  const[context, setContext] = useContext(Context);
+  const param = context;
     
-    const {isLoading, error, data, refetch} = useQuery(['onenew'], 
-    async ({context}) => { 
-      const res = await axios.get(`https://api.hnpwa.com/v0/item/${param}.json`)
-      return res.data },
-           
+  const {isLoading, error, data, refetch} = useQuery(['onenew'], 
+  async ({context}) => { 
+    const res = await axios.get(`https://api.hnpwa.com/v0/item/${param}.json`)
+    return res.data },          
       {
-        
         refetchOnMount: true,
         refetchInterval: 60000,
         refetchIntervalInBackground: true,
-        
-      }
-      );
+      });
       
+  const refreshPage = () => {
+    refetch();
+  }
 
-      
-  
-    const refreshPage = () => {
-       refetch();
-    }
+  const [isHidden, setIsHidden] = useState(true);
 
+  const Comments = ({ items }) => (
+    <React.Fragment>
+      {items.map(n => (
+        <div key={n.id}>
+          <h3>{n.user}</h3>
+          <div>{n.content.split('<p>').join(' ').split('&#x27;').join('`')}</div>
+          <div>{n.time_ago}</div>
+          <button onClick={()=> setIsHidden(state => !state)}>{isHidden ? 'v':'^'}</button>
+          <ul>{n.comments !==[] && !isHidden ?  <Comments items={n.comments} /> : null}</ul>
+        </div>
+      ))}
+    </React.Fragment>
+  );
 
-
-    
-    const Comments = ({ items }) => (
-      <React.Fragment>
-        {items.map(n => (
-          <ul className="comment" key={n.id}>
-            <h3>{n.user}</h3>
-            <div>{n.content}</div>
-            <div>{n.time_ago}</div>
-            <li>{n.comments !==[] ? <Comments items={n.comments} /> : null}</li>
-          </ul>
-        ))}
-      </React.Fragment>
-    );
-
-    
     if (error) return <h1>OH SHIT</h1>;
     if (isLoading) return <h1>Loading...</h1>;
   
@@ -104,16 +91,9 @@ function New() {
               </div>
               
                 <ComSec>Comment section</ComSec>
+
                 
               <Comments items={data.comments} />
-              
-   
-      
-                
-            
-
-            
-          
         
         </div>
       
@@ -121,4 +101,4 @@ function New() {
     );
   }
 
-export default New
+export default New 
