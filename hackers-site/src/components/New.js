@@ -36,14 +36,10 @@ padding: 10px;
 
 `;
 
-
-
 function New() {
     const[context, setContext] = useContext(Context);
     const navigate = useNavigate(); 
-    
    
-  
     const {isLoading, error, data: first, refetch} = useQuery(['newses'], 
     async () => { 
       
@@ -74,7 +70,7 @@ function New() {
       
      
       const { data: third } = useQuery(['newses'], 
-    async () => { 
+      async () => { 
       
         const res = await axios.get('https://api.hnpwa.com/v0/newest/3.json');
         return res.data
@@ -101,13 +97,7 @@ function New() {
        }
     
       );
-     
-     
-
-
-     
       
-  
     const refreshPage = () => {
        refetch();
         
@@ -130,8 +120,6 @@ function New() {
         <TheButton onClick={() => refreshPage()}> Refresh </TheButton>
         <ol>
         <div> 
-          
-                                  
             {
               first.map((newses) =>
               <div key={newses.id} >
@@ -196,15 +184,11 @@ function New() {
                     }
               
                   </div>
-                  
-                  
-                 
+                
                  </ol>
                 
             </div>
-            
-      
-    
+         
     );
   }
 

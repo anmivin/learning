@@ -87,17 +87,13 @@ function New() {
                 <div>&nbsp;{data.time_ago}</div>
                 <div>&nbsp;{data.comments_count}&nbsp;comments</div>
               </Wrapp>
-              
               </div>
               
                 <ComSec>Comment section</ComSec>
-
-                
               <Comments items={data.comments} />
         
         </div>
-      
-    
+     
     );
   }
 
