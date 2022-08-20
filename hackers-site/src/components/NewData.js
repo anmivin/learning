@@ -35,7 +35,7 @@ const URL = styled.div`
   text-align: right;
   font-size: 15px;
 `;
-function New() {
+function NewData() {
   const parametr = useLocation().state.param;
 
   const { isLoading, error, data, refetch } = useQuery(
@@ -76,4 +76,4 @@ function New() {
   );
 }
 
-export default New;
+export default NewData;
