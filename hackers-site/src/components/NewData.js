@@ -1,19 +1,18 @@
-import React, { useContext, useState } from "react";
-import styled from "styled-components";
-import axios from "axios";
-import Context from "../NewsItemContext";
-import { useQuery } from "react-query";
+import React from 'react';
+import styled from 'styled-components';
+import axios from 'axios';
 
-const NewTitle = styled.div`
+import { useQuery } from 'react-query';
+import Tree from './CommentTree';
+import { useLocation } from 'react-router-dom';
+
+const Title = styled.div`
   padding: 10px;
   background-color: PaleGreen;
   font-size: 20px;
   border: 2 solid black;
 `;
-const Wrapp = styled.div`
-  display: flex;
-  justify-content: flex-start;
-
+const Div = styled.div`
   padding: 5px 5px 5px 50px;
 `;
 
@@ -31,59 +30,30 @@ const Button = styled.button`
   }
 `;
 
-const Div = styled.div`
+const URL = styled.div`
   padding: 10px;
   text-align: right;
   font-size: 15px;
 `;
 function New() {
-  const [context, setContext] = useContext(Context);
-  /* const [newID, setNewID] = useState(context) */
-  
-  const test = 32515067; //чтобы проверить древо комментов, подставить вместо param
+  const parametr = useLocation().state.param;
 
   const { isLoading, error, data, refetch } = useQuery(
-    ["onenew"],
+    ['newsitem'],
     async () => {
-      const res = await axios.get(
-        `https://api.hnpwa.com/v0/item/${context}.json`
-      );
+      const res = await axios.get(`https://api.hnpwa.com/v0/item/${parametr}.json`);
       return res.data;
     },
     {
       refetchOnMount: true,
       refetchInterval: 60000,
-      refetchIntervalInBackground: true
-    }
+      refetchIntervalInBackground: true,
+    },
   );
 
   const refreshPage = () => {
     refetch();
   };
-
-  const [isHidden, setIsHidden] = useState(true);
-
-  const Comments = ({ items }) => (
-    <React.Fragment>
-      {items.map((commentItem) => (
-        <div key={commentItem.id}>
-          <h3>{commentItem.user}</h3>
-          <div>
-            {commentItem.content.split("<p>").join(" ").split("&#x27;").join("`")}
-          </div>
-          <div>{commentItem.time_ago}</div>
-          <button onClick={() => setIsHidden((state) => !state)}>
-            {isHidden ? "v" : "^"}
-          </button>
-          <ul>
-            {commentItem.comments !== [] && !isHidden ? (
-              <Comments items={commentItem.comments} />
-            ) : null}
-          </ul>
-        </div>
-      ))}
-    </React.Fragment>
-  );
 
   if (error) return <h1>OH SHIT</h1>;
   if (isLoading) return <h1>Loading...</h1>;
@@ -91,19 +61,17 @@ function New() {
   return (
     <div>
       <Button onClick={() => refreshPage()}> Refresh </Button>
-      <Div> The URL for this: {data.url} </Div>
+      <URL> The URL for this: {data.url} </URL>
       <div>
-        <NewTitle> {data.title}</NewTitle>
-        <Wrapp>
-          <div>by &nbsp;{data.user}</div>
-          <div>&nbsp;{data.time_ago}</div>
-          <div>&nbsp;{data.comments_count}&nbsp;comments</div>
-        </Wrapp>
+        <Title> {data.title}</Title>
+
+        <Div>
+          by {data.user} {data.time_ago} {data.comments_count} comments
+        </Div>
       </div>
 
       <ComSec>Comment section</ComSec>
-
-      <Comments items={data.comments} />
+      <Tree data={data.comments} />
     </div>
   );
 }
