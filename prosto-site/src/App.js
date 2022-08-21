@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import React, { useState, useContext, useEffect, useMemo } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-/* import { QueryClient, QueryClientProvider } from "react-query"; */
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Main from './components/Main';
 import Mapp from './components/Map';
 import Timer from './components/Timer';
@@ -9,11 +9,10 @@ import Layout from './components/Layout';
 import UserContext from './components/TimerContext';
 const TheHeader = styled.div`
   font-size: 30px;
-
   text-align: center;
+  margin: 20px;
 `;
 
-/* const queryClient = new QueryClient(); */
 function App() {
   const [secs, setSecs] = useState(0);
   const [mins, setMins] = useState(0);
@@ -37,7 +36,6 @@ function App() {
 
   return (
     <>
-      {/* <QueryClientProvider client={queryClient}> */}
       <TheHeader>Lorem ipsum</TheHeader>
       <UserContext.Provider value={{ secs, mins, hours }}>
         <BrowserRouter>
@@ -51,7 +49,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </UserContext.Provider>
-      {/* </QueryClientProvider> */}
     </>
   );
 }

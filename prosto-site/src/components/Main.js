@@ -9,8 +9,8 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   margin: 10px;
 `;
-const Title = styled.div`
-  border: solid white 3px;
+const Title = styled.p`
+  font-size: 1.1em;
 `;
 const MainSec = styled.div`
   width: 70%;
@@ -34,6 +34,17 @@ const Img = styled.img`
 const Text = styled.div`
   padding: 15px;
 `;
+const Texti = styled.div`
+  padding: 15px;
+  border-left: double 3px Indigo;
+`;
+const Cite = styled.div`
+  padding: 10px;
+`;
+
+const Rating = styled.div`
+  text-align: end;
+`;
 const SecPost = styled.div`
   border-radius: 10px;
   margin-bottom: 30px;
@@ -51,39 +62,50 @@ const SideSectionTop = styled.div`
   box-shadow: 0px 0px 10px 5px Indigo;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 30px;
-
+  width: 90%;
+  justify-content: center;
   border-radius: 10px;
   padding: 10px;
 `;
 const ProfileImg = styled.img`
   border-radius: 50px;
-  margin: 15px 5px;
-  width: 80%;
+  margin: auto;
+  width: 100%;
+  height: auto;
 `;
 
 const SideSectionMid = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   box-shadow: 0px 0px 10px 5px Indigo;
   border-radius: 10px;
   margin-bottom: 30px;
+  width: 90%;
 `;
 
 const SideSectionBot = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: raw;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   box-shadow: 0px 0px 10px 5px Indigo;
   border-radius: 10px;
+  width: 90%;
 `;
 
-const Input = styled.input`
-  width: 80%;
+const Input = styled.div`
+  display: flex;
+  flex-direction: raw;
+`;
+
+const InputField = styled.input`
+  width: 65%;
 `;
 
 function Main() {
@@ -93,21 +115,31 @@ function Main() {
         <MainSec>
           <FirstPost>
             <Img src={pic} alt="pic" />
-
-            <Text>Настоящий волк идёт по жизни или за майонезом, или за пивом</Text>
+            <Cite>
+              <Title>Цитата дня</Title>
+              <Texti>Настоящий волк идёт по жизни или за майонезом, или за пивом</Texti>
+              <Rating>Perfect</Rating>
+            </Cite>
           </FirstPost>
           <SecPost>
-            <Text>Деньги не делают тебя беднее, они лишь делают тебя богаче.</Text>
+            <Cite>
+              <Texti>Деньги не делают тебя беднее, они лишь делают тебя богаче.</Texti>
+              <Rating>Nice</Rating>
+            </Cite>
           </SecPost>
+
           <SecPost>
-            <Text>Если тебе тяжело идти, значит ты жирный</Text>
+            <Cite>
+              <Texti>Если тебе тяжело идти, значит ты жирный</Texti>
+              <Rating>Good</Rating>
+            </Cite>
           </SecPost>
         </MainSec>
         <SideSec>
           <SideSectionTop>
             <ProfileImg src={profpic} width="200px" height="200px" alt="profpic" />
 
-            <Title>На барабане:</Title>
+            <Title>Вращайте барбан</Title>
 
             <Text>Сектор приз</Text>
             <Text>Сектор плюс</Text>
@@ -115,12 +147,16 @@ function Main() {
           </SideSectionTop>
           <SideSectionMid>
             <Title>Назовите букву</Title>
-            <Input placeholder="Ваша буква" />
-            <button onClick={() => alert('Да что вы!')}>Угадать</button>
+            <Input>
+              <InputField placeholder="Ваша буква" />
+              <button onClick={() => alert('Да что вы!')}>Угадать</button>
+            </Input>
           </SideSectionMid>
           <SideSectionBot>
-            <input type="checkbox" />
-            <Text>Передать подарки в музей капитал-шоу</Text>
+            <Input>
+              <input type="checkbox" />
+              <Text>Передать подарки</Text>
+            </Input>
           </SideSectionBot>
         </SideSec>
       </Wrapper>
