@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import { useQuery } from 'react-query';
 import Tree from './CommentTree';
-import { useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const Title = styled.div`
   padding: 10px;
@@ -37,14 +37,12 @@ const URL = styled.div`
   font-size: 15px;
 `;
 function NewData() {
-  localStorage.setItem('parametr', useLocation().state.param);
-  const param = localStorage.getItem('parametr');
-  console.log(param);
+  const { id } = useParams();
 
   const { isLoading, error, data, refetch } = useQuery(
     ['newsitem'],
     async () => {
-      const res = await axios.get(`https://api.hnpwa.com/v0/item/${param}.json`);
+      const res = await axios.get(`https://api.hnpwa.com/v0/item/${id}.json`);
       return res.data;
     },
     {

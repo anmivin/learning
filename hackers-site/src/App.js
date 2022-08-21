@@ -26,7 +26,7 @@ function App() {
         </Nav>
         <Routes>
           <Route exact path="/" element={<New />} />
-          <Route exact path="/news" element={<NewData />} />
+          <Route exact path="/news/:id" element={<NewData />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

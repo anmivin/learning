@@ -49,7 +49,7 @@ function New() {
   };
 
   const goToNew = (key) => {
-    navigate('/news', { state: { param: key } });
+    navigate(`/news/${key}`);
   };
 
   if (error) return <h1>OH SHIT</h1>;
@@ -66,7 +66,6 @@ function New() {
                 <NewsTitle onClick={() => goToNew(newses.id)}>{newses.title}</NewsTitle>
               </Li>
               <Div>
-                {' '}
                 by {newses.user} {newses.time_ago} {newses.points} points {newses.comments_count} comments
               </Div>
             </div>
