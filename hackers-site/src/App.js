@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import New from './components/New';
 import NewData from './components/NewData';
-
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 const Header = styled.div`
@@ -19,22 +18,18 @@ const Nav = styled.nav`
 const queryClient = new QueryClient();
 function App() {
   return (
-    <>
-      <QueryClientProvider client={queryClient}>
-        <Header>Hackers news</Header>
-
-        <BrowserRouter>
-          <Nav>
-            <Link to="/">Main page</Link>
-          </Nav>
-
-          <Routes>
-            <Route exact path="/" element={<New />} />
-            <Route exact path="/news" element={<NewData />} />
-          </Routes>
-        </BrowserRouter>
-      </QueryClientProvider>
-    </>
+    <QueryClientProvider client={queryClient}>
+      <Header>Hackers news</Header>
+      <BrowserRouter>
+        <Nav>
+          <Link to="/">Main page</Link>
+        </Nav>
+        <Routes>
+          <Route exact path="/" element={<New />} />
+          <Route exact path="/news" element={<NewData />} />
+        </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 

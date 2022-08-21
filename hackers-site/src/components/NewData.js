@@ -10,6 +10,7 @@ const Title = styled.div`
   padding: 10px;
   background-color: PaleGreen;
   font-size: 20px;
+  font-family: Lucida Sans, Verdana, Serif;
   border: 2 solid black;
 `;
 const Div = styled.div`
@@ -36,12 +37,14 @@ const URL = styled.div`
   font-size: 15px;
 `;
 function NewData() {
-  const parametr = useLocation().state.param;
+  localStorage.setItem('parametr', useLocation().state.param);
+  const param = localStorage.getItem('parametr');
+  console.log(param);
 
   const { isLoading, error, data, refetch } = useQuery(
     ['newsitem'],
     async () => {
-      const res = await axios.get(`https://api.hnpwa.com/v0/item/${parametr}.json`);
+      const res = await axios.get(`https://api.hnpwa.com/v0/item/${param}.json`);
       return res.data;
     },
     {
@@ -63,13 +66,11 @@ function NewData() {
       <Button onClick={() => refreshPage()}> Refresh </Button>
       <URL> The URL for this: {data.url} </URL>
       <div>
-        <Title> {data.title}</Title>
-
+        <Title key={data.id}> {data.title}</Title>
         <Div>
           by {data.user} {data.time_ago} {data.comments_count} comments
         </Div>
       </div>
-
       <ComSec>Comment section</ComSec>
       <Tree data={data.comments} />
     </div>

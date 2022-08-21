@@ -17,7 +17,6 @@ const Ul = styled.ul`
 
 const Button = styled.button`
   border: thick double Cyan;
-
   &:hover {
     cursor: pointer;
   }
@@ -26,7 +25,7 @@ const Button = styled.button`
 const Tree = ({ data = [] }) => {
   return (
     <Div>
-      <Ul>
+      <Ul key={data.id}>
         {data.map((tree) => (
           <TreeNode node={tree} />
         ))}
@@ -37,8 +36,7 @@ const Tree = ({ data = [] }) => {
 
 const TreeNode = ({ node }) => {
   const [childVisible, setChildVisible] = useState(false);
-
-  const hasChild = node.comments.length !== 0 ? true : false;
+  const hasChild = !!node.comments.length;
 
   const changeVisibility = () => {
     setChildVisible(!childVisible);
@@ -46,14 +44,11 @@ const TreeNode = ({ node }) => {
   return (
     <li>
       <Username>{node.user}</Username>
-
       <Div dangerouslySetInnerHTML={{ __html: node.content }} />
-
       <Div>
         {node.time_ago} {node.comments_count} comments{' '}
         {hasChild ? <Button onClick={() => changeVisibility()}>{childVisible ? '^' : 'v'} </Button> : ''}
       </Div>
-
       {hasChild && childVisible && (
         <Div>
           <Ul>

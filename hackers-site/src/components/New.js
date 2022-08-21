@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
 import { useQuery } from 'react-query';
 
 const NewsTitle = styled.div`
@@ -24,7 +23,6 @@ const Button = styled.button`
 
 const Li = styled.li`
   padding: 10px;
-
   &:hover {
     cursor: pointer;
   }
@@ -41,7 +39,7 @@ function New() {
       const res3 = await axios.get('https://api.hnpwa.com/v0/newest/3.json');
       const res4 = await axios.get('https://api.hnpwa.com/v0/newest/4.json');
       const newsList = [...res1.data, ...res2.data, ...res3.data, ...res4.data];
-      return newsList.slice(1, 101);
+      return newsList.slice(0, 100);
     },
     { refetchInterval: 60000 },
   );
@@ -67,7 +65,6 @@ function New() {
               <Li>
                 <NewsTitle onClick={() => goToNew(newses.id)}>{newses.title}</NewsTitle>
               </Li>
-
               <Div>
                 {' '}
                 by {newses.user} {newses.time_ago} {newses.points} points {newses.comments_count} comments
