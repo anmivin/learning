@@ -1,4 +1,4 @@
 import { createContext } from 'react';
-const UserContext = createContext();
+const TimerContext = createContext();
 
-export default UserContext;
+export default TimerContext;

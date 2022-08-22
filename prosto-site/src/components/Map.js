@@ -4,10 +4,17 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import { Hearts } from 'react-loader-spinner';
 
 const Wrapp = styled.div`
-  width: 50vw;
-  height: 50vh;
-
+  width: 70vw;
+  height: 70vh;
   margin: auto;
+`;
+const LoaderWrapp = styled.div`
+  margin: auto;
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 function Mapp() {
@@ -15,8 +22,12 @@ function Mapp() {
 
   return (
     <>
+      {load && (
+        <LoaderWrapp>
+          <Hearts height="50%" width="50%" color="violet" visible={setLoad ? 'true' : 'false'} />
+        </LoaderWrapp>
+      )}
       <Wrapp>
-        {load && <Hearts margin="auto" height="50%" width="50%" color="violet" visible={setLoad ? 'true' : 'false'} />}
         <YMaps>
           <Map
             onLoad={() => {
@@ -26,7 +37,7 @@ function Mapp() {
             height={'100%'}
             defaultState={{
               center: [56.01242, 37.474915],
-              zoom: 9,
+              zoom: 12,
             }}
           >
             <Placemark geometry={[56.01242, 37.474915]} />

@@ -11,8 +11,9 @@ const Wrapper = styled.div`
 `;
 const Title = styled.p`
   font-size: 1.1em;
+  border-bottom: solid 1px indigo;
 `;
-const MainSec = styled.div`
+const MainSection = styled.div`
   width: 70%;
   padding: 10px;
   display: flex;
@@ -20,7 +21,6 @@ const MainSec = styled.div`
   align-items: left;
   border-radius: 10px;
 `;
-
 const FirstPost = styled.div`
   box-shadow: 0px 0px 10px 5px Indigo;
   border-radius: 10px;
@@ -34,29 +34,32 @@ const Img = styled.img`
 const Text = styled.div`
   padding: 15px;
 `;
-const Texti = styled.div`
+const CiteText = styled.div`
   padding: 15px;
   border-left: double 3px Indigo;
 `;
 const Cite = styled.div`
   padding: 10px;
 `;
-
 const Rating = styled.div`
   text-align: end;
+  padding: 0 5px 5px 0;
 `;
-const SecPost = styled.div`
+const OtherPost = styled.div`
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 10px 5px Indigo;
 `;
-const SideSec = styled.div`
+const SideSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
   border-radius: 10px;
   width: 20%;
+  @media (max-width: 768px) {
+    width: 70%;
+  }
 `;
 const SideSectionTop = styled.div`
   box-shadow: 0px 0px 10px 5px Indigo;
@@ -75,7 +78,6 @@ const ProfileImg = styled.img`
   width: 100%;
   height: auto;
 `;
-
 const SideSectionMid = styled.div`
   display: flex;
   flex-direction: column;
@@ -87,7 +89,6 @@ const SideSectionMid = styled.div`
   margin-bottom: 30px;
   width: 90%;
 `;
-
 const SideSectionBot = styled.div`
   display: flex;
   flex-direction: raw;
@@ -98,12 +99,10 @@ const SideSectionBot = styled.div`
   border-radius: 10px;
   width: 90%;
 `;
-
 const Input = styled.div`
   display: flex;
   flex-direction: raw;
 `;
-
 const InputField = styled.input`
   width: 65%;
 `;
@@ -112,35 +111,32 @@ function Main() {
   return (
     <>
       <Wrapper>
-        <MainSec>
+        <MainSection>
           <FirstPost>
             <Img src={pic} alt="pic" />
             <Cite>
               <Title>Цитата дня</Title>
-              <Texti>Настоящий волк идёт по жизни или за майонезом, или за пивом</Texti>
+              <CiteText>Настоящий волк идёт по жизни или за майонезом, или за пивом</CiteText>
               <Rating>Perfect</Rating>
             </Cite>
           </FirstPost>
-          <SecPost>
+          <OtherPost>
             <Cite>
-              <Texti>Деньги не делают тебя беднее, они лишь делают тебя богаче.</Texti>
+              <CiteText>Деньги не делают тебя беднее, они лишь делают тебя богаче.</CiteText>
               <Rating>Nice</Rating>
             </Cite>
-          </SecPost>
-
-          <SecPost>
+          </OtherPost>
+          <OtherPost>
             <Cite>
-              <Texti>Если тебе тяжело идти, значит ты жирный</Texti>
+              <CiteText>Если тебе тяжело идти, значит ты жирный</CiteText>
               <Rating>Good</Rating>
             </Cite>
-          </SecPost>
-        </MainSec>
-        <SideSec>
+          </OtherPost>
+        </MainSection>
+        <SideSection>
           <SideSectionTop>
             <ProfileImg src={profpic} width="200px" height="200px" alt="profpic" />
-
             <Title>Вращайте барбан</Title>
-
             <Text>Сектор приз</Text>
             <Text>Сектор плюс</Text>
             <Text>Сектор без баб</Text>
@@ -158,7 +154,7 @@ function Main() {
               <Text>Передать подарки</Text>
             </Input>
           </SideSectionBot>
-        </SideSec>
+        </SideSection>
       </Wrapper>
     </>
   );
