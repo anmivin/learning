@@ -30,7 +30,6 @@ const Img = styled.img`
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
-  image?: HTMLImageElement;
 `;
 const Text = styled.div`
   padding: 15px;

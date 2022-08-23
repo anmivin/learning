@@ -8,7 +8,7 @@ const Div = styled.div`
   font-size: 20px;
 `;
 
-const Timer = () => {
+const Timer: React.FC = () => {
   const { secs } = useContext(UserContext);
   const time = moment.utc(secs * 1000).format('HH:mm:ss');
 
