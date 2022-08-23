@@ -1,83 +1,79 @@
 import styled from 'styled-components';
-import React, { useContext } from 'react';
-import { useNavigate } from "react-router-dom";
-import axios from 'axios'
-import Context from '../TheContext';
-import {useQuery} from 'react-query';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { useQuery } from 'react-query';
 
-const NewsTitle = styled.div `
-background-color: GreenYellow;
-padding: 10px;
-`
-const Wrapper = styled.div `
-display: flex;
-justify-content: flex-start;
+const NewsTitle = styled.div`
+  background-color: PaleGreen;
+  padding: 10px;
+`;
+const Div = styled.div`
+  padding-left: 50px;
+`;
 
-`
+const Button = styled.button`
+  border: thick double Cyan;
+  width: 100px;
+  height: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+const Li = styled.li`
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 function New() {
-    const[context, setContext] = useContext(Context);
-    const navigate = useNavigate(); 
-    
-    
+  const navigate = useNavigate();
 
-    const {isLoading, error, data, refetch} = useQuery(['newses'], 
-    async () => { 
-      const res = await axios.get('https://api.hnpwa.com/v0/newest/1.json')
-      return res.data },
-      {
-        enable: false,
-      },
-      {
-        
-        refetchInterval: 60000,
-      }
-      );
-  
-    const refreshPage = () => {
-       refetch();
-        
-      console.log('jj')};
- 
-    const goToNew = (key) => {
-        setContext(key);
-        console.log(key);
-        const path = '/news'; 
-        navigate(path);
-    }
+  const { isLoading, error, data, refetch } = useQuery(
+    ['newses'],
+    async () => {
+      const res1 = await axios.get('https://api.hnpwa.com/v0/newest/1.json');
+      const res2 = await axios.get('https://api.hnpwa.com/v0/newest/2.json');
+      const res3 = await axios.get('https://api.hnpwa.com/v0/newest/3.json');
+      const res4 = await axios.get('https://api.hnpwa.com/v0/newest/4.json');
+      const newsList = [...res1.data, ...res2.data, ...res3.data, ...res4.data];
+      return newsList.slice(0, 100);
+    },
+    { refetchInterval: 60000 },
+  );
 
-    if (error) return <h1>OH SHIT</h1>;
-    if (isLoading) return <h1>Loading...</h1>;
-       
-    
-    return (
-      <div>
-        
-        <button onClick={() => refreshPage()}> Refresh </button>
-        <div> 
-                                  
-            {
-              data.map((newses) =>
-                  <div key={newses.id} >
-                                
-                  <NewsTitle onClick={() => goToNew(newses.id)}>{newses.title}</NewsTitle>
-                  <Wrapper>
-                    <div>{newses.points} points &nbsp;</div>
-                    <div>by {newses.user} &nbsp;</div>
-                    <div>{newses.time_ago}</div>
-                  </Wrapper>
-                            </div>
-                        )
-                    } 
-              
-                  </div>
-                 
-              
-                
+  const refreshPage = () => {
+    refetch();
+  };
+
+  const goToNew = (key) => {
+    navigate(`/news/${key}`);
+  };
+
+  if (error) return <h1>OH SHIT</h1>;
+  if (isLoading) return <h1>Loading...</h1>;
+
+  return (
+    <div>
+      <Button onClick={() => refreshPage()}> Refresh </Button>
+      <ol>
+        <div>
+          {data.map((newses) => (
+            <div key={newses.id}>
+              <Li>
+                <NewsTitle onClick={() => goToNew(newses.id)}>{newses.title}</NewsTitle>
+              </Li>
+              <Div>
+                by {newses.user} {newses.time_ago} {newses.points} points {newses.comments_count} comments
+              </Div>
             </div>
-      
-    
-    );
-  }
+          ))}
+        </div>
+      </ol>
+    </div>
+  );
+}
 
-export default New
+export default New;
