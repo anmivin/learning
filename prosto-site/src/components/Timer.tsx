@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import UserContext from './TimerContext';
 import styled from 'styled-components';
+import moment from 'moment';
 
 const Div = styled.div`
   text-align: center;
@@ -8,15 +9,13 @@ const Div = styled.div`
 `;
 
 const Timer = () => {
-  const { secs, mins, hours } = useContext(UserContext);
+  const { secs } = useContext(UserContext);
+  const time = moment.utc(secs * 1000).format('HH:mm:ss');
 
   return (
     <div className="app">
       <div className="time">
-        <Div>
-          Текущая сессия: {hours < 10 ? '0' + hours : hours}:{mins < 10 ? '0' + mins : mins}:
-          {secs < 10 ? '0' + secs : secs}
-        </Div>
+        <Div>Текущая сессия: {time}</Div>
       </div>
     </div>
   );

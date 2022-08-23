@@ -13,21 +13,12 @@ const Header = styled.div`
   margin: 20px;
 `;
 
-function App() {
-  const [secs, setSecs] = useState(0);
-  const [mins, setMins] = useState(0);
-  const [hours, setHours] = useState(0);
+const App: React.FC = () => {
+  const [secs, setSecs] = useState<number>(0);
+
   useEffect(() => {
     const timer = setInterval(() => {
       setSecs(secs + 1);
-      if (secs === 59) {
-        setMins(mins + 1);
-        setSecs(0);
-      }
-      if (mins === 59) {
-        setHours(hours + 1);
-        setMins(0);
-      }
     }, 1000);
     return () => clearInterval(timer);
   });
@@ -35,19 +26,19 @@ function App() {
   return (
     <>
       <Header>Капитал-шоу "Счастливы вместе"</Header>
-      <TimerContext.Provider value={{ secs, mins, hours }}>
+      <TimerContext.Provider value={{ secs }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Main />} />
-              <Route exact path="map" element={<Mapp />} />
-              <Route exact path="timer" element={<Timer />} />
+              <Route path="map" element={<Mapp />} />
+              <Route path="timer" element={<Timer />} />
             </Route>
           </Routes>
         </BrowserRouter>
       </TimerContext.Provider>
     </>
   );
-}
+};
 
 export default App;

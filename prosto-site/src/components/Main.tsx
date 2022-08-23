@@ -30,6 +30,7 @@ const Img = styled.img`
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
+  image?: HTMLImageElement;
 `;
 const Text = styled.div`
   padding: 15px;
@@ -107,7 +108,7 @@ const InputField = styled.input`
   width: 65%;
 `;
 
-function Main() {
+const Main: React.FC = () => {
   return (
     <>
       <Wrapper>
@@ -158,6 +159,6 @@ function Main() {
       </Wrapper>
     </>
   );
-}
+};
 
 export default Main;
