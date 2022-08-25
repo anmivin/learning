@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { NewInterface } from './Interfaces';
+import { NewsItem } from '../types';
 
 const Ul = styled.ul`
   list-style-type: none;
@@ -41,11 +41,11 @@ const Button = styled.button`
 `;
 
 interface CommentProps {
-  commentItem: NewInterface[];
+  commentItem: NewsItem[];
 }
 
 interface NodeProps {
-  nodeItem: NewInterface;
+  nodeItem: NewsItem;
 }
 
 const Tree: React.FC<CommentProps> = ({ commentItem }) => {

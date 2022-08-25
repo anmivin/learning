@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useQuery } from 'react-query';
-import { ListInterface } from './Interfaces';
+import { NewsListItem } from '../types';
 
 const NavBar = styled.div`
   display: flex;
@@ -49,14 +49,14 @@ const NewsInfo = styled.div`
 const New: React.FC = () => {
   const navigate = useNavigate();
 
-  const { isLoading, error, data, refetch } = useQuery<ListInterface[], Error>(
+  const { isLoading, error, data, refetch } = useQuery<NewsListItem[], Error>(
     ['newses'],
 
-    async (): Promise<ListInterface[]> => {
-      const res1 = await axios.get<ListInterface[]>('https://api.hnpwa.com/v0/newest/1.json');
-      const res2 = await axios.get<ListInterface[]>('https://api.hnpwa.com/v0/newest/2.json');
-      const res3 = await axios.get<ListInterface[]>('https://api.hnpwa.com/v0/newest/3.json');
-      const res4 = await axios.get<ListInterface[]>('https://api.hnpwa.com/v0/newest/4.json');
+    async (): Promise<NewsListItem[]> => {
+      const res1 = await axios.get<NewsListItem[]>('https://api.hnpwa.com/v0/newest/1.json');
+      const res2 = await axios.get<NewsListItem[]>('https://api.hnpwa.com/v0/newest/2.json');
+      const res3 = await axios.get<NewsListItem[]>('https://api.hnpwa.com/v0/newest/3.json');
+      const res4 = await axios.get<NewsListItem[]>('https://api.hnpwa.com/v0/newest/4.json');
       const newsList = [...res1.data, ...res2.data, ...res3.data, ...res4.data];
       return newsList.slice(0, 100);
     },

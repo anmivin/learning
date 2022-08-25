@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useQuery } from 'react-query';
 import Tree from './CommentTree';
 import { useParams } from 'react-router-dom';
-import { NewInterface } from './Interfaces';
+import { NewsItem } from '../types';
 
 const NavBar = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ const Button = styled.button`
     color: MediumVioletRed;
   }
 `;
-const NewsItem = styled.div`
+const New = styled.div`
   background-color: PaleGreen;
   box-shadow: -1px -1px 2px black;
   border-radius: 5px;
@@ -52,10 +52,10 @@ const Div = styled.div`
 const NewData: React.FC = () => {
   const { id } = useParams();
 
-  const { isLoading, error, data, refetch } = useQuery<NewInterface, Error>(
+  const { isLoading, error, data, refetch } = useQuery<NewsItem, Error>(
     ['newsitem'],
-    async (): Promise<NewInterface> => {
-      const res = await axios.get<NewInterface>(`https://api.hnpwa.com/v0/item/${id}.json`);
+    async (): Promise<NewsItem> => {
+      const res = await axios.get<NewsItem>(`https://api.hnpwa.com/v0/item/${id}.json`);
       return res.data;
     },
     {
@@ -80,7 +80,7 @@ const NewData: React.FC = () => {
         <Button onClick={() => refreshPage()}>Refresh</Button>
         <Button onClick={() => goMain()}>Main page</Button>
       </NavBar>
-      <NewsItem key={data!.id}>
+      <New key={data!.id}>
         <Title>{data!.title}</Title>
         <Section>
           <div> {data!.url} </div>
@@ -88,7 +88,7 @@ const NewData: React.FC = () => {
             by {data!.user} | {data!.time_ago} | {data!.comments_count} comments
           </div>
         </Section>
-      </NewsItem>
+      </New>
       <Div>Comments</Div>
       {<Tree commentItem={data!.comments} />}
     </div>
