@@ -20,8 +20,10 @@ export function usePageVisibility() {
       document.removeEventListener("visibilitychange", changeVisability);
     };
   }, []);
+
   const onVisibilityChange = (func: (param: boolean) => void) => {
     callback.current = [...callback.current, func];
   };
+
   return { visible, leaveCount, onVisibilityChange };
 }
