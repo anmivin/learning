@@ -2,16 +2,16 @@ import { useState, useEffect, useRef } from "react";
 
 export function usePageVisibility() {
   const [visible, setVisible] = useState(!document.hidden);
-  const [count, setcount] = useState(0);
-  const ref = useRef<((param: boolean) => void)[]>([]);
+  const [leaveCount, setLeaveCount] = useState(0);
+  const callback = useRef<((param: boolean) => void)[]>([]);
 
   useEffect(() => {
     const changeVisability = () => {
       if (document.hidden) {
-        setcount((count) => count + 1);
+        setLeaveCount((leaveCount) => leaveCount + 1);
       }
       setVisible(!document.hidden);
-      ref.current.forEach((changeVisability) =>
+      callback.current.forEach((changeVisability) =>
         changeVisability(!document.hidden)
       );
     };
@@ -21,7 +21,7 @@ export function usePageVisibility() {
     };
   }, []);
   const onVisibilityChange = (func: (param: boolean) => void) => {
-    ref.current = [...ref.current, func];
+    callback.current = [...callback.current, func];
   };
-  return { visible, count, onVisibilityChange };
+  return { visible, leaveCount, onVisibilityChange };
 }
