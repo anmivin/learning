@@ -1,0 +1,1995 @@
+[
+  {
+    "id": 32709337,
+    "title": "Bones: Why Utah’s desert is a paleontologist’s playground",
+    "points": 2,
+    "user": "Hooke",
+    "time": 1662260335,
+    "time_ago": "7 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": { "create": [] },
+    "comments_count": 0,
+    "url": "https://www.deseret.com/2022/8/21/23313199/dinosaurs-palentology-utah-desert-grand-staircase-university-of-utah-t-rex-tyrannosaur",
+    "domain": "deseret.com"
+  },
+  {
+    "id": 32709241,
+    "title": "Ask HN: What were you once expert, but now you can hardly recall what you knew?",
+    "points": 4,
+    "user": "samstave",
+    "time": 1662259393,
+    "time_ago": "7 hours ago",
+    "type": "link",
+    "content": "<p>30 years in - there are various areas where I was the SME&#x2F;expert on certain things, but if I were to be interviewed on them, I would sound completely like I never knew anything about it...<p>-<p>What are some areas where you had intense focus, drive and knowledge, but years later - you can now barely speak as an authority on the subject?<p>&quot;<i>I&#x27;ve forgotten more about [subject] than you would ever know</i>] trope",
+    "comments": {
+      "create": [
+        {
+          "id": 32710460,
+          "user": "metaloha",
+          "time": 1662273446,
+          "time_ago": "3 hours ago",
+          "type": "comment",
+          "content": "<p>PHP for sure - used it for years, wrote multiple frameworks for various things, then migrated to JavaScript and the front-end and now I can barely remember how to write PHP :(",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32710460"
+        },
+        {
+          "id": 32709579,
+          "user": "superchroma",
+          "time": 1662262787,
+          "time_ago": "6 hours ago",
+          "type": "comment",
+          "content": "<p>Probably more esoteric WPF stuff like bundling image resources in the DLL and defining control templates. I mainly remember how fiddly it all was.",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709579"
+        },
+        {
+          "id": 32709327,
+          "user": "gladiatr72",
+          "time": 1662260274,
+          "time_ago": "7 hours ago",
+          "type": "comment",
+          "content": "<p>M$&#x2F;PC&#x2F;IBM DOS memory management driver configuration",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709327"
+        },
+        {
+          "id": 32709270,
+          "user": "tempxyz",
+          "time": 1662259693,
+          "time_ago": "7 hours ago",
+          "type": "comment",
+          "content": "<p>Music I suppose. High school phase.",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709270"
+        },
+        {
+          "id": 32709296,
+          "time": 1662259953,
+          "time_ago": "7 hours ago",
+          "type": "comment",
+          "content": "[deleted]",
+
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709296"
+        }
+      ]
+    },
+    "comments_count": 5,
+    "url": "item?id=32709241"
+  },
+  {
+    "id": 32709201,
+    "title": "Stable Diffusion PR optimizes VRAM, generate 576x1280 images with 6 GB VRAM",
+    "points": 140,
+    "user": "avocado2",
+    "time": 1662258909,
+    "time_ago": "7 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": {
+      "create": [
+        {
+          "id": 32709528,
+          "user": "qdot76367",
+          "time": 1662262177,
+          "time_ago": "6 hours ago",
+          "type": "comment",
+          "content": "<p>For everyone about to comment on the garbage in the commit:<p>It looks like the committer made their changes in the top commit, then merged the updated CompViz StableDiffusion change set on top of it for some reason. That&#x27;s where the license change, rick astley image, etc come from.<p>And yes, StableDiffusion from the original repo will rick roll you if you try to generate something that triggers its NSFW filter.<p>Here&#x27;s the code that does it:<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;CompVis&#x2F;stable-diffusion&#x2F;blob&#x2F;main&#x2F;scripts&#x2F;txt2img.py#L79\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;CompVis&#x2F;stable-diffusion&#x2F;blob&#x2F;main&#x2F;script...</a><p>And here&#x27;s what it looks like:<p><a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;qDot&#x2F;status&#x2F;1565076751465648128\" rel=\"nofollow\">https:&#x2F;&#x2F;twitter.com&#x2F;qDot&#x2F;status&#x2F;1565076751465648128</a>",
+          "comments": {
+            "create": [
+              {
+                "id": 32709834,
+                "user": "p-e-w",
+                "time": 1662265624,
+                "time_ago": "5 hours ago",
+                "type": "comment",
+                "content": "<p>&gt; And yes, StableDiffusion from the original repo will rick roll you if you try to generate something that triggers its NSFW filter.<p>It goes without saying that the authors of a piece of software have the right to make the software do whatever they want, but that shouldn&#x27;t stop us from recognizing that AI engineers are starting to act like megalomaniac overseers who consider it part of their mission to steer humanity onto the &quot;right&quot; path.<p>Who exactly do these people think they are?<p>Imagine this behavior from a web browser. &quot;The URL of the file you were trying to download triggered my NSFW classifier, so I&#x27;m going to replace the file with this funny image.&quot;<p>This isn&#x27;t funny, it&#x27;s creepy.",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32709891,
+                      "user": "qdot76367",
+                      "time": 1662266417,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>Nah it’s just basic due diligence for releasing an open source app of this nature. Turning it off is a simple one line change, because everything is obviously named. This is not some high wall to scale.<p>As someone that manages nsfw open source projects, this move seems fine to me.<p>And actually kinda hilarious.",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32710067,
+                            "user": "p-e-w",
+                            "time": 1662268635,
+                            "time_ago": "4 hours ago",
+                            "type": "comment",
+                            "content": "<p>If what StableDiffusion did was ask the user something like &quot;The prompt you entered may result in the generation of content some people find objectionable. Are you sure you want to proceed?&quot;, then I would buy your argument.<p>As currently implemented (and the implementation took <i>more work</i> than a confirmation prompt would have!), it&#x27;s an obvious attempt to <i>control,</i> rather than protect, users. They try their best to dress it up like a joke, but it clearly isn&#x27;t.",
+                            "comments": {
+                              "create": [
+                                {
+                                  "id": 32710473,
+                                  "user": "MattRix",
+                                  "time": 1662273598,
+                                  "time_ago": "3 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>They aren’t trying to “control” users, they’re trying to minimize the amount of bad press these AIs get. The approach they took was easier than your suggestion, because their system detects NSFW content on a per output image basis… so it’s easier to output some image (rickroll) rather than put up a prompt or even skip it completely (since they also generate a grid of the resulting images).<p>I should add that it’s also incredibly easy to comment it out.",
+                                  "comments": {
+                                    "create": [
+                                      {
+                                        "id": 32711063,
+                                        "user": "numpad0",
+                                        "time": 1662280305,
+                                        "time_ago": "an hour ago",
+                                        "type": "comment",
+                                        "content": "<p>Yeah, it&#x27;s basic survival. Technology is inherently free and driven by porn, but sometimes that can be shocking to those uninitiated, so to &quot;protect the children&quot;, restrictions are often placed to avoid alerting the horde and reverse progresses. I think those &quot;enlightened&quot; should construct and share such understanding that these are the actual reasons, so to avoid us all ending up in an actual dystopia where &quot;protections&quot; are enforced stricter than intended.",
+                                        "comments": { "create": [] },
+                                        "comments_count": 0,
+                                        "level": 5,
+                                        "url": "item?id=32711063"
+                                      }
+                                    ]
+                                  },
+                                  "comments_count": 1,
+                                  "level": 4,
+                                  "url": "item?id=32710473"
+                                },
+                                {
+                                  "id": 32710975,
+                                  "user": "wolfd",
+                                  "time": 1662279296,
+                                  "time_ago": "an hour ago",
+                                  "type": "comment",
+                                  "content": "<p>The implementation as it stands <i>is</i> actually easier the way they do it. They replace the image by scaling Rick to the image size. That means that they can still automatically put your output images in a grid without any extra code. They could have zeroed the pixels, but that could have led to confusion about if things were working or not.<p>It&#x27;s silly and you&#x27;re able to patch it out if you so desire. But most importantly, they released the model to <i>everyone</i> so it&#x27;s way more open than OpenAI&#x27;s DALL-E 2 (for better or worse). I don&#x27;t think the argument that they&#x27;re trying to control you really makes a lot of sense given how widely accessible this model is.",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710975"
+                                },
+                                {
+                                  "id": 32710511,
+                                  "user": "IanCal",
+                                  "time": 1662274075,
+                                  "time_ago": "3 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>That would absolutely be more work than just subbing in an image and would neither have worked in the original implementation nor the various frontends it&#x27;s been used in.<p>This is quite a classic HN kind of comment. Immediately assumes specific problematic intent and proposes a solution that doesn&#x27;t fit the API.",
+                                  "comments": {
+                                    "create": [
+                                      {
+                                        "id": 32710633,
+                                        "user": "macrolime",
+                                        "time": 1662275376,
+                                        "time_ago": "3 hours ago",
+                                        "type": "comment",
+                                        "content": "<p>Now instead users have to spend hours upon hours editing docker images to remove it. Much easier.",
+                                        "comments": { "create": [] },
+                                        "comments_count": 0,
+                                        "level": 5,
+                                        "url": "item?id=32710633"
+                                      }
+                                    ]
+                                  },
+                                  "comments_count": 1,
+                                  "level": 4,
+                                  "url": "item?id=32710511"
+                                },
+                                {
+                                  "id": 32710093,
+                                  "user": "icelancer",
+                                  "time": 1662269134,
+                                  "time_ago": "4 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>It&#x27;s open-source. Patch it out yourself. It&#x27;s not hidden.",
+                                  "comments": {
+                                    "create": [
+                                      {
+                                        "id": 32710103,
+                                        "user": "p-e-w",
+                                        "time": 1662269230,
+                                        "time_ago": "4 hours ago",
+                                        "type": "comment",
+                                        "content": "<p>That&#x27;s not the point at all.",
+                                        "comments": {
+                                          "create": [
+                                            {
+                                              "id": 32710279,
+                                              "user": "icelancer",
+                                              "time": 1662271242,
+                                              "time_ago": "4 hours ago",
+                                              "type": "comment",
+                                              "content": "<p>It&#x27;s the point of open source.",
+                                              "comments": { "create": [] },
+                                              "comments_count": 0,
+                                              "level": 6,
+                                              "url": "item?id=32710279"
+                                            },
+                                            {
+                                              "id": 32710795,
+                                              "user": "Kiro",
+                                              "time": 1662277424,
+                                              "time_ago": "2 hours ago",
+                                              "type": "comment",
+                                              "content": "<p>You have no point whatsoever. You&#x27;re fighting windmills.",
+                                              "comments": {
+                                                "create": [
+                                                  {
+                                                    "id": 32710878,
+                                                    "user": "bawolff",
+                                                    "time": 1662278213,
+                                                    "time_ago": "2 hours ago",
+                                                    "type": "comment",
+                                                    "content": "<p>I disagree that the rick roll is inappropriate, but i also hate the argument that just because its open source, the programmers are above criticism. I think its reasonable people can dislike or even morally object to the decisions open source maintainers make (even if i dont particularly object to this specific instance)",
+                                                    "comments": {
+                                                      "create": []
+                                                    },
+                                                    "comments_count": 0,
+                                                    "level": 7,
+                                                    "url": "item?id=32710878"
+                                                  }
+                                                ]
+                                              },
+                                              "comments_count": 1,
+                                              "level": 6,
+                                              "url": "item?id=32710795"
+                                            }
+                                          ]
+                                        },
+                                        "comments_count": 3,
+                                        "level": 5,
+                                        "url": "item?id=32710103"
+                                      }
+                                    ]
+                                  },
+                                  "comments_count": 4,
+                                  "level": 4,
+                                  "url": "item?id=32710093"
+                                },
+                                {
+                                  "id": 32710875,
+                                  "user": "rdsubhas",
+                                  "time": 1662278184,
+                                  "time_ago": "2 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>From your previous comment:<p>&gt; AI engineers starting to act like megalomaniac overseers who consider it part of their mission to steer humanity onto the &quot;right&quot; path.<p>You outdid your comment. You have an idea of how this should work. And you&#x27;re trying to supposedly &quot;steer&quot; in a path of humanity. It&#x27;s just projection.<p>This kind of preachery righteousness control tactics should sit elsewhere (fork it). The devs want to convey something is nsfw. They will do it however they want.",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710875"
+                                },
+                                {
+                                  "id": 32710426,
+                                  "user": "yardstick",
+                                  "time": 1662273102,
+                                  "time_ago": "3 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>As currently implemented, it’s a hilarious Easter egg. I wouldn’t read too much into it.",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710426"
+                                },
+                                {
+                                  "id": 32710240,
+                                  "user": "TaylorAlexander",
+                                  "time": 1662270873,
+                                  "time_ago": "4 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>I don’t read it that way. I think their intent is open to interpretation.",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710240"
+                                },
+                                {
+                                  "id": 32710357,
+                                  "user": "manmal",
+                                  "time": 1662272192,
+                                  "time_ago": "3 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>Fork it and fix it, see if your branch gains traction.",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710357"
+                                }
+                              ]
+                            },
+                            "comments_count": 14,
+                            "level": 3,
+                            "url": "item?id=32710067"
+                          }
+                        ]
+                      },
+                      "comments_count": 15,
+                      "level": 2,
+                      "url": "item?id=32709891"
+                    },
+                    {
+                      "id": 32709869,
+                      "user": "esjeon",
+                      "time": 1662266151,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>Yeah, but, when it comes to <i>generating</i> NSFW contents, it is illegal to distribute pornographic software in some countries, and doing so can lead to domain blockage and such (i.e. South Korea, believe or not). This is something you gotta understand.<p>Also, if the author wanted to block NSFW contents at all, I&#x27;m pretty sure one can actually make the filter inseparable from the main network. This isn&#x27;t the case here AFAIK.",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32710095,
+                            "user": "p-e-w",
+                            "time": 1662269138,
+                            "time_ago": "4 hours ago",
+                            "type": "comment",
+                            "content": "<p>That makes no sense. You can draw whatever you like with Photoshop. You can search for whatever you want on Google. That doesn&#x27;t make <i>the software</i> &quot;NSFW&quot;, and no country will block Photoshop&#x27;s domain just because someone used Photoshop to create NSFW content.<p>Don&#x27;t let people who are clearly motivated by a moralistic desire to control others hide behind BS pseudo-legal excuses.",
+                            "comments": {
+                              "create": [
+                                {
+                                  "id": 32710414,
+                                  "user": "esjeon",
+                                  "time": 1662272966,
+                                  "time_ago": "3 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>1. Google do have a stuff called &quot;SafeSearch&quot;[1] to filter explicit contents, and they do have a DMCA-like system for processing violation reports from governments and legal entities. That is, Google is already cooperating.<p>2. Photoshop&#x27;s sole function is to let people draw, so drawing a porn w&#x2F; Photoshop is 100% users&#x27; responsibility. In case of image generators, the AI itself has the capabilities to create NSFW contents. If you&#x27;re talking about the interactive nature of &quot;prompt&quot;, that logic also makes any adult games SFW - they are safe until the user clicks something.<p>[1]: <a href=\"https:&#x2F;&#x2F;support.google.com&#x2F;websearch&#x2F;answer&#x2F;510\" rel=\"nofollow\">https:&#x2F;&#x2F;support.google.com&#x2F;websearch&#x2F;answer&#x2F;510</a>",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710414"
+                                },
+                                {
+                                  "id": 32710361,
+                                  "user": "manmal",
+                                  "time": 1662272280,
+                                  "time_ago": "3 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>Explain this to <i>insert regime</i> when they block your GitHub repo or make using your software a felony. You are proposing to act on ideology, while such mitigations are rooted in pragmatism. You often can’t have both.",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710361"
+                                },
+                                {
+                                  "id": 32710525,
+                                  "user": "the-rc",
+                                  "time": 1662274227,
+                                  "time_ago": "3 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>You&#x27;d be right about Photoshop, but...<p><a href=\"https:&#x2F;&#x2F;helpx.adobe.com&#x2F;photoshop&#x2F;cds.html\" rel=\"nofollow\">https:&#x2F;&#x2F;helpx.adobe.com&#x2F;photoshop&#x2F;cds.html</a>",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710525"
+                                }
+                              ]
+                            },
+                            "comments_count": 3,
+                            "level": 3,
+                            "url": "item?id=32710095"
+                          },
+                          {
+                            "id": 32711015,
+                            "user": "numpad0",
+                            "time": 1662279694,
+                            "time_ago": "an hour ago",
+                            "type": "comment",
+                            "content": "<p>SK and Germany are notorious for that. They don&#x27;t care how the pixel arrays came to existence, any shapes and forms and representations, even links to such information, that are interpretable as belonging to certain categories are plain <i>illegal</i> there. I believe SK don&#x27;t even recognize copyright laws for such &quot;illegal&quot; information.",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 3,
+                            "url": "item?id=32711015"
+                          }
+                        ]
+                      },
+                      "comments_count": 5,
+                      "level": 2,
+                      "url": "item?id=32709869"
+                    },
+                    {
+                      "id": 32710173,
+                      "user": "greesil",
+                      "time": 1662270088,
+                      "time_ago": "4 hours ago",
+                      "type": "comment",
+                      "content": "<p>Yes, the megalomania of someone who makes their code and models freely available.",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32710367,
+                            "user": "p-e-w",
+                            "time": 1662272381,
+                            "time_ago": "3 hours ago",
+                            "type": "comment",
+                            "content": "<p>StableDiffusion isn&#x27;t freely available, in the &quot;Free Software&quot; sense. They use the highly uncommon &quot;CreativeML Open RAIL-M License&quot; which is a wall of text composed of weasel words describing how the software is so incredibly advanced and dangerous that despite the authors&#x27; earnest wish to do so, they cannot in good conscience make it genuinely Free Software.<p>These people wrote a bunch of Python code that pipes images and text through a GPU, and they&#x27;re acting as if they had created a secret weapon that somehow humanity must be protected from. If that&#x27;s not megalomania, I don&#x27;t know what is.",
+                            "comments": {
+                              "create": [
+                                {
+                                  "id": 32710527,
+                                  "user": "IanCal",
+                                  "time": 1662274232,
+                                  "time_ago": "3 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>If they think it&#x27;s a secret weapon humanity must be prevented from using, giving it away for free with examples on how to use it with a note on the side saying &quot;pls don&#x27;t misuse thanks&quot; seems like a very odd thing to do.",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710527"
+                                },
+                                {
+                                  "id": 32710499,
+                                  "user": "MattRix",
+                                  "time": 1662273884,
+                                  "time_ago": "3 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>Oh please, all the creators of these image AIs (OpenAI, Google, Midjourney, SD, etc) are being very very cautious with this stuff. It’s not going to end humanity, but it could easily lead to some really gross content that would paint the responsible organization in a bad light.",
+                                  "comments": {
+                                    "create": [
+                                      {
+                                        "id": 32710710,
+                                        "user": "p-e-w",
+                                        "time": 1662276353,
+                                        "time_ago": "2 hours ago",
+                                        "type": "comment",
+                                        "content": "<p>True, they are all very cautious not to let bad actors generate bad content.<p>Where &quot;bad actors&quot; are defined as &quot;people who disagree with us&quot;, and &quot;bad content&quot; is defined as &quot;things we don&#x27;t want to see&quot;.<p>Needless to say, the list of bad actors never includes the authors themselves, and the list of unacceptable applications never includes anything the authors had in mind.",
+                                        "comments": { "create": [] },
+                                        "comments_count": 0,
+                                        "level": 5,
+                                        "url": "item?id=32710710"
+                                      },
+                                      {
+                                        "id": 32710788,
+                                        "user": "kaoD",
+                                        "time": 1662277324,
+                                        "time_ago": "2 hours ago",
+                                        "type": "comment",
+                                        "content": "<p>Can you elaborate? Would Adobe be painted in a bad light if someone committed a crime using Photoshop?<p>Honestly it just feels weird. I&#x27;ve read the license restrictions and I can&#x27;t see why they are there out what they&#x27;re preventing.",
+                                        "comments": {
+                                          "create": [
+                                            {
+                                              "id": 32710941,
+                                              "user": "tirpen",
+                                              "time": 1662278987,
+                                              "time_ago": "2 hours ago",
+                                              "type": "comment",
+                                              "content": "<p>Photoshop doesn&#x27;t have an automatic &quot;Generate image of Obama selling weapons to Putin&quot; function.",
+                                              "comments": {
+                                                "create": [
+                                                  {
+                                                    "id": 32711075,
+                                                    "user": "kaoD",
+                                                    "time": 1662280498,
+                                                    "time_ago": "an hour ago",
+                                                    "type": "comment",
+                                                    "content": "<p>But anyone with enough time to learn (or money) can do it anyways without much effort.<p>(I&#x27;m trying to understand the exact difference here.) So it boils down to democratization? That anyone can do it regardless of skills acquired?",
+                                                    "comments": {
+                                                      "create": []
+                                                    },
+                                                    "comments_count": 0,
+                                                    "level": 7,
+                                                    "url": "item?id=32711075"
+                                                  }
+                                                ]
+                                              },
+                                              "comments_count": 1,
+                                              "level": 6,
+                                              "url": "item?id=32710941"
+                                            }
+                                          ]
+                                        },
+                                        "comments_count": 2,
+                                        "level": 5,
+                                        "url": "item?id=32710788"
+                                      }
+                                    ]
+                                  },
+                                  "comments_count": 4,
+                                  "level": 4,
+                                  "url": "item?id=32710499"
+                                }
+                              ]
+                            },
+                            "comments_count": 6,
+                            "level": 3,
+                            "url": "item?id=32710367"
+                          }
+                        ]
+                      },
+                      "comments_count": 7,
+                      "level": 2,
+                      "url": "item?id=32710173"
+                    },
+                    {
+                      "id": 32709880,
+                      "user": "Arainach",
+                      "time": 1662266249,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>What&#x27;s creepy is the very real world that we&#x27;re approaching where anyone can create porn of anyone else given a few pictures without their consent. That can cause all sorts of lasting psychological harm and other societal negative consequences.  Even if this probably can&#x27;t be entirely avoided, that doesn&#x27;t mean that the folks developing these models are obligated to make it easy or are incorrect to take steps to avoid it.",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32710013,
+                            "user": "hda2",
+                            "time": 1662267809,
+                            "time_ago": "5 hours ago",
+                            "type": "comment",
+                            "content": "<p>&gt; What&#x27;s creepy is the very real world that we&#x27;re approaching where anyone can create porn of anyone else given a few pictures without their consent.<p>Why is that a problem, exactly?<p>&gt; That can cause all sorts of lasting psychological harm and other societal negative consequences.<p>Like what? To me this sounds like a problem with how some people want to have absolute control over what others do and want everyone else to play along. That&#x27;s what I find really creepy.<p>Someone wants to generate porn of me fucking a donkey? Let them. They already could do that with ms-paint and I don&#x27;t get magically harmed if they do.<p>This reminds me of the old saying: &quot;Sticks and stones may break my bones, but AI-generated&#x2F;photoshopped&#x2F;glued-together pictures of me fucking a donkey will never hurt me&quot; :)",
+                            "comments": {
+                              "create": [
+                                {
+                                  "id": 32710120,
+                                  "user": "Arainach",
+                                  "time": 1662269434,
+                                  "time_ago": "4 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>Revenge porn, rumors, and defamation are already huge problems in society.  Being able to generate such things on demand with AI models will make it significantly worse.<p><a href=\"https:&#x2F;&#x2F;www.theguardian.com&#x2F;lifeandstyle&#x2F;2018&#x2F;may&#x2F;07&#x2F;many-revenge-porn-victims-consider-suicide-why-arent-schools-doing-more-to-stop-it\" rel=\"nofollow\">https:&#x2F;&#x2F;www.theguardian.com&#x2F;lifeandstyle&#x2F;2018&#x2F;may&#x2F;07&#x2F;many-re...</a>",
+                                  "comments": {
+                                    "create": [
+                                      {
+                                        "id": 32710903,
+                                        "user": "bawolff",
+                                        "time": 1662278549,
+                                        "time_ago": "2 hours ago",
+                                        "type": "comment",
+                                        "content": "<p>Perhaps, but there comes a point where the technology is out there whether we like it or not. We should criminalize bad uses, not engage in some futile attempt to try to stuff the proverbial cat back in the bag",
+                                        "comments": {
+                                          "create": [
+                                            {
+                                              "id": 32711179,
+                                              "user": "Arainach",
+                                              "time": 1662281661,
+                                              "time_ago": "an hour ago",
+                                              "type": "comment",
+                                              "content": "<p>Don&#x27;t let perfection be the enemy of good.  Anyone with a basic machine shop can modify an AR15 for fully automatic fire, and a bump stock can be fabricated even easier.  That doesn&#x27;t mean we should just give up and make these things legal and easily accessible to everyone.",
+                                              "comments": { "create": [] },
+                                              "comments_count": 0,
+                                              "level": 6,
+                                              "url": "item?id=32711179"
+                                            }
+                                          ]
+                                        },
+                                        "comments_count": 1,
+                                        "level": 5,
+                                        "url": "item?id=32710903"
+                                      },
+                                      {
+                                        "id": 32710246,
+                                        "user": "Teever",
+                                        "time": 1662270961,
+                                        "time_ago": "4 hours ago",
+                                        "type": "comment",
+                                        "content": "<p>To play devil&#x27;s advocate being able to generate this kind of content on demand with AI may actually make things significantly worse.<p>The reason why revenge porn, rumours, and defamation are all possible online is because there&#x27;s a level of plausibility to these things -- especially revenge porn.<p>Now that plausibility goes out the window because of AI generated content.  Someone posts your actual nudes?  Give a nervous laugh and say that AI made them.<p>Someone says they heard a rumour about you and asks if it&#x27;s true? Say &#x27;don&#x27;t believe everything you read on the internet, you know they have AI that writes anything you want now, right?&quot;",
+                                        "comments": { "create": [] },
+                                        "comments_count": 0,
+                                        "level": 5,
+                                        "url": "item?id=32710246"
+                                      }
+                                    ]
+                                  },
+                                  "comments_count": 3,
+                                  "level": 4,
+                                  "url": "item?id=32710120"
+                                },
+                                {
+                                  "id": 32710119,
+                                  "user": "NLPlatypus",
+                                  "time": 1662269434,
+                                  "time_ago": "4 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>That proverb isn’t true and stems from a generation that didn’t understand mental health",
+                                  "comments": {
+                                    "create": [
+                                      {
+                                        "id": 32710310,
+                                        "user": "Georgelemental",
+                                        "time": 1662271613,
+                                        "time_ago": "4 hours ago",
+                                        "type": "comment",
+                                        "content": "<p>The proverb describes a state of mind one should aspire to. &quot;Words will never hurt me&quot; not because saying mean things can never do harm (it obviously can), but because I make an effort to control my emotions and reactions. Just as physical health is improved by a nutritious diet and regular exercise, mental health is improved by proper habits of mind.",
+                                        "comments": {
+                                          "create": [
+                                            {
+                                              "id": 32710893,
+                                              "user": "bawolff",
+                                              "time": 1662278424,
+                                              "time_ago": "2 hours ago",
+                                              "type": "comment",
+                                              "content": "<p>Refusing to acknowledge the affect of hurtful words on yourself, is pretty much the opposite of &quot;proper habits of the mind&quot;.<p>Denial does not make healthy people.",
+                                              "comments": { "create": [] },
+                                              "comments_count": 0,
+                                              "level": 6,
+                                              "url": "item?id=32710893"
+                                            }
+                                          ]
+                                        },
+                                        "comments_count": 1,
+                                        "level": 5,
+                                        "url": "item?id=32710310"
+                                      }
+                                    ]
+                                  },
+                                  "comments_count": 2,
+                                  "level": 4,
+                                  "url": "item?id=32710119"
+                                },
+                                {
+                                  "id": 32710158,
+                                  "user": "ziddoap",
+                                  "time": 1662269868,
+                                  "time_ago": "4 hours ago",
+                                  "type": "comment",
+                                  "content": "<p>&gt;<i>Why is that a problem, exactly?</i><p>Do you really need someone to spell out to you why being able to create realistic-looking porn of anyone might lead to some issues...?<p>&gt;<i>Someone wants to generate porn of me fucking a donkey? Let them. They already could do that with ms-paint and I don&#x27;t get magically harmed if they do.</i><p>What an absolutely wild take. Do you expect this line of thinking to be convincing when you&#x27;re comparing AI-generated images to what someone can whip together in MS Paint? Come on. You, me, and everyone else reading here knows that&#x27;s not even close to a valid comparison.",
+                                  "comments": {
+                                    "create": [
+                                      {
+                                        "id": 32710289,
+                                        "user": "ipaddr",
+                                        "time": 1662271391,
+                                        "time_ago": "4 hours ago",
+                                        "type": "comment",
+                                        "content": "<p>Do you really need someone to spell out to you why being able to create realistic-looking porn of anyone might lead to some issues...?<p>A less creative next generation as they don&#x27;t have to close there eyes and imagine generated porn of anyone.<p>The second problem will be finding people that you would even want generated porn for.",
+                                        "comments": {
+                                          "create": [
+                                            {
+                                              "id": 32710334,
+                                              "user": "literallyWTF",
+                                              "time": 1662271875,
+                                              "time_ago": "3 hours ago",
+                                              "type": "comment",
+                                              "content": "<p>What am I even reading",
+                                              "comments": { "create": [] },
+                                              "comments_count": 0,
+                                              "level": 6,
+                                              "url": "item?id=32710334"
+                                            }
+                                          ]
+                                        },
+                                        "comments_count": 1,
+                                        "level": 5,
+                                        "url": "item?id=32710289"
+                                      }
+                                    ]
+                                  },
+                                  "comments_count": 2,
+                                  "level": 4,
+                                  "url": "item?id=32710158"
+                                },
+                                {
+                                  "id": 32710323,
+                                  "user": "literallyWTF",
+                                  "time": 1662271779,
+                                  "time_ago": "4 hours ago",
+                                  "type": "comment",
+                                  "content": "",
+
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32710323"
+                                }
+                              ]
+                            },
+                            "comments_count": 11,
+                            "level": 3,
+                            "url": "item?id=32710013"
+                          },
+                          {
+                            "id": 32710272,
+                            "user": "ipaddr",
+                            "time": 1662271193,
+                            "time_ago": "4 hours ago",
+                            "type": "comment",
+                            "content": "<p>It is almost like a human able to imagine.  If you think human mind is creepy because it can create any thought and start worrying about some psychological harm then you have created a false prison within your own mind where scary thoughts will creep in.",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 3,
+                            "url": "item?id=32710272"
+                          }
+                        ]
+                      },
+                      "comments_count": 13,
+                      "level": 2,
+                      "url": "item?id=32709880"
+                    },
+                    {
+                      "id": 32709877,
+                      "user": "0cVlTeIATBs",
+                      "time": 1662266229,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>Devil&#x27;s advocate, this output could have unexpected results, making a filter possibly desirable. Browsers do filter by default with safe browsing URL lists for malware, and they gate access to sites with bad certificates. But agreed users should have control, leaving such filters as safe defaults only.",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32710047,
+                            "user": "p-e-w",
+                            "time": 1662268281,
+                            "time_ago": "4 hours ago",
+                            "type": "comment",
+                            "content": "<p>&gt; Browsers do filter by default with safe browsing URL lists for malware<p>Yes, for malware. As in, software created by criminals to damage your computer and&#x2F;or steal your personal information.<p>That&#x27;s not even remotely comparable to what StableDiffusion does here. What they do is refuse to generate content <i>you requested,</i> based on opaque criteria that no doubt are ultimately influenced by quasi-religious sentiments retained from the Bronze Age.",
+                            "comments": {
+                              "create": [
+                                {
+                                  "id": 32711041,
+                                  "user": "code_duck",
+                                  "time": 1662280076,
+                                  "time_ago": "an hour ago",
+                                  "type": "comment",
+                                  "content": "<p>The concept is quite similar to the NSFW filter found on Google and other image searches for many years.  Like the “mature” search settings, this filter is active by default but simple to disable.",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32711041"
+                                }
+                              ]
+                            },
+                            "comments_count": 1,
+                            "level": 3,
+                            "url": "item?id=32710047"
+                          }
+                        ]
+                      },
+                      "comments_count": 2,
+                      "level": 2,
+                      "url": "item?id=32709877"
+                    },
+                    {
+                      "id": 32710130,
+                      "user": "ThrowawayTestr",
+                      "time": 1662269570,
+                      "time_ago": "4 hours ago",
+                      "type": "comment",
+                      "content": "<p>It&#x27;s literally one line of code so you don&#x27;t generate unexpected boobs. Save your ire for the nannies that won&#x27;t let you generate NSFW images at all.",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32710130"
+                    },
+                    {
+                      "id": 32710586,
+                      "user": "throwaway5959",
+                      "time": 1662274882,
+                      "time_ago": "3 hours ago",
+                      "type": "comment",
+                      "content": "<p>I’m sure you’re great at parties. A number of people have explained how easy this is to turn off (I did it myself in minutes without outside help by literally commenting out a line of code and changing a variable name). Getting offended at everything doesn’t solve anything and just makes half the US think we’re all snowflakes.",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32710586"
+                    },
+                    {
+                      "id": 32710733,
+                      "user": "jannes",
+                      "time": 1662276628,
+                      "time_ago": "2 hours ago",
+                      "type": "comment",
+                      "content": "<p>Remember the Terminator movie? It’s about an AI that went too far.",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32710733"
+                    }
+                  ]
+                },
+                "comments_count": 50,
+                "level": 1,
+                "url": "item?id=32709834"
+              },
+              {
+                "id": 32710118,
+                "user": "aortega",
+                "time": 1662269431,
+                "time_ago": "4 hours ago",
+                "type": "comment",
+                "content": "<p>&gt;StableDiffusion from the original repo will rick roll you if you try to generate something that triggers its NSFW filter.<p>Just replace in scripts&#x2F;txt2img.py:<p>-  x_checked_image, has_nsfw_concept = check_safety(x_samples_ddim)<p>+  x_checked_image = x_samples_ddim<p>And be done with it.",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32710580,
+                      "user": "rrobukef",
+                      "time": 1662274822,
+                      "time_ago": "3 hours ago",
+                      "type": "comment",
+                      "content": "<p>And you save some more RAM too!",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32710767,
+                            "user": "terafo",
+                            "time": 1662277109,
+                            "time_ago": "2 hours ago",
+                            "type": "comment",
+                            "content": "<p>You don&#x27;t since model is loaded earlier in the script.",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 3,
+                            "url": "item?id=32710767"
+                          }
+                        ]
+                      },
+                      "comments_count": 1,
+                      "level": 2,
+                      "url": "item?id=32710580"
+                    }
+                  ]
+                },
+                "comments_count": 2,
+                "level": 1,
+                "url": "item?id=32710118"
+              },
+              {
+                "id": 32709744,
+                "user": "NHQ",
+                "time": 1662264691,
+                "time_ago": "5 hours ago",
+                "type": "comment",
+                "content": "<p>But what is the correct git command to ignore all that?",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32709780,
+                      "user": "cercatrova",
+                      "time": 1662265120,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>There&#x27;s no git command to ignore it, the main repo should merge their changes and then the other person can make a PR on the updated changes.",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32709780"
+                    },
+                    {
+                      "id": 32709855,
+                      "user": "oefrha",
+                      "time": 1662265851,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>Do a git-cherry-pick.",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32709855"
+                    }
+                  ]
+                },
+                "comments_count": 2,
+                "level": 1,
+                "url": "item?id=32709744"
+              }
+            ]
+          },
+          "comments_count": 57,
+          "level": 0,
+          "url": "item?id=32709528"
+        },
+        {
+          "id": 32710563,
+          "user": "TaylorAlexander",
+          "time": 1662274655,
+          "time_ago": "3 hours ago",
+          "type": "comment",
+          "content": "<p>In case anyone is confused by the clashing repos, here is how I was able to easily run this updated code.<p>Clone the original SD repo, which is what this code was built off of, and follow all the installation instructions:<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;CompVis&#x2F;stable-diffusion\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;CompVis&#x2F;stable-diffusion</a><p>In that repo, replace the file ldm&#x2F;modules&#x2F;attention.py with this file:<p><a href=\"https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;neonsecret&#x2F;stable-diffusion&#x2F;main&#x2F;ldm&#x2F;modules&#x2F;attention.py\" rel=\"nofollow\">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;neonsecret&#x2F;stable-diffusio...</a><p>Now run a new prompt with a larger image. Note that the original model was trained on 512x512 and may lead to repetition especially if you try to increase both dimensions (this is mentioned in the SD readme) so just run with one dimension increased.<p>For example try the following example:<p>python scripts&#x2F;txt2img.py --prompt &quot;a person gardening, by claude monet&quot; --ddim_steps 50 --seed 12000 --scale 9 --n_iter=1 --n_samples=1 --H=512 --W=1024 --skip_grid<p>I confirmed that if I run that command with the original attention.py, it fails due to lack of memory. With the new attention.py, it succeeds.<p>That said, this still uses 13GB of ram on my system.<p>I suppose you can check out the full repo with the updated code, which seems to have other changes, if you want to give that a try.<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;neonsecret&#x2F;stable-diffusion&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;neonsecret&#x2F;stable-diffusion&#x2F;</a><p>I have already been using the original SD repo so I found benefit by just changing attention.py",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32710563"
+        },
+        {
+          "id": 32709473,
+          "user": "oefrha",
+          "time": 1662261622,
+          "time_ago": "6 hours ago",
+          "type": "comment",
+          "content": "<p>Almost impossible to pinpoint what changed thanks to thousands of lines of completely irrelevant changes and shitty commit messages. It seems the only changeset that might be relevant out of +2,273 -1,531 is the +11 -7 from <a href=\"https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion&#x2F;pull&#x2F;103&#x2F;commits&#x2F;47f878421c5bf97d0fff44edaa703d152cafb483\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion&#x2F;pull&#x2F;103&#x2F;comm...</a>? Does it even work?",
+          "comments": {
+            "create": [
+              {
+                "id": 32711224,
+                "user": "operator-name",
+                "time": 1662282215,
+                "time_ago": "37 minutes ago",
+                "type": "comment",
+                "content": "<p>It looks like the first commit is the important change.",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32711224"
+              },
+              {
+                "id": 32709854,
+                "user": "jsnell",
+                "time": 1662265843,
+                "time_ago": "5 hours ago",
+                "type": "comment",
+                "content": "<p>&gt; Does it even work?<p>It has an effect, but nothing like what&#x27;s claimed in the submission title. On a 1070Ti (8GB), I managed to go up from 512<i>576 to 576</i>640.",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32710307,
+                      "user": "ipaddr",
+                      "time": 1662271593,
+                      "time_ago": "4 hours ago",
+                      "type": "comment",
+                      "content": "<p>Has anyone gotten to run on a 4gig card?",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32710307"
+                    }
+                  ]
+                },
+                "comments_count": 1,
+                "level": 1,
+                "url": "item?id=32709854"
+              },
+              {
+                "id": 32709751,
+                "user": "piyh",
+                "time": 1662264758,
+                "time_ago": "5 hours ago",
+                "type": "comment",
+                "content": "<p>As a learning opportunity for people like me, what does a good PR look like for a large change?",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32709817,
+                      "user": "oefrha",
+                      "time": 1662265495,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>I would say large contributions from non-members generally work rather terribly in open source. If you absolutely have to,<p>- Communicate ahead of time; don&#x27;t surprise maintainers with sweeping architectural changes or huge features no one wants or would like to review;<p>- Try to break up changes into logical units that can be understood and reviewed independently;<p>- Write useful and detailed commit messages (some bad examples: &quot;Update attention.py&quot;, &quot;various clean-ups, code now beautified&quot;);<p>- Don&#x27;t sneak in anything unrelated to the PR; don&#x27;t sneak anything unrelated into a commit;<p>- Absolutely don&#x27;t use a code formatter to format the entire code base if the repo wasn&#x27;t already using one. You can suggest that separately. And changes like that are best done by a trusted member.",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32710715,
+                            "user": "zo1",
+                            "time": 1662276401,
+                            "time_ago": "2 hours ago",
+                            "type": "comment",
+                            "content": "<p>This applies just as much if not more in a closed team setting.<p>Personally I blame juniors that insist on using the git CLI instead of a million visual GUIs to git. They get told just do a git commit, have no idea what they changed so can&#x27;t produce a meaningful commit message, and because it&#x27;s the command line good luck getting a visual representation of what you&#x27;re committing.",
+                            "comments": {
+                              "create": [
+                                {
+                                  "id": 32711078,
+                                  "user": "silviot",
+                                  "time": 1662280535,
+                                  "time_ago": "an hour ago",
+                                  "type": "comment",
+                                  "content": "<p>&gt; and because it&#x27;s the command line good luck getting a visual representation of what you&#x27;re committing<p>I don&#x27;t get the point here. I&#x27;ve never met a developer who knew about `git commit` but didn&#x27;t know about `git diff` (sometimes I pointed out `git diff --cached`).<p>I don&#x27;t think you can blame the CLI on this. It&#x27;s about the lack of proofreading, in my opinion.",
+                                  "comments": { "create": [] },
+                                  "comments_count": 0,
+                                  "level": 4,
+                                  "url": "item?id=32711078"
+                                }
+                              ]
+                            },
+                            "comments_count": 1,
+                            "level": 3,
+                            "url": "item?id=32710715"
+                          }
+                        ]
+                      },
+                      "comments_count": 2,
+                      "level": 2,
+                      "url": "item?id=32709817"
+                    },
+                    {
+                      "id": 32710364,
+                      "user": "imron",
+                      "time": 1662272353,
+                      "time_ago": "3 hours ago",
+                      "type": "comment",
+                      "content": "<p>Follow this: <a href=\"https:&#x2F;&#x2F;cbea.ms&#x2F;git-commit&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cbea.ms&#x2F;git-commit&#x2F;</a><p>and this: <a href=\"https:&#x2F;&#x2F;www.aleksandrhovhannisyan.com&#x2F;blog&#x2F;atomic-git-commits&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.aleksandrhovhannisyan.com&#x2F;blog&#x2F;atomic-git-commit...</a><p>That way your &quot;large change&quot; becomes a collection of small, easy to reason about and well explained changes.",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32710364"
+                    },
+                    {
+                      "id": 32709853,
+                      "user": "lbotos",
+                      "time": 1662265825,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>in this case a lot of the large change is actually &quot;upstream&quot;.<p>We Have Neon, who is making a PR.<p>We have Upstream, SD source.<p>We have basu, repo maintainer.<p>Neon pulled in upstream changes, and are trying to merge those into basu&#x27;s repo AND then on top of that, apply neon edits to the code.<p>Ways to make this cleaner:<p>- Basu pulls in upstream changes, Neon just puts theirs on top. (Slow, you have to wait for Basu)<p>- Neon makes two PRs, one to pull in upstream changes, another for his edits on top of those changes. (More work, and coordination, but each PR is &quot;one unit of work&quot;)<p>- Better commit messages: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion&#x2F;pull&#x2F;103#commits-pushed-47f8784\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion&#x2F;pull&#x2F;103#comm...</a> &lt;- notice the repeated and non-descript commit messages? That makes it hard for non-experts to cherry pick out the bits that are really relevant. (Fastest)",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32709853"
+                    },
+                    {
+                      "id": 32709759,
+                      "user": "adastra22",
+                      "time": 1662264810,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>You don’t make large change PRs.",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32709759"
+                    },
+                    {
+                      "id": 32709814,
+                      "user": "MontagFTB",
+                      "time": 1662265483,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "<p>Branching in git is very cheap, so the typical path a large change takes to the main branch is by a series of smaller, incremental PRs. This keeps your work close to the main branch as much as possible.",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32709814"
+                    }
+                  ]
+                },
+                "comments_count": 7,
+                "level": 1,
+                "url": "item?id=32709751"
+              }
+            ]
+          },
+          "comments_count": 11,
+          "level": 0,
+          "url": "item?id=32709473"
+        },
+        {
+          "id": 32710502,
+          "user": "saurik",
+          "time": 1662273905,
+          "time_ago": "3 hours ago",
+          "type": "comment",
+          "content": "<p>I was under the impression that generating images where both dimensions were larger than 512 didn&#x27;t merely require a lot of resources but didn&#x27;t work well as the model was trained exclusively on 512 by 512 images and while it sort of worked ok to stretch one dimension a bit you got weird repetitions by making the overall canvas too large (as this isn&#x27;t going to generate higher dpi images, merely ones with greater square inches).",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32710502"
+        },
+        {
+          "id": 32710664,
+          "user": "macrolime",
+          "time": 1662275728,
+          "time_ago": "2 hours ago",
+          "type": "comment",
+          "content": "<p>I&#x27;ve seen people claim that it&#x27;s better to generate 512x512 images since that&#x27;s what it&#x27;s trained on, and then upscale, rather than generating higher resolution images directly. Anyone tried any systematic investigation of this?",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32710664"
+        },
+        {
+          "id": 32711004,
+          "user": "MayeulC",
+          "time": 1662279618,
+          "time_ago": "an hour ago",
+          "type": "comment",
+          "content": "<p>I wonder if GTT (GART size) wouldn&#x27;t help with limitted VRAM amounts, at the cost of some performance?",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32711004"
+        },
+        {
+          "id": 32710378,
+          "user": "switchers",
+          "time": 1662272504,
+          "time_ago": "3 hours ago",
+          "type": "comment",
+          "content": "<p>Slightly off tangent, has anyone got it running on an AMD card? Sad 6600xt Windows user reporting in :(",
+          "comments": {
+            "create": [
+              {
+                "id": 32711076,
+                "user": "mpaepper",
+                "time": 1662280498,
+                "time_ago": "an hour ago",
+                "type": "comment",
+                "content": "<p>Here is a guide for AMD, but I don&#x27;t have such a card, so haven&#x27;t tried.<p><a href=\"https:&#x2F;&#x2F;rentry.org&#x2F;sdamd\" rel=\"nofollow\">https:&#x2F;&#x2F;rentry.org&#x2F;sdamd</a>",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32711076"
+              },
+              {
+                "id": 32710454,
+                "user": "universa1",
+                "time": 1662273392,
+                "time_ago": "3 hours ago",
+                "type": "comment",
+                "content": "<p>Not sure about the 6600, but there is a guide for Linux at least:<p><a href=\"https:&#x2F;&#x2F;m.youtube.com&#x2F;watch?v=d_CgaHyA_n4&amp;feature=emb_logo\" rel=\"nofollow\">https:&#x2F;&#x2F;m.youtube.com&#x2F;watch?v=d_CgaHyA_n4&amp;feature=emb_logo</a><p>And this is somehow relevant (possibly), as I kept the link open.<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;RadeonOpenCompute&#x2F;ROCm-docker&#x2F;issues&#x2F;38\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;RadeonOpenCompute&#x2F;ROCm-docker&#x2F;issues&#x2F;38</a>",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32710454"
+              }
+            ]
+          },
+          "comments_count": 2,
+          "level": 0,
+          "url": "item?id=32710378"
+        },
+        {
+          "id": 32709399,
+          "user": "jacobn",
+          "time": 1662260948,
+          "time_ago": "7 hours ago",
+          "type": "comment",
+          "content": "<p>Interesting that “del” helps here - could eg torch.jit.script&#x2F;trace be more of a “sledgehammer” solution?",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709399"
+        },
+        {
+          "id": 32710309,
+          "user": "andrethegiant",
+          "time": 1662271603,
+          "time_ago": "4 hours ago",
+          "type": "comment",
+          "content": "<p>Wild how fast this is moving",
+          "comments": {
+            "create": [
+              {
+                "id": 32710477,
+                "user": "bongobingo1",
+                "time": 1662273641,
+                "time_ago": "3 hours ago",
+                "type": "comment",
+                "content": "<p>Just wait until the AI is writing the code too. You wont be able to `git pull` fast enough.",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32710477"
+              }
+            ]
+          },
+          "comments_count": 1,
+          "level": 0,
+          "url": "item?id=32710309"
+        },
+        {
+          "id": 32709431,
+          "user": "dr_dshiv",
+          "time": 1662261229,
+          "time_ago": "6 hours ago",
+          "type": "comment",
+          "content": "<p>How much VRAM was previously required?",
+          "comments": {
+            "create": [
+              {
+                "id": 32709634,
+                "user": "jameshe",
+                "time": 1662263303,
+                "time_ago": "6 hours ago",
+                "type": "comment",
+                "content": "<p>Looks like 10GB in the README[0] for a 512x512 image - though the fork[1] from the repo in this PR claims to be able to work with as little as 4GB VRAM.<p>[0] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;CompVis&#x2F;stable-diffusion#stable-diffusion\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;CompVis&#x2F;stable-diffusion#stable-diffusion</a> \n[1] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion#txt2img\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion#txt2img</a>",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32709634"
+              },
+              {
+                "id": 32709593,
+                "user": "gpt5",
+                "time": 1662262919,
+                "time_ago": "6 hours ago",
+                "type": "comment",
+                "content": "<p>I can generate a 768x896 pixels image on an RTX 3090, using 23.4&#x2F;24GB",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32709714,
+                      "user": "moneycantbuy",
+                      "time": 1662264293,
+                      "time_ago": "6 hours ago",
+                      "type": "comment",
+                      "content": "<p>How does the content of the images look compared to the same prompt and seed for 512x512? I ask because when I make 768x896 with M1 MAX the resulting image is less coherent, more noisy, and or has repeating subject matter, nothing really usable unlike 512x512.",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32710387,
+                            "user": "gpt5",
+                            "time": 1662272710,
+                            "time_ago": "3 hours ago",
+                            "type": "comment",
+                            "content": "<p>Same here.",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 3,
+                            "url": "item?id=32710387"
+                          }
+                        ]
+                      },
+                      "comments_count": 1,
+                      "level": 2,
+                      "url": "item?id=32709714"
+                    }
+                  ]
+                },
+                "comments_count": 2,
+                "level": 1,
+                "url": "item?id=32709593"
+              },
+              {
+                "id": 32709453,
+                "user": "temp_account_32",
+                "time": 1662261401,
+                "time_ago": "6 hours ago",
+                "type": "comment",
+                "content": "<p>I am able to generate a maximum resolution of 512x768 on my 11GB 1080Ti. This seems to use almost 100% of the available RAM.",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32709501,
+                      "user": "frognumber",
+                      "time": 1662261897,
+                      "time_ago": "6 hours ago",
+                      "type": "comment",
+                      "content": "<p>That&#x27;s weird. I cap out at 512x512 on my 16GB Ampere card. Even stepping down precision doesn&#x27;t help. I wonder what&#x27;s different.<p>I use it directly from Python.",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32710550,
+                            "user": "MattRix",
+                            "time": 1662274491,
+                            "time_ago": "3 hours ago",
+                            "type": "comment",
+                            "content": "<p>You might have the n_samples (aka batch size) set to a number greater than 1? That basically multiplies the amount of VRAM you’re using.<p>I can generate a 512x512 on my 10gb 3080 no problem (or three 384x384 at a time)",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 3,
+                            "url": "item?id=32710550"
+                          },
+                          {
+                            "id": 32709764,
+                            "user": "prox",
+                            "time": 1662264865,
+                            "time_ago": "5 hours ago",
+                            "type": "comment",
+                            "content": "<p>Perhaps a different kind of chipset that isn’t optimized yet? Just a guess based on other graphics processes.",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 3,
+                            "url": "item?id=32709764"
+                          }
+                        ]
+                      },
+                      "comments_count": 2,
+                      "level": 2,
+                      "url": "item?id=32709501"
+                    }
+                  ]
+                },
+                "comments_count": 3,
+                "level": 1,
+                "url": "item?id=32709453"
+              }
+            ]
+          },
+          "comments_count": 8,
+          "level": 0,
+          "url": "item?id=32709431"
+        },
+        {
+          "id": 32709795,
+          "time": 1662265264,
+          "time_ago": "5 hours ago",
+          "type": "comment",
+          "content": "[deleted]",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709795"
+        },
+        {
+          "id": 32709424,
+          "user": "ceeplusplus",
+          "time": 1662261179,
+          "time_ago": "6 hours ago",
+          "type": "comment",
+          "content": "<p>Unfortunately the author of this PR decided to include garbage like this [1] in it, so this PR is pretty useless.<p>[1] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion&#x2F;pull&#x2F;103&#x2F;files#diff-c693279643b8cd5d248172d9c22cb7cf4ed163a3c98c8a3f69c2717edd3eacb7\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion&#x2F;pull&#x2F;103&#x2F;file...</a>",
+          "comments": {
+            "create": [
+              {
+                "id": 32709638,
+                "user": "Matheus28",
+                "time": 1662263387,
+                "time_ago": "6 hours ago",
+                "type": "comment",
+                "content": "<p>Seems like author did his work on a different fork and pushed to this one, which included all changes from the other fork...",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32709638"
+              },
+              {
+                "id": 32709763,
+                "user": "cercatrova",
+                "time": 1662264846,
+                "time_ago": "5 hours ago",
+                "type": "comment",
+                "content": "<p>How is that garbage? That license is part of the original SD repository, the creator Emad even talks about it in his initial post, about the OpenRAIL M License [0]:<p>&gt; <i>i) The model is being released under a Creative ML OpenRAIL-M license [<a href=\"https:&#x2F;&#x2F;huggingface.co&#x2F;spaces&#x2F;CompVis&#x2F;stable-diffusion-license\" rel=\"nofollow\">https:&#x2F;&#x2F;huggingface.co&#x2F;spaces&#x2F;CompVis&#x2F;stable-diffusion-licen...</a>]. This is a permissive license that allows for commercial and non-commercial usage. This license is focused on ethical and legal use of the model as your responsibility and must accompany any distribution of the model. It must also be made available to end users of the model in any service on it.</i><p>[0] <a href=\"https:&#x2F;&#x2F;stability.ai&#x2F;blog&#x2F;stable-diffusion-public-release\" rel=\"nofollow\">https:&#x2F;&#x2F;stability.ai&#x2F;blog&#x2F;stable-diffusion-public-release</a>",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32710086,
+                      "user": "zarzavat",
+                      "time": 1662269045,
+                      "time_ago": "4 hours ago",
+                      "type": "comment",
+                      "content": "<p>It’s worth to point out that there’s no consensus yet on whether ML models (as in the weights) are actually copyrightable. If you’re using them, you should probably assume that they are. If you’re distributing them, you should probably assume that they aren’t.",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32710086"
+                    },
+                    {
+                      "id": 32709970,
+                      "time": 1662267335,
+                      "time_ago": "5 hours ago",
+                      "type": "comment",
+                      "content": "[deleted]",
+
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32709970"
+                    }
+                  ]
+                },
+                "comments_count": 2,
+                "level": 1,
+                "url": "item?id=32709763"
+              },
+              {
+                "id": 32710953,
+                "user": "sercand",
+                "time": 1662279177,
+                "time_ago": "an hour ago",
+                "type": "comment",
+                "content": "<p>This is the worst type of PR. Just submit a different PR for the code format changes.",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32710953"
+              },
+              {
+                "id": 32709619,
+                "user": "jinseokim",
+                "time": 1662263165,
+                "time_ago": "6 hours ago",
+                "type": "comment",
+                "content": "<p>I just reminded &quot;clean room design&quot; technique: <a href=\"https:&#x2F;&#x2F;en.m.wikipedia.org&#x2F;wiki&#x2F;Clean_room_design\" rel=\"nofollow\">https:&#x2F;&#x2F;en.m.wikipedia.org&#x2F;wiki&#x2F;Clean_room_design</a>",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32709636,
+                      "user": "javchz",
+                      "time": 1662263338,
+                      "time_ago": "6 hours ago",
+                      "type": "comment",
+                      "content": "<p>Yeah, reminds me of the old freedoom WADs situation",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32709636"
+                    }
+                  ]
+                },
+                "comments_count": 1,
+                "level": 1,
+                "url": "item?id=32709619"
+              },
+              {
+                "id": 32709493,
+                "user": "kevingadd",
+                "time": 1662261787,
+                "time_ago": "6 hours ago",
+                "type": "comment",
+                "content": "<p>You&#x27;re still able to run it locally even if the license change prevents it from being merged, and it seems to be a proof of concept that may inspire other people to optimize it in different ways",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32709493"
+              },
+              {
+                "id": 32709477,
+                "time": 1662261652,
+                "time_ago": "6 hours ago",
+                "type": "comment",
+                "content": "[deleted]",
+
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32709477"
+              }
+            ]
+          },
+          "comments_count": 9,
+          "level": 0,
+          "url": "item?id=32709424"
+        },
+        {
+          "id": 32710894,
+          "time": 1662278435,
+          "time_ago": "2 hours ago",
+          "type": "comment",
+          "content": "[deleted]",
+
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32710894"
+        },
+        {
+          "id": 32709207,
+          "user": "avocado2",
+          "time": 1662258985,
+          "time_ago": "7 hours ago",
+          "type": "comment",
+          "content": "<p>can run with gui: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion&#x2F;blob&#x2F;main&#x2F;optimizedSD&#x2F;txt2img_gradio.py\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;basujindal&#x2F;stable-diffusion&#x2F;blob&#x2F;main&#x2F;opt...</a>",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709207"
+        },
+        {
+          "id": 32710144,
+          "user": "nl",
+          "time": 1662269718,
+          "time_ago": "4 hours ago",
+          "type": "comment",
+          "content": "<p>I&#x27;ve been using the HuggingFace diffuses repo[1] with 6GB of VRAM fine.<p>It&#x27;s well engineered, maintainable and with decent installation process.<p>The branch in this PR[2] adds M1 Mac support with a one line patch and it runs faster than the CompVis version (1.5 iterations&#x2F;sec vs 1.4 for CompVis on a 32 Gb M1 Max,<p>I highly recommend people switching to that version for the improved flexibility.<p>[1] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;huggingface&#x2F;diffusers\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;huggingface&#x2F;diffusers</a><p>[2] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;huggingface&#x2F;diffusers&#x2F;pull&#x2F;278\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;huggingface&#x2F;diffusers&#x2F;pull&#x2F;278</a>",
+          "comments": {
+            "create": [
+              {
+                "id": 32710506,
+                "user": "JimDabell",
+                "time": 1662274016,
+                "time_ago": "3 hours ago",
+                "type": "comment",
+                "content": "<p>I wouldn’t recommend using that as-is. MPS doesn’t give deterministic random number generation, which means that seeds become meaningless and you won’t ever be able to reproduce something. You can work around it by generating random numbers on the CPU and then moving them to MPS, but that probably requires a fix in PyTorch.<p>The MPS support issue for diffusers is here:<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;huggingface&#x2F;diffusers&#x2F;issues&#x2F;292\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;huggingface&#x2F;diffusers&#x2F;issues&#x2F;292</a><p>…and it links to the relevant PyTorch issue here:<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;pytorch&#x2F;pytorch&#x2F;issues&#x2F;84288\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;pytorch&#x2F;pytorch&#x2F;issues&#x2F;84288</a>",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32710506"
+              }
+            ]
+          },
+          "comments_count": 1,
+          "level": 0,
+          "url": "item?id=32710144"
+        },
+        {
+          "id": 32710810,
+          "user": "lionkor",
+          "time": 1662277538,
+          "time_ago": "2 hours ago",
+          "type": "comment",
+          "content": "<p>This is one of the worst PRs i&#x27;ve ever seen.<p>If I was involved, this PR would be closed and conversation locked, simply because its a ton of formatting changes. The only &quot;memory efficiency&quot; changes are like 6 lines of python where the author uses `del`. Thats it. Everything else is formatting bullshit, and some other merge stuff. Yikes.<p>Also, some of those PR comments are written by kids or something. Wtf",
+          "comments": {
+            "create": [
+              {
+                "id": 32710852,
+                "time": 1662277963,
+                "time_ago": "2 hours ago",
+                "type": "comment",
+                "content": "[deleted]",
+
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32710852"
+              }
+            ]
+          },
+          "comments_count": 1,
+          "level": 0,
+          "url": "item?id=32710810"
+        }
+      ]
+    },
+    "comments_count": 106,
+    "url": "https://github.com/basujindal/stable-diffusion/pull/103",
+    "domain": "github.com"
+  },
+  {
+    "id": 32709183,
+    "title": "Ask HN: How can both Verizon and Comcast be down?",
+    "points": 2,
+    "user": "11thEarlOfMar",
+    "time": 1662258656,
+    "time_ago": "7 hours ago",
+    "type": "link",
+    "content": "<p>Both Verizon and Comcast are currently reporting outages in parts of Silicon Valley at the same time.<p>WTF",
+    "comments": {
+      "create": [
+        {
+          "id": 32709621,
+          "user": "gregjor",
+          "time": 1662263178,
+          "time_ago": "6 hours ago",
+          "type": "comment",
+          "content": "<p>The planets aligned just right.  I’d call it a good omen.",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709621"
+        },
+        {
+          "id": 32709249,
+          "user": "emccue",
+          "time": 1662259470,
+          "time_ago": "7 hours ago",
+          "type": "comment",
+          "content": "<p>They use the same physical infrastructure. Its an oligopoly",
+          "comments": {
+            "create": [
+              {
+                "id": 32709486,
+                "user": "missedthecue",
+                "time": 1662261730,
+                "time_ago": "6 hours ago",
+                "type": "comment",
+                "content": "<p>What&#x27;s the maximum number of market participants that can exist simultaneously but still be considered an oligopoly in your view?",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32709732,
+                      "user": "dredmorbius",
+                      "time": 1662264560,
+                      "time_ago": "6 hours ago",
+                      "type": "comment",
+                      "content": "<p>Mu.<p>The question doesn&#x27;t respect reality.  There can be oligopolies or cartels with numerous participants.  There can be sharp competition with only two participants.<p>Oligopoly (or its demand-side complement, oligopsony), can be defined by economic characteristics, or other criteria.<p>I&#x27;d strongly recommend the work of Joan Robinson on imperfect competition generally.  There&#x27;s also a whole political element to such questions --- economic power is a form of power, and monopoly&#x2F;monopsony oligopoly&#x2F;oligopsony both represent different concentrations of such power.<p>&lt;<a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Joan_Robinson\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Joan_Robinson</a>&gt;",
+                      "comments": { "create": [] },
+                      "comments_count": 0,
+                      "level": 2,
+                      "url": "item?id=32709732"
+                    }
+                  ]
+                },
+                "comments_count": 1,
+                "level": 1,
+                "url": "item?id=32709486"
+              }
+            ]
+          },
+          "comments_count": 2,
+          "level": 0,
+          "url": "item?id=32709249"
+        }
+      ]
+    },
+    "comments_count": 4,
+    "url": "item?id=32709183"
+  },
+  {
+    "id": 32709076,
+    "title": "Spotify CarThing: Spotify’s hardware device designed for your drive.",
+    "points": 1,
+    "user": "nateb2022",
+    "time": 1662257714,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": { "create": [] },
+    "comments_count": 0,
+    "url": "https://carthing.spotify.com/",
+    "domain": "carthing.spotify.com"
+  },
+  {
+    "id": 32709071,
+    "title": "High socioeconomic status = charitable with their $, selfish with their time",
+    "points": 2,
+    "user": "coolmike",
+    "time": 1662257696,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": { "create": [] },
+    "comments_count": 0,
+    "url": "https://www.psypost.org/2022/08/people-with-higher-socioeconomic-status-are-more-charitable-with-their-money-but-more-selfish-with-their-time-63778",
+    "domain": "psypost.org"
+  },
+  {
+    "id": 32709045,
+    "title": "The best debugging story I've ever heard (2010)",
+    "points": 58,
+    "user": "thunderbong",
+    "time": 1662257539,
+    "time_ago": "7 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": {
+      "create": [
+        {
+          "id": 32710278,
+          "user": "Taniwha",
+          "time": 1662271240,
+          "time_ago": "4 hours ago",
+          "type": "comment",
+          "content": "<p>Many years ago I was a systems programmer for a Burroughs B6700 mainframe in New Zealand - this was the only mainframe at the University, everyone depended on it for almost everything. One day it started doing random IOs to random devices - garbage on a printer or a console were annoying, but scribbling over disk was a particularly bad thing, we could be down for ages bringing it back. We had an engineering contract with Burroughs and eventually they flew in the big gun engineer from the US .....<p>He took a stick and ran it down one row of cards in the IO processor, nothing happened, he ran it down the next row, bang! hours later we&#x27;re up again, he runs it down half the row, bang! binary search with stick ensues, eventually he starts pulling cards one comes out and 3 small solder blobs fall off, they&#x27;d been sitting there on some chip&#x27;s pins since it was manufactured years ago",
+          "comments": {
+            "create": [
+              {
+                "id": 32710297,
+                "user": "Taniwha",
+                "time": 1662271505,
+                "time_ago": "4 hours ago",
+                "type": "comment",
+                "content": "<p>And of course there was the IBM Stretch possibly the only computer ever fixed by giving it an oil change<p><a href=\"http:&#x2F;&#x2F;www.chilton-computing.org.uk&#x2F;acl&#x2F;literature&#x2F;reports&#x2F;p018.htm\" rel=\"nofollow\">http:&#x2F;&#x2F;www.chilton-computing.org.uk&#x2F;acl&#x2F;literature&#x2F;reports&#x2F;p...</a>",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32710297"
+              }
+            ]
+          },
+          "comments_count": 1,
+          "level": 0,
+          "url": "item?id=32710278"
+        },
+        {
+          "id": 32710422,
+          "user": "thombat",
+          "time": 1662273061,
+          "time_ago": "3 hours ago",
+          "type": "comment",
+          "content": "<p>Nice story - but what I liked even more was how the pictures were of a computer from equipped like the first place i ever worked: even back in 1991 the mag tapes and the fleet of three Prime computers were a little antiquated, but lifting up a for tile with the suction grip felt like being in the movies. We never had The Expert visit, but during one regular service visit an onlooker tried peering into the bowels and got a brisk bollocking from the technician: he had no tie clip and so his polyester noose was dangling perilously over circuit boards, ready to deliver a static zap.",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32710422"
+        },
+        {
+          "id": 32711036,
+          "user": "frobozz",
+          "time": 1662279987,
+          "time_ago": "an hour ago",
+          "type": "comment",
+          "content": "<p>The story where emails could only be sent a certain distance is fun.  I haven&#x27;t read that one in a while.",
+          "comments": {
+            "create": [
+              {
+                "id": 32711046,
+                "user": "ljf",
+                "time": 1662280138,
+                "time_ago": "an hour ago",
+                "type": "comment",
+                "content": "<p><a href=\"https:&#x2F;&#x2F;web.mit.edu&#x2F;jemorris&#x2F;humor&#x2F;500-miles\" rel=\"nofollow\">https:&#x2F;&#x2F;web.mit.edu&#x2F;jemorris&#x2F;humor&#x2F;500-miles</a> for those who have not read it - it is brilliant and solving the bug involves understanding the speed of light!",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32711313,
+                      "user": "allendoerfer",
+                      "time": 1662283293,
+                      "time_ago": "19 minutes ago",
+                      "type": "comment",
+                      "content": "<p>It&#x27;s on &quot;Did you win the Putnam?&quot; or &quot;xkcd 927&quot; level and does not really need a link on HN at this point.",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32711347,
+                            "user": "ljf",
+                            "time": 1662283775,
+                            "time_ago": "11 minutes ago",
+                            "type": "comment",
+                            "content": "<p><a href=\"https:&#x2F;&#x2F;xkcd.com&#x2F;1053&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;xkcd.com&#x2F;1053&#x2F;</a><p>I can assure you there are plenty of readers here who have not heard of it. I shared the link at work recently and was interested that  not a single person knew of it (they are fairly young though).",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 3,
+                            "url": "item?id=32711347"
+                          }
+                        ]
+                      },
+                      "comments_count": 1,
+                      "level": 2,
+                      "url": "item?id=32711313"
+                    }
+                  ]
+                },
+                "comments_count": 2,
+                "level": 1,
+                "url": "item?id=32711046"
+              }
+            ]
+          },
+          "comments_count": 3,
+          "level": 0,
+          "url": "item?id=32711036"
+        },
+        {
+          "id": 32710940,
+          "user": "noisy_boy",
+          "time": 1662278985,
+          "time_ago": "2 hours ago",
+          "type": "comment",
+          "content": "<p>For some reason, the link doesn&#x27;t open for me. Wayback machine works:<p><a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220904055009&#x2F;https:&#x2F;&#x2F;patrickthomson.tumblr.com&#x2F;post&#x2F;2499755681&#x2F;the-best-debugging-story-ive-ever-heard\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220904055009&#x2F;https:&#x2F;&#x2F;patrickth...</a>",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32710940"
+        },
+        {
+          "id": 32710380,
+          "time": 1662272576,
+          "time_ago": "3 hours ago",
+          "type": "comment",
+          "content": "[deleted]",
+
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32710380"
+        },
+        {
+          "id": 32710599,
+          "user": "Cyberdog",
+          "time": 1662274959,
+          "time_ago": "3 hours ago",
+          "type": "comment",
+          "content": "<p>So, for once, it actually <i>was</i> a hardware problem…",
+          "comments": {
+            "create": [
+              {
+                "id": 32711049,
+                "user": "AlotOfReading",
+                "time": 1662280160,
+                "time_ago": "an hour ago",
+                "type": "comment",
+                "content": "<p>Hardware bugs make the best war stories. I once spent a few days debugging a robot arm that would only manifest the erroneous behavior if it was in the right room. If you physically moved the arm and all its associated cables to another room, the problem would disappear only to manifest again when the hardware was all moved back to the original location.<p>Turns out the problem was an undocumented revision to a passive port cover. The new design introduced a short between pins without changing external markings. The only distinguishing mark was a slight color difference between different batches of plastic.",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32711049"
+              }
+            ]
+          },
+          "comments_count": 1,
+          "level": 0,
+          "url": "item?id=32710599"
+        }
+      ]
+    },
+    "comments_count": 11,
+    "url": "https://patrickthomson.tumblr.com/post/2499755681/the-best-debugging-story-ive-ever-heard",
+    "domain": "patrickthomson.tumblr.com"
+  },
+  {
+    "id": 32709017,
+    "title": "Fiction vs. nonfiction writing as a career path",
+    "points": 1,
+    "user": "ramoswriter",
+    "time": 1662257299,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": { "create": [] },
+    "comments_count": 0,
+    "url": "https://www.ramoswriter.com/author-freedom-fiction-vs-nonfiction/",
+    "domain": "ramoswriter.com"
+  },
+  {
+    "id": 32709011,
+    "title": "What in-person conferences offer: feedback",
+    "points": 1,
+    "user": "mooreds",
+    "time": 1662257243,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": { "create": [] },
+    "comments_count": 0,
+    "url": "https://www.mooreds.com/wordpress/archives/3540",
+    "domain": "mooreds.com"
+  },
+  {
+    "id": 32709005,
+    "title": "Andrej Karpathy on Machine Consciousness",
+    "points": 1,
+    "user": "ofou",
+    "time": 1662257172,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": { "create": [] },
+    "comments_count": 0,
+    "url": "https://www.youtube.com/watch?v=YNvwfMhAD8U",
+    "domain": "youtube.com"
+  },
+  {
+    "id": 32708996,
+    "title": "Cheap Online Collaborative Code Editor and Compiler",
+    "points": 1,
+    "user": "freexiaosu",
+    "time": 1662257104,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": { "create": [] },
+    "comments_count": 0,
+    "url": "https://www.paircoding.online",
+    "domain": "paircoding.online"
+  },
+  {
+    "id": 32708963,
+    "title": "Mars Oxygen ISRU Experiment (Moxie)–Preparing for Human Mars Exploration",
+    "points": 2,
+    "user": "bookofjoe",
+    "time": 1662256772,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": { "create": [] },
+    "comments_count": 0,
+    "url": "https://www.science.org/doi/10.1126/sciadv.abp8636",
+    "domain": "science.org"
+  },
+  {
+    "id": 32708921,
+    "title": "The Scoop: Netflix’s historic introduction of levels for software engineers",
+    "points": 12,
+    "user": "thekashifmalik",
+    "time": 1662256358,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": {
+      "create": [
+        {
+          "id": 32709508,
+          "user": "arcanus",
+          "time": 1662261955,
+          "time_ago": "6 hours ago",
+          "type": "comment",
+          "content": "<p>Netflix famously would match the salary of any external offer. I expect this will be the end of this practice.",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709508"
+        }
+      ]
+    },
+    "comments_count": 1,
+    "url": "https://blog.pragmaticengineer.com/netflix-levels/",
+    "domain": "blog.pragmaticengineer.com"
+  },
+  {
+    "id": 32708894,
+    "title": "Y Wladfa",
+    "points": 4,
+    "user": "thunderbong",
+    "time": 1662256136,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": {
+      "create": [
+        {
+          "id": 32711271,
+          "user": "ZeroGravitas",
+          "time": 1662282806,
+          "time_ago": "39 minutes ago",
+          "type": "comment",
+          "content": "<p>Surprised there&#x27;s no mention of<p><a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Separado\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Separado</a>!<p><a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=r2IfD-6iS3Y\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=r2IfD-6iS3Y</a><p>in the popular (okay maybe not that popular) culture section.",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32711271"
+        }
+      ]
+    },
+    "comments_count": 1,
+    "url": "https://en.wikipedia.org/wiki/Y_Wladfa",
+    "domain": "en.wikipedia.org"
+  },
+  {
+    "id": 32708856,
+    "title": "Tips and Tools for Text Mode Lovers",
+    "points": 37,
+    "user": "lbotos",
+    "time": 1662255875,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": {
+      "create": [
+        {
+          "id": 32709612,
+          "user": "yewenjie",
+          "time": 1662263066,
+          "time_ago": "6 hours ago",
+          "type": "comment",
+          "content": "<p>Seems like this was last updated in 2017. IMO there has actually been a lot of cool `modern unix` kind of development in that space since then. Sure, these new tools are not always drop-in replacements and not available everywhere, but they are often easier an more fun to use.<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;ibraheemdev&#x2F;modern-unix\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;ibraheemdev&#x2F;modern-unix</a><p>There is also this nice awesome list with a more extensive collection.<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;agarrharr&#x2F;awesome-cli-apps\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;agarrharr&#x2F;awesome-cli-apps</a>",
+          "comments": {
+            "create": [
+              {
+                "id": 32710902,
+                "user": "thefz",
+                "time": 1662278542,
+                "time_ago": "2 hours ago",
+                "type": "comment",
+                "content": "<p>&gt; A collection of modern&#x2F;faster&#x2F;saner alternatives to common unix commands.<p>What&#x27;s not &quot;sane&quot; about tools that have worked for thirty years?<p>A lot of these replacements say &quot;I don&#x27;t want to read the man page to get what I want, make it work without arguments and with pretty colors&quot;",
+                "comments": { "create": [] },
+                "comments_count": 0,
+                "level": 1,
+                "url": "item?id=32710902"
+              }
+            ]
+          },
+          "comments_count": 1,
+          "level": 0,
+          "url": "item?id=32709612"
+        },
+        {
+          "id": 32710598,
+          "user": "yosito",
+          "time": 1662274957,
+          "time_ago": "3 hours ago",
+          "type": "comment",
+          "content": "<p>A few completely random shell commands from 2017",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32710598"
+        },
+        {
+          "id": 32709840,
+          "user": "gulabjamuns",
+          "time": 1662265699,
+          "time_ago": "5 hours ago",
+          "type": "comment",
+          "content": "<p>Vim encryption is outdated.",
+          "comments": { "create": [] },
+          "comments_count": 0,
+          "level": 0,
+          "url": "item?id=32709840"
+        }
+      ]
+    },
+    "comments_count": 4,
+    "url": "https://cli-ck.io/",
+    "domain": "cli-ck.io"
+  },
+  {
+    "id": 32708843,
+    "title": "Parent Links in Go ASTs",
+    "points": 1,
+    "user": "mfrw",
+    "time": 1662255762,
+    "time_ago": "8 hours ago",
+    "type": "link",
+    "content": "",
+    "comments": { "create": [] },
+    "comments_count": 0,
+    "url": "https://eli.thegreenplace.net/2022/parent-links-in-go-asts/",
+    "domain": "eli.thegreenplace.net"
+  }
+]

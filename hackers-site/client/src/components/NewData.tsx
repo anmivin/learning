@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import { useQuery } from 'react-query';
-import Tree from './CommentTree';
-import { useParams } from 'react-router-dom';
-import { NewsItem } from '../types';
+import React from "react";
+import styled from "styled-components";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { useQuery } from "react-query";
+import Tree from "./CommentTree";
+import { useParams } from "react-router-dom";
+import { NewsItem } from "../types";
 
 const NavBar = styled.div`
   display: flex;
@@ -53,14 +53,17 @@ const NewData: React.FC = () => {
   const { id } = useParams();
 
   const { isLoading, error, data, refetch } = useQuery<NewsItem, Error>(
-    ['newsitem'],
+    ["newsitem"],
     async (): Promise<NewsItem> => {
-      const res = await axios.get<NewsItem>(`https://api.hnpwa.com/v0/item/${id}.json`);
+      const res = await axios.get<NewsItem>(
+        `http://localhost:5000/news/${id}`
+      ); /* `https://api.hnpwa.com/v0/item/${id}.json` */
+
       return res.data;
     },
     {
       refetchInterval: 60000,
-    },
+    }
   );
 
   const refreshPage = () => {
@@ -68,7 +71,7 @@ const NewData: React.FC = () => {
   };
   const navigate = useNavigate();
   const goMain = () => {
-    navigate('/');
+    navigate("/");
   };
 
   if (error) return <h1>OH SHIT</h1>;

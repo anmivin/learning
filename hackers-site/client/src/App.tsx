@@ -1,8 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import New from './components/New';
-import NewData from './components/NewData';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import New from "./components/New";
+import NewData from "./components/NewData";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 const queryClient = new QueryClient();
 const App: React.FC = () => {
