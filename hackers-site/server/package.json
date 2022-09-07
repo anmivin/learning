@@ -5,31 +5,25 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "ts-node index.ts",
-    "test": "dotenv -e .env.test -- jest",
+    "start": "node dist/index.js",
     "dev": "ts-node ./index.ts",
-    "migrate": "npx prisma migrate dev --name init",
+    "migrate": "npx prisma migrate deploy",
     "seed": "npx prisma db seed",
-    "predev": "npm run migrate && npm run seed"
+    "predev": "prisma generate && npm run migrate && npm run seed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@fastify/cors": "^8.1.0",
-    "@types/cors": "^2.8.12",
-    "cors": "^2.8.5",
     "fastify": "^4.5.3",
-    "fastify-blipp": "^3.1.0",
-    "fastify-plugin": "^4.2.1",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
+    "@prisma/client": "^4.1.1",
     "@types/node": "^18.7.14",
-    "typescript": "^4.8.2",
-    "nodemon": "^2.0.19",
     "prisma": "^4.1.1",
-    "@prisma/client": "^4.1.1"
+    "typescript": "^4.8.2"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"

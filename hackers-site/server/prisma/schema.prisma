@@ -1,5 +1,6 @@
 generator client {
   provider = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl"]
 }
 
 datasource db {
@@ -8,37 +9,32 @@ datasource db {
 }
 
 model newslist {
-    id       Int       @id @default(autoincrement())
-    title    String
-    points   Int?
-    user     String?
-    time     Int
-    time_ago String
-    comments_count Int
-    type String
-    url      String?
-    domain String?
-    
+  id             Int     @id @default(autoincrement())
+  title          String
+  points         Int?
+  user           String?
+  time           Int
+  time_ago       String
+  comments_count Int
+  type           String
+  url            String?
+  domain         String?
 }
 
 model newsitem {
-    id       Int       @id @default(autoincrement())
-    title    String?
-    points   Int?
-    user     String?
-    time     Int
-    time_ago String
-    type String
-    content  String
-    comments newsitem[] @relation("NewsItemComments")
-    parent   newsitem?  @relation("NewsItemComments", fields: [parentId], references: [id])
-    parentId Int?
-    comments_count Int
-    level Int?
-    url      String?
-    domain String?
+  id             Int        @id @default(autoincrement())
+  title          String?
+  points         Int?
+  user           String?
+  time           Int
+  time_ago       String
+  type           String
+  content        String
+  parentId       Int?
+  comments_count Int
+  level          Int?
+  url            String?
+  domain         String?
+  parent         newsitem?  @relation("NewsItemComments", fields: [parentId], references: [id])
+  comments       newsitem[] @relation("NewsItemComments")
 }
-   
-
-
-   
