@@ -51,18 +51,14 @@ const New: React.FC = () => {
 
   const { isLoading, error, data, refetch } = useQuery<NewsListItem[], Error>(
     ['newses'],
-
-    async (): Promise<NewsListItem[]> => {
-      const res1 = await axios.get<NewsListItem[]>('https://api.hnpwa.com/v0/newest/1.json');
-      const res2 = await axios.get<NewsListItem[]>('https://api.hnpwa.com/v0/newest/2.json');
-      const res3 = await axios.get<NewsListItem[]>('https://api.hnpwa.com/v0/newest/3.json');
-      const res4 = await axios.get<NewsListItem[]>('https://api.hnpwa.com/v0/newest/4.json');
-      const newsList = [...res1.data, ...res2.data, ...res3.data, ...res4.data];
-      return newsList.slice(0, 100);
+    async () => {
+      const res = await axios.get<NewsListItem[]>('http://localhost:5000/');
+      return res.data;
     },
-    { refetchInterval: 60000 },
+    {
+      refetchInterval: 60000,
+    },
   );
-
   const refreshPage = () => {
     refetch();
   };
@@ -87,7 +83,8 @@ const New: React.FC = () => {
               <li>
                 <NewsTitle onClick={() => goToNew(newses.id)}>{newses.title}</NewsTitle>
                 <NewsInfo>
-                  by {newses.user} | {newses.time_ago} | {newses.points} points | {newses.comments_count} comments
+                  by {newses.user} | {newses.time_ago} | {newses.points} {newses.points == 1 ? 'point' : 'points'} |{' '}
+                  {newses.comments_count} {newses.comments_count == 1 ? 'comment' : 'comments'}
                 </NewsInfo>
               </li>
             </div>

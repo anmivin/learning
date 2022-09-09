@@ -1,0 +1,55 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    hostname: postgres
+    restart: always
+    stdin_open: true
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: hackerssite
+    volumes:
+      - postgres:/var/lib/postgres/data
+    networks:
+      - inner
+
+  server:
+    container_name: server
+    stdin_open: true
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    ports:
+      - 5000:5000
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/hackerssite
+    restart: always
+    networks:
+      - inner
+
+  client:
+    container_name: client
+    stdin_open: true
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    depends_on:
+      - server
+    ports:
+      - 3000:3000
+    restart: always
+    networks:
+      - inner
+
+volumes:
+  postgres:
+
+networks:
+  inner:

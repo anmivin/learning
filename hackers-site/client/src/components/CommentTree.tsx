@@ -71,7 +71,7 @@ const TreeNode: React.FC<NodeProps> = ({ nodeItem }) => {
         <Username>{nodeItem.user}</Username>
         <div dangerouslySetInnerHTML={{ __html: nodeItem.content }} />
         <ItemInfo>
-          {nodeItem.time_ago} | {nodeItem.comments_count} comments{' '}
+          {nodeItem.time_ago} | {nodeItem.comments_count} {nodeItem.comments_count == 1 ? 'comment' : 'comments'}
           {hasChild ? <Button onClick={() => changeVisibility()}>{childVisible ? 'hide' : 'show'} </Button> : ''}
         </ItemInfo>
         <Div>

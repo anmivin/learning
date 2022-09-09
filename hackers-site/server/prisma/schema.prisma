@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model NewsList {
+  id             Int     @id @default(autoincrement())
+  title          String
+  points         Int?
+  user           String?
+  time           Int
+  time_ago       String
+  comments_count Int?
+  comments Comment[]
+  type           String
+  url            String?
+  domain         String?
+
+}
+
+model Comment {
+  id             Int        @id @default(autoincrement())
+  user           String?
+  time           Int
+  time_ago       String
+  type           String
+  content        String
+  comments_count Int?
+  level          Int?
+  url            String?
+  domain         String?
+  parent         Comment?  @relation("NewsItemComments", fields: [parentId], references: [id])
+  parentId       Int?
+  comments       Comment[] @relation("NewsItemComments")
+  news NewsList? @relation(fields: [newsId], references: [id])
+  newsId Int?
+}
+
