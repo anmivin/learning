@@ -8,33 +8,36 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model newslist {
+model NewsList {
   id             Int     @id @default(autoincrement())
   title          String
   points         Int?
   user           String?
   time           Int
   time_ago       String
-  comments_count Int
+  comments_count Int?
+  comments Comment[]
   type           String
   url            String?
   domain         String?
+
 }
 
-model newsitem {
+model Comment {
   id             Int        @id @default(autoincrement())
-  title          String?
-  points         Int?
   user           String?
   time           Int
   time_ago       String
   type           String
   content        String
-  parentId       Int?
-  comments_count Int
+  comments_count Int?
   level          Int?
   url            String?
   domain         String?
-  parent         newsitem?  @relation("NewsItemComments", fields: [parentId], references: [id])
-  comments       newsitem[] @relation("NewsItemComments")
+  parent         Comment?  @relation("NewsItemComments", fields: [parentId], references: [id])
+  parentId       Int?
+  comments       Comment[] @relation("NewsItemComments")
+  news NewsList? @relation(fields: [newsId], references: [id])
+  newsId Int?
 }
+

@@ -1,16 +1,16 @@
-import { PrismaClient, Prisma, newsitem, newslist } from '@prisma/client';
+import { PrismaClient, NewsList, Comment } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
 
 const prisma = new PrismaClient();
 
-const seedNewsList: newslist[] = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'seed.json'), 'utf8'));
+const seedNewsList: NewsList[] = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'seedNews.json'), 'utf8'));
 
-async function NewsList() {
+async function NewsListSeed() {
   console.log(`Start seeding ...`);
   await Promise.all(
     seedNewsList.map((data) => {
-      return prisma.newslist.upsert({
+      return prisma.newsList.upsert({
         where: { id: data.id },
         create: data,
         update: {},
@@ -20,7 +20,7 @@ async function NewsList() {
   console.log(`Seeding finished.`);
 }
 
-NewsList()
+NewsListSeed()
   .then(async () => {
     await prisma.$disconnect();
   })
@@ -30,12 +30,12 @@ NewsList()
     process.exit(1);
   });
 
-const seedCommentsItem: newsitem[] = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'test.json'), 'utf8'));
-async function CommentsList() {
+const seedCommentsItem: Comment[] = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'seedComments.json'), 'utf8'));
+async function CommentsListSeed() {
   console.log(`Start seeding ...`);
   await Promise.all(
     seedCommentsItem.map((data) => {
-      return prisma.newsitem.upsert({
+      return prisma.comment.upsert({
         where: { id: data.id },
         create: data,
         update: {},
@@ -45,7 +45,7 @@ async function CommentsList() {
   console.log(`Seeding finished.`);
 }
 
-CommentsList()
+CommentsListSeed()
   .then(async () => {
     await prisma.$disconnect();
   })
