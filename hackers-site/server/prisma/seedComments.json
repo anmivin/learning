@@ -1,13 +1,260 @@
 [
   {
+    "id": 32764502,
+    "content": "Николай Басков. Песня",
+    "user": "nature_blonde",
+    "time": 1662640008,
+    "time_ago": "eternity ago",
+    "type": "link",
+    "comments": {
+      "create": [
+        {
+          "id": 32763360,
+          "user": "vanderZwan",
+          "time": 1662630525,
+          "time_ago": "16 minutes ago",
+          "type": "comment",
+          "content": "Я для тебя не буду",
+          "comments": {
+            "create": [
+              {
+                "id": 32764402,
+                "user": "ElfinTrousers",
+                "time": 1662639415,
+                "time_ago": "15 minutes ago",
+                "type": "comment",
+                "content": "Звёзды хватать в охапки",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32763920,
+                      "user": "hprotagonist",
+                      "time": 1662635467,
+                      "time_ago": "14 minutes ago",
+                      "type": "comment",
+                      "content": "Не потому, что трудно",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32764500,
+                            "user": "VoodooJuJu",
+                            "time": 1662639999,
+                            "time_ago": "13 minutes ago",
+                            "type": "comment",
+                            "content": "Не потому, что жалко",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 0,
+                            "url": "item?id=32764500"
+                          }
+                        ]
+                      },
+                      "comments_count": 1,
+                      "level": 1,
+                      "url": "item?id=32763920"
+                    }
+                  ]
+                },
+                "comments_count": 1,
+                "level": 1,
+                "url": "item?id=32764402"
+              }
+            ]
+          },
+          "comments_count": 1,
+          "level": 1,
+          "url": "item?id=32763885"
+        },
+        {
+          "id": 32763553,
+          "user": "db48x",
+          "time": 1662632205,
+          "time_ago": "12 minutes ago",
+          "type": "comment",
+          "content": "Просто на этом небе",
+          "comments": {
+            "create": [
+              {
+                "id": 32763921,
+                "user": "hprotagonist",
+                "time": 1662635510,
+                "time_ago": "11 minutes ago",
+                "type": "comment",
+                "content": "Как бы оно не злилось",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32763925,
+                      "user": "bsenftner",
+                      "time": 1662635539,
+                      "time_ago": "10 minutes ago",
+                      "type": "comment",
+                      "content": "Нет ни одной заветной",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32764233,
+                            "user": "noSyncCloud",
+                            "time": 1662638028,
+                            "time_ago": "9 minutes ago",
+                            "type": "comment",
+                            "content": "Что бы с тобой сравнилась",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 3,
+                            "url": "item?id=32764233"
+                          }
+                        ]
+                      },
+                      "comments_count": 1,
+                      "level": 1,
+                      "url": "item?id=32763925"
+                    }
+                  ]
+                },
+                "comments_count": 1,
+                "level": 1,
+                "url": "item?id=32763921"
+              }
+            ]
+          },
+          "comments_count": 1,
+          "level": 1,
+          "url": "item?id=32763553"
+        },
+        {
+          "id": 32763443,
+          "user": "staticassertion",
+          "time": 1662631077,
+          "time_ago": "8 minutes ago",
+          "type": "comment",
+          "content": "Я буду руки твои целовать",
+          "comments": {
+            "create": [
+              {
+                "id": 32763798,
+                "user": "samatman",
+                "time": 1662634245,
+                "time_ago": "7 minutes ago",
+                "type": "comment",
+                "content": "Я стану грустью в улыбке твоей",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32764424,
+                      "user": "ElfinTrousers",
+                      "time": 1662639518,
+                      "time_ago": "6 minutes ago",
+                      "type": "comment",
+                      "content": "И нам никто не посмеет мешать",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32764050,
+                            "user": "hcks",
+                            "time": 1662636657,
+                            "time_ago": "5 minutes ago",
+                            "type": "comment",
+                            "content": "И не отнимет у нас этих дней",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 1,
+                            "url": "item?id=32764050"
+                          }
+                        ]
+                      },
+                      "comments_count": 1,
+                      "level": 1,
+                      "url": "item?id=32764424"
+                    }
+                  ]
+                },
+
+                "comments_count": 1,
+                "level": 1,
+                "url": "item?id=32763798"
+              }
+            ]
+          },
+          "comments_count": 1,
+          "level": 1,
+          "url": "item?id=32763443"
+        },
+
+        {
+          "id": 32763885,
+          "user": "galangalalgol",
+          "time": 1662635149,
+          "time_ago": "4 minutes ago",
+          "type": "comment",
+          "content": "Я буду руки твои целовать",
+          "comments": {
+            "create": [
+              {
+                "id": 32763923,
+                "user": "samatman",
+                "time": 1662635520,
+                "time_ago": "3 minutes ago",
+                "type": "comment",
+                "content": "Забыв, как мальчик, о смене времён ",
+                "comments": {
+                  "create": [
+                    {
+                      "id": 32763291,
+                      "user": "akiselev",
+                      "time": 1662629833,
+                      "time_ago": "2 minutes ago",
+                      "type": "comment",
+                      "content": "НЕ ТОРОПИСЬ ЭТУ СКАЗКУ ПРЕРВАТЬ",
+                      "comments": {
+                        "create": [
+                          {
+                            "id": 32763912,
+                            "user": "eesmith",
+                            "time": 1662635423,
+                            "time_ago": "1 minute ago",
+                            "type": "comment",
+                            "content": "ОН ТАК ХОРОШ, МОЙ НЕЧАЯННЫЙ СОН!!!!!!!!",
+                            "comments": { "create": [] },
+                            "comments_count": 0,
+                            "level": 1,
+                            "url": "item?id=32763912"
+                          }
+                        ]
+                      },
+                      "comments_count": 1,
+                      "level": 1,
+                      "url": "item?id=32763291"
+                    }
+                  ]
+                },
+                "comments_count": 1,
+                "level": 1,
+                "url": "item?id=32763923"
+              }
+            ]
+          },
+
+          "comments_count": 1,
+          "level": 1,
+          "url": "item?id=32763885"
+        }
+      ]
+    },
+    "comments_count": 4,
+    "url": "https://www.youtube.com/watch?v=L13_nN2WXX8",
+    "domain": "youtube.com"
+  },
+
+  {
     "id": 32709337,
-    "title": "Bones: Why Utah’s desert is a paleontologist’s playground",
-    "points": 2,
+    "content": "Bones: Why Utah’s desert is a paleontologist’s playground",
+
     "user": "Hooke",
     "time": 1662260335,
     "time_ago": "7 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.deseret.com/2022/8/21/23313199/dinosaurs-palentology-utah-desert-grand-staircase-university-of-utah-t-rex-tyrannosaur",
@@ -15,13 +262,12 @@
   },
   {
     "id": 32709241,
-    "title": "Ask HN: What were you once expert, but now you can hardly recall what you knew?",
-    "points": 4,
+    "content": "Ask HN: What were you once expert, but now you can hardly recall what you knew?",
+
     "user": "samstave",
     "time": 1662259393,
     "time_ago": "7 hours ago",
     "type": "link",
-    "content": "<p>30 years in - there are various areas where I was the SME&#x2F;expert on certain things, but if I were to be interviewed on them, I would sound completely like I never knew anything about it...<p>-<p>What are some areas where you had intense focus, drive and knowledge, but years later - you can now barely speak as an authority on the subject?<p>&quot;<i>I&#x27;ve forgotten more about [subject] than you would ever know</i>] trope",
     "comments": {
       "create": [
         {
@@ -91,13 +337,12 @@
   },
   {
     "id": 32709201,
-    "title": "Stable Diffusion PR optimizes VRAM, generate 576x1280 images with 6 GB VRAM",
-    "points": 140,
+    "content": "Stable Diffusion PR optimizes VRAM, generate 576x1280 images with 6 GB VRAM",
+
     "user": "avocado2",
     "time": 1662258909,
     "time_ago": "7 hours ago",
     "type": "link",
-    "content": "",
     "comments": {
       "create": [
         {
@@ -1522,13 +1767,12 @@
   },
   {
     "id": 32709183,
-    "title": "Ask HN: How can both Verizon and Comcast be down?",
-    "points": 2,
+    "content": "Ask HN: How can both Verizon and Comcast be down?",
+
     "user": "11thEarlOfMar",
     "time": 1662258656,
     "time_ago": "7 hours ago",
     "type": "link",
-    "content": "<p>Both Verizon and Comcast are currently reporting outages in parts of Silicon Valley at the same time.<p>WTF",
     "comments": {
       "create": [
         {
@@ -1592,13 +1836,12 @@
   },
   {
     "id": 32709076,
-    "title": "Spotify CarThing: Spotify’s hardware device designed for your drive.",
-    "points": 1,
+    "content": "Spotify CarThing: Spotify’s hardware device designed for your drive.",
+
     "user": "nateb2022",
     "time": 1662257714,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://carthing.spotify.com/",
@@ -1606,13 +1849,13 @@
   },
   {
     "id": 32709071,
-    "title": "High socioeconomic status = charitable with their $, selfish with their time",
-    "points": 2,
+    "content": "High socioeconomic status = charitable with their $, selfish with their time",
+
     "user": "coolmike",
     "time": 1662257696,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.psypost.org/2022/08/people-with-higher-socioeconomic-status-are-more-charitable-with-their-money-but-more-selfish-with-their-time-63778",
@@ -1620,13 +1863,13 @@
   },
   {
     "id": 32709045,
-    "title": "The best debugging story I've ever heard (2010)",
-    "points": 58,
+    "content": "The best debugging story I've ever heard (2010)",
+
     "user": "thunderbong",
     "time": 1662257539,
     "time_ago": "7 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -1784,13 +2027,12 @@
   },
   {
     "id": 32709017,
-    "title": "Fiction vs. nonfiction writing as a career path",
-    "points": 1,
+    "content": "Fiction vs. nonfiction writing as a career path",
+
     "user": "ramoswriter",
     "time": 1662257299,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.ramoswriter.com/author-freedom-fiction-vs-nonfiction/",
@@ -1798,13 +2040,13 @@
   },
   {
     "id": 32709011,
-    "title": "What in-person conferences offer: feedback",
-    "points": 1,
+    "content": "What in-person conferences offer: feedback",
+
     "user": "mooreds",
     "time": 1662257243,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.mooreds.com/wordpress/archives/3540",
@@ -1812,13 +2054,13 @@
   },
   {
     "id": 32709005,
-    "title": "Andrej Karpathy on Machine Consciousness",
-    "points": 1,
+    "content": "Andrej Karpathy on Machine Consciousness",
+
     "user": "ofou",
     "time": 1662257172,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.youtube.com/watch?v=YNvwfMhAD8U",
@@ -1826,13 +2068,13 @@
   },
   {
     "id": 32708996,
-    "title": "Cheap Online Collaborative Code Editor and Compiler",
-    "points": 1,
+    "content": "Cheap Online Collaborative Code Editor and Compiler",
+
     "user": "freexiaosu",
     "time": 1662257104,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.paircoding.online",
@@ -1840,13 +2082,13 @@
   },
   {
     "id": 32708963,
-    "title": "Mars Oxygen ISRU Experiment (Moxie)–Preparing for Human Mars Exploration",
-    "points": 2,
+    "content": "Mars Oxygen ISRU Experiment (Moxie)–Preparing for Human Mars Exploration",
+
     "user": "bookofjoe",
     "time": 1662256772,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.science.org/doi/10.1126/sciadv.abp8636",
@@ -1854,13 +2096,13 @@
   },
   {
     "id": 32708921,
-    "title": "The Scoop: Netflix’s historic introduction of levels for software engineers",
-    "points": 12,
+    "content": "The Scoop: Netflix’s historic introduction of levels for software engineers",
+
     "user": "thekashifmalik",
     "time": 1662256358,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -1883,13 +2125,13 @@
   },
   {
     "id": 32708894,
-    "title": "Y Wladfa",
-    "points": 4,
+    "content": "Y Wladfa",
+
     "user": "thunderbong",
     "time": 1662256136,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -1912,13 +2154,13 @@
   },
   {
     "id": 32708856,
-    "title": "Tips and Tools for Text Mode Lovers",
-    "points": 37,
+    "content": "Tips and Tools for Text Mode Lovers",
+
     "user": "lbotos",
     "time": 1662255875,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -1980,13 +2222,13 @@
   },
   {
     "id": 32708843,
-    "title": "Parent Links in Go ASTs",
-    "points": 1,
+    "content": "Parent Links in Go ASTs",
+
     "user": "mfrw",
     "time": 1662255762,
     "time_ago": "8 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://eli.thegreenplace.net/2022/parent-links-in-go-asts/",
@@ -1994,13 +2236,13 @@
   },
   {
     "id": 32721014,
-    "title": "The capitalist network that runs the world (2011)",
-    "points": 2,
+    "content": "The capitalist network that runs the world (2011)",
+
     "user": "dredmorbius",
     "time": 1662357349,
     "time_ago": "32 minutes ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -2023,13 +2265,13 @@
   },
   {
     "id": 32720987,
-    "title": "A toy remote login server",
-    "points": 2,
+    "content": "A toy remote login server",
+
     "user": "rrampage",
     "time": 1662357055,
     "time_ago": "37 minutes ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://jvns.ca/blog/2022/07/28/toy-remote-login-server/",
@@ -2037,13 +2279,13 @@
   },
   {
     "id": 32720976,
-    "title": "Mystery as private plane crashes into Baltic Sea",
-    "points": 2,
+    "content": "Mystery as private plane crashes into Baltic Sea",
+
     "user": "aluket",
     "time": 1662356922,
     "time_ago": "40 minutes ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.bbc.com/news/world-europe-62789877",
@@ -2051,13 +2293,13 @@
   },
   {
     "id": 32720964,
-    "title": "Recycling Clothes: What Is 'Circulose' and Is It Sustainable?",
-    "points": 1,
+    "content": "Recycling Clothes: What Is 'Circulose' and Is It Sustainable?",
+
     "user": "helsinkiandrew",
     "time": 1662356828,
     "time_ago": "41 minutes ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://thecircularlaboratory.com/how-sustainable-is-hms-circulose-fabric",
@@ -2065,13 +2307,13 @@
   },
   {
     "id": 32720950,
-    "title": "Earthworks at the Leaning Toothpick of Babble",
-    "points": 1,
+    "content": "Earthworks at the Leaning Toothpick of Babble",
+
     "user": "sivoais",
     "time": 1662356630,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://enetdown.org/hacktivity/posts/2022/09/04/earthworks-at-the-leaning-toothpick-of-babble/",
@@ -2079,13 +2321,13 @@
   },
   {
     "id": 32720936,
-    "title": "Where We'll End Up Living as the Planet Burns",
-    "points": 1,
+    "content": "Where We'll End Up Living as the Planet Burns",
+
     "user": "thejarren",
     "time": 1662356402,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -2108,13 +2350,13 @@
   },
   {
     "id": 32720924,
-    "title": "Show HN: Infinite Stable Diffusion Videos",
-    "points": 1,
+    "content": "Show HN: Infinite Stable Diffusion Videos",
+
     "user": "lwneal",
     "time": 1662356246,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://orbdog.com",
@@ -2122,13 +2364,13 @@
   },
   {
     "id": 32720895,
-    "title": "'Lock the doors' – words that marked loss of hope for shuttle (2003)",
-    "points": 1,
+    "content": "'Lock the doors' – words that marked loss of hope for shuttle (2003)",
+
     "user": "Tomte",
     "time": 1662355990,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -2151,13 +2393,13 @@
   },
   {
     "id": 32720893,
-    "title": "Physically-Based Shading at Disney (2012) [pdf]",
-    "points": 2,
+    "content": "Physically-Based Shading at Disney (2012) [pdf]",
+
     "user": "Tomte",
     "time": 1662355981,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://static1.squarespace.com/static/58586fa5ebbd1a60e7d76d3e/t/593a3afa46c3c4a376d779f6/1496988449807/s2012_pbs_disney_brdf_notes_v2.pdf",
@@ -2165,13 +2407,13 @@
   },
   {
     "id": 32720852,
-    "title": "Chilean voters reject new constitution",
-    "points": 3,
+    "content": "Chilean voters reject new constitution",
+
     "user": "AlbertCory",
     "time": 1662355555,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.washingtonpost.com/world/2022/09/04/chile-votes-constitution-referendum/",
@@ -2179,13 +2421,13 @@
   },
   {
     "id": 32720816,
-    "title": "Organizational Metabolism and the For-Profit Advantage",
-    "points": 1,
+    "content": "Organizational Metabolism and the For-Profit Advantage",
+
     "user": "pr337h4m",
     "time": 1662355060,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://rootsofprogress.org/organizational-metabolism-and-the-for-profit-advantage",
@@ -2193,13 +2435,13 @@
   },
   {
     "id": 32720810,
-    "title": "Yunohost: A server OS aiming to make self-hosting accessible to everyone",
-    "points": 2,
+    "content": "Yunohost: A server OS aiming to make self-hosting accessible to everyone",
+
     "user": "yamrzou",
     "time": 1662354980,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://yunohost.org",
@@ -2207,13 +2449,13 @@
   },
   {
     "id": 32720794,
-    "title": "Useful engineering metrics and why velocity is not one of them",
-    "points": 3,
+    "content": "Useful engineering metrics and why velocity is not one of them",
+
     "user": "lucasfcosta",
     "time": 1662354747,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://lucasfcosta.com/2022/08/31/engineering-metrics.html",
@@ -2221,39 +2463,39 @@
   },
   {
     "id": 32720777,
-    "title": "Ask HN: Modern BI stack 2022 for low entry and cheap license dashboards",
-    "points": 1,
+    "content": "Ask HN: Modern BI stack 2022 for low entry and cheap license dashboards",
+
     "user": "californiacream",
     "time": 1662354622,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "<p>Hi all,\nI&#x27;m looking to get into niche dashboards for my special interest (cycling adjacent and adrenaline junkie). This world has tons of users, but no &#x27;whales&#x27;.<p>I simply want to host a dashboard and allow people to access it for 10-15 dollars a month while making a bit of meat for myself (to allow full-time work on the project). I considered PowerBI, but learnt that the user account license would run 10 dollars a pop, per month. So say I scale to 10k users, almost all of my money would be going straight to the MS.<p>What are the best modern ways to do this? Looking around, it seems I can use an Azure SQL server or Amazon dynamoDB to host the database and get good reliability and concurrency somewhat cheaply. How can I do the same with the dashboard itself? (if I was doing time series data, an Amazon managed Grafana looks like a winner, but I&#x27;m doing a simple dashboard with little time series data).<p>Thanks!",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "item?id=32720777"
   },
   {
     "id": 32720765,
-    "title": "Ask HN: If there is no time, will you just focus on leetcode only for interviews",
-    "points": 1,
+    "content": "Ask HN: If there is no time, will you just focus on leetcode only for interviews",
+
     "user": "dev_0",
     "time": 1662354513,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "<p>And forget about learning these new programming languages or frameworks (the craftsmanship) of a software engineer",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "item?id=32720765"
   },
   {
     "id": 32720738,
-    "title": "Ask HN: Which strategies work best to reduce/eliminate alcohol use?",
-    "points": 1,
+    "content": "Ask HN: Which strategies work best to reduce/eliminate alcohol use?",
+
     "user": "frans",
     "time": 1662354187,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "<p>There was a recent HN post [1] on an article from Nature titled &quot;Almost half of cancer deaths are caused by smoking, alcohol, or obesity&quot;.<p>Whether you need to go to absolutely no alcohol or not is not the issue here (it was discussed at length in [1] and [2]). Rather, I am interested to know what HN readers did to cut down on their drinking.<p>One helpful comment in [1] was the book &quot;This Naked Mind&quot; by Annie Grace. Any other tips&#x2F;experiences?<p>[1] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=32714527<p>[2] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=30009529",
+
     "comments": {
       "create": [
         {
@@ -2299,13 +2541,13 @@
   },
   {
     "id": 32720734,
-    "title": "Game Design, Yoga for the Mind",
-    "points": 1,
+    "content": "Game Design, Yoga for the Mind",
+
     "user": "ar2808",
     "time": 1662354151,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://uxdesign.cc/game-design-yoga-for-the-mind-e880c721e939",
@@ -2313,13 +2555,13 @@
   },
   {
     "id": 32720720,
-    "title": "Hate site KiwiFarms given the boot by web services provider Cloudflare",
-    "points": 3,
+    "content": "Hate site KiwiFarms given the boot by web services provider Cloudflare",
+
     "user": "wernercolangelo",
     "time": 1662354045,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -2378,13 +2620,13 @@
   },
   {
     "id": 32720713,
-    "title": "The mysterious life of public, private, and protected in Ruby",
-    "points": 1,
+    "content": "The mysterious life of public, private, and protected in Ruby",
+
     "user": "Peter5",
     "time": 1662353969,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://paweldabrowski.com/articles/public-private-and-protected-in-ruby",
@@ -2392,13 +2634,13 @@
   },
   {
     "id": 32720707,
-    "title": "Show HN: Universal API for healthcare/life science search",
-    "points": 1,
+    "content": "Show HN: Universal API for healthcare/life science search",
+
     "user": "kletinic",
     "time": 1662353913,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -2436,13 +2678,13 @@
   },
   {
     "id": 32720686,
-    "title": "Should brands sue their own fans? It’s working out for Netflix and Oprah",
-    "points": 2,
+    "content": "Should brands sue their own fans? It’s working out for Netflix and Oprah",
+
     "user": "herbertl",
     "time": 1662353774,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.fastcompany.com/90784831/should-brands-sue-their-own-fans-its-working-out-for-netflix-and-oprah",
@@ -2450,13 +2692,13 @@
   },
   {
     "id": 32720682,
-    "title": "Photos of the Forgotten Bengal Famine Fueled by British Colonialism",
-    "points": 1,
+    "content": "Photos of the Forgotten Bengal Famine Fueled by British Colonialism",
+
     "user": "kottapar",
     "time": 1662353737,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://allthatsinteresting.com/bengal-famine#5",
@@ -2464,13 +2706,13 @@
   },
   {
     "id": 32720673,
-    "title": "Ask HN: Are there any dumb virtual screen overlay glasses?",
-    "points": 2,
+    "content": "Ask HN: Are there any dumb virtual screen overlay glasses?",
+
     "user": "eximius",
     "time": 1662353701,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "<p>Not VR. Not AR.<p>Or, well, maybe dumb AR. Clear glasses like AR but not trying to enable object interaction. Just HUDs or virtual monitors&#x2F;surfaces, etc.<p>That would seem to be far more tractable for an initial product.",
+
     "comments": {
       "create": [
         {
@@ -2528,13 +2770,13 @@
   },
   {
     "id": 32720671,
-    "title": "Why Intellectual Humility Matters",
-    "points": 1,
+    "content": "Why Intellectual Humility Matters",
+
     "user": "herbertl",
     "time": 1662353692,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.ft.com/content/921df7b1-b100-49c8-b6c0-578b6182dd04",
@@ -2542,13 +2784,13 @@
   },
   {
     "id": 32720666,
-    "title": "Whatever Happened to Corel WordPerfect?",
-    "points": 2,
+    "content": "Whatever Happened to Corel WordPerfect?",
+
     "user": "behnamoh",
     "time": 1662353636,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -2571,13 +2813,13 @@
   },
   {
     "id": 32720654,
-    "title": "Effective Altruism",
-    "points": 1,
+    "content": "Effective Altruism",
+
     "user": "b8",
     "time": 1662353520,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://en.wikipedia.org/wiki/Effective_altruism",
@@ -2585,26 +2827,26 @@
   },
   {
     "id": 32720626,
-    "title": "Ask HN: Tracking video player viewer statistics",
-    "points": 1,
+    "content": "Ask HN: Tracking video player viewer statistics",
+
     "user": "arunnanda",
     "time": 1662353199,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "<p>As part of an embeddable video player I&#x27;m starting to build, I need to have some way of keeping track of viewer behavior.<p>The easy way is to integrate something like Mux (YC Winter 2016). The even easier way is to just use an existing player like video js. But I want to start off by building my own solution.<p>I have the basic player working (still some race conditions to be resolved), so now I am starting to look at tracking viewing behavior. I need to know things like timestamp till which a viewer has watched the video, at what timestamps they paused&#x2F;played&#x2F;forwarded it, when they wanted to seek to an earlier time and rewatch a part of it, etc. etc.<p>Say I start a timer when the viewer presses play. Then for each (milli)second I can check the timestamp of the video - this will let me track if some parts of the video were replayed or fast forwarded. Whenever the viewer presses play&#x2F;pause&#x2F;forward, I record the event.  I send this info to the server every 1 or 2 or 5 seconds and do the analytics.<p>Since I haven&#x27;t done this sort of thing before, I would love to have some inputs on if this ^ is the right approach.<p>Does it make sense to treat this data as a timeseries data? If not (even if it is), what else is a good way to organize this data?<p>I assume something like Cassandra (which I haven&#x27;t used much) is much better suited for this than Postgres (which I am comfortable with). Is this right?",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "item?id=32720626"
   },
   {
     "id": 32720586,
-    "title": "Police use smartphone location data culled from Waze, Starbucks, etc.",
-    "points": 1,
+    "content": "Police use smartphone location data culled from Waze, Starbucks, etc.",
+
     "user": "wrayjustin",
     "time": 1662352768,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://9to5mac.com/2022/09/01/smartphone-location-data-2/",
@@ -2612,13 +2854,13 @@
   },
   {
     "id": 32720580,
-    "title": "A Home Depot “merchant” knew we all needed a $300 set of supersize bones",
-    "points": 1,
+    "content": "A Home Depot “merchant” knew we all needed a $300 set of supersize bones",
+
     "user": "cpeterso",
     "time": 1662352727,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://slate.com/human-interest/2020/10/12-foot-skeleton-halloween-home-depot-review.html",
@@ -2626,13 +2868,13 @@
   },
   {
     "id": 32720578,
-    "title": "What is the upper limit of value? (2021)",
-    "points": 1,
+    "content": "What is the upper limit of value? (2021)",
+
     "user": "csense",
     "time": 1662352698,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://philpapers.org/rec/MANWIT-6",
@@ -2640,13 +2882,13 @@
   },
   {
     "id": 32733969,
-    "title": "Fishing slaves no more, but freedom brings new struggles (2017)",
-    "points": 1,
+    "content": "Fishing slaves no more, but freedom brings new struggles (2017)",
+
     "user": "thunderbong",
     "time": 1662448551,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.ap.org/explore/seafood-from-slaves/fishing-slaves-no-more-but-freedom-brings-new-struggles.html",
@@ -2654,13 +2896,13 @@
   },
   {
     "id": 32733967,
-    "title": "Breaking Taboo, Germany Extends Life of 2 Nuclear Reactors",
-    "points": 3,
+    "content": "Breaking Taboo, Germany Extends Life of 2 Nuclear Reactors",
+
     "user": "ericdanielski",
     "time": 1662448537,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -2683,13 +2925,13 @@
   },
   {
     "id": 32733962,
-    "title": "Substack’s View of Content Moderation",
-    "points": 1,
+    "content": "Substack’s View of Content Moderation",
+
     "user": "yamrzou",
     "time": 1662448519,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://on.substack.com/p/substacks-view-of-content-moderation",
@@ -2697,26 +2939,26 @@
   },
   {
     "id": 32733954,
-    "title": "Tell HN: Last chance to confirm your subscription from Gitlab",
-    "points": 1,
+    "content": "Tell HN: Last chance to confirm your subscription from Gitlab",
+
     "user": "throwaway2056",
     "time": 1662448470,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "<p>What does the community think of these emails?<p>&quot;We’re checking in to see if you’re still interested in receiving emails about our products, services, and events.\n&quot;<p>The &quot;Yes,  I&#x27;m interested in hearing more about GitLab &quot; has a large &quot;a href element for the entire text&quot;<p>While the &quot;unsubscribe&quot; is a tiny font size - in the last line - almost hidden.<p>Last month, I unsubscribed from all notification emails from gitlab - after getting lots of emails related to change from Oct 19 free accounts.<p>why do marketing think they need to again check if I am interested in emails? I did voluntarily unsubscribe.<p>Is this the sign gitlab has grown?<p>&#x2F;s",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "item?id=32733954"
   },
   {
     "id": 32733923,
-    "title": "The Conservatives Made Everything in Britain Worse (Yes, Even the Weather)",
-    "points": 2,
+    "content": "The Conservatives Made Everything in Britain Worse (Yes, Even the Weather)",
+
     "user": "m0rcq",
     "time": 1662448188,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.nytimes.com/2022/09/05/opinion/liz-truss-prime-minister-inflation.html",
@@ -2724,13 +2966,13 @@
   },
   {
     "id": 32733912,
-    "title": "Dangerous heat predicted to hit 3 times more often in future",
-    "points": 2,
+    "content": "Dangerous heat predicted to hit 3 times more often in future",
+
     "user": "ciconia",
     "time": 1662448106,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://apnews.com/article/heat-waves-predicted-to-hit-more-often-036f7cda4ac5647b59d3981e51fd6aac",
@@ -2738,13 +2980,13 @@
   },
   {
     "id": 32733908,
-    "title": "The world needs an AI code of ethics",
-    "points": 1,
+    "content": "The world needs an AI code of ethics",
+
     "user": "isaacfrond",
     "time": 1662448060,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.protocol.com/policy/world-needs-ai-ethics",
@@ -2752,13 +2994,13 @@
   },
   {
     "id": 32733907,
-    "title": "Astronomers Are Freaking Out over Bizarre Rectangle-Shaped Rings in Space",
-    "points": 11,
+    "content": "Astronomers Are Freaking Out over Bizarre Rectangle-Shaped Rings in Space",
+
     "user": "isaacfrond",
     "time": 1662448044,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.vice.com/en/article/qjk38p/astronomers-are-freaking-out-over-bizarre-rectangle-shaped-rings-in-space",
@@ -2766,13 +3008,13 @@
   },
   {
     "id": 32733905,
-    "title": "Kiwi Farms Is Down After Cloudflare Boots the Site as a Customer",
-    "points": 2,
+    "content": "Kiwi Farms Is Down After Cloudflare Boots the Site as a Customer",
+
     "user": "isaacfrond",
     "time": 1662448025,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.vice.com/en/article/4axnwg/kiwi-farms-is-down-after-cloudflare-boots-the-site-as-a-customer",
@@ -2780,13 +3022,13 @@
   },
   {
     "id": 32733870,
-    "title": "X-Plane 12 Released",
-    "points": 1,
+    "content": "X-Plane 12 Released",
+
     "user": "jamesy0ung",
     "time": 1662447694,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.x-plane.com/",
@@ -2794,13 +3036,13 @@
   },
   {
     "id": 32733862,
-    "title": "Grants only go so far",
-    "points": 2,
+    "content": "Grants only go so far",
+
     "user": "metaverbal",
     "time": 1662447634,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://benjaminreinhardt.com/grants",
@@ -2808,13 +3050,13 @@
   },
   {
     "id": 32733861,
-    "title": "Python Type Hints Are Turing Complete",
-    "points": 2,
+    "content": "Python Type Hints Are Turing Complete",
+
     "user": "po",
     "time": 1662447623,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://arxiv.org/abs/2208.14755",
@@ -2822,13 +3064,13 @@
   },
   {
     "id": 32733854,
-    "title": "Top IT Certifications In-demand Today (2022)",
-    "points": 1,
+    "content": "Top IT Certifications In-demand Today (2022)",
+
     "user": "rashik98",
     "time": 1662447539,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.zluri.com/blog/top-it-certifications-in-demand-today/",
@@ -2836,13 +3078,13 @@
   },
   {
     "id": 32733844,
-    "title": "The history of sending signals to Unix process groups",
-    "points": 23,
+    "content": "The history of sending signals to Unix process groups",
+
     "user": "r4um",
     "time": 1662447441,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://utcc.utoronto.ca/~cks/space/blog/unix/ProcessGroupsAndSignals",
@@ -2850,13 +3092,13 @@
   },
   {
     "id": 32733824,
-    "title": "The iBackpack has it all: Kevlar, batteries, and a federal investigation (2020)",
-    "points": 1,
+    "content": "The iBackpack has it all: Kevlar, batteries, and a federal investigation (2020)",
+
     "user": "Tomte",
     "time": 1662447250,
     "time_ago": "an hour ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.theverge.com/2020/3/4/21156136/ibackpack-smart-backpack-kickstarter-indiegogo-crowdfunding-scam-investigation-ftc-doug-monahan",
@@ -2864,13 +3106,13 @@
   },
   {
     "id": 32733823,
-    "title": "Capillary-driven desalination in a synthetic mangrove (2020)",
-    "points": 2,
+    "content": "Capillary-driven desalination in a synthetic mangrove (2020)",
+
     "user": "Tomte",
     "time": 1662447237,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://advances.sciencemag.org/content/6/8/eaax5253",
@@ -2878,13 +3120,13 @@
   },
   {
     "id": 32733814,
-    "title": "120 FPS has been “experimental” on Quest 2, we are going to make it default",
-    "points": 1,
+    "content": "120 FPS has been “experimental” on Quest 2, we are going to make it default",
+
     "user": "tosh",
     "time": 1662447187,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://twitter.com/ID_AA_Carmack/status/1566926602847408128",
@@ -2892,13 +3134,13 @@
   },
   {
     "id": 32733804,
-    "title": "The Broken Window Theory",
-    "points": 2,
+    "content": "The Broken Window Theory",
+
     "user": "abricq",
     "time": 1662447088,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://blog.codinghorror.com/the-broken-window-theory/",
@@ -2906,13 +3148,13 @@
   },
   {
     "id": 32733789,
-    "title": "Before YouTube’s Algorithm, There Were ‘Coolhunters’",
-    "points": 1,
+    "content": "Before YouTube’s Algorithm, There Were ‘Coolhunters’",
+
     "user": "marban",
     "time": 1662446944,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.theatlantic.com/technology/archive/2022/09/youtube-homepage-editor-google-algorithm-book-excerpt/671339/",
@@ -2920,13 +3162,13 @@
   },
   {
     "id": 32733752,
-    "title": "Sausage-Style GPU Thermal Paste Application Results in Lowest Temps",
-    "points": 3,
+    "content": "Sausage-Style GPU Thermal Paste Application Results in Lowest Temps",
+
     "user": "danboarder",
     "time": 1662446668,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.tomshardware.com/news/sausage-style-gpu-thermal-paste-application-results-in-lowset-temps",
@@ -2934,13 +3176,13 @@
   },
   {
     "id": 32733748,
-    "title": "Boosting Adoption of Tor Browser Using Behavioral Science",
-    "points": 1,
+    "content": "Boosting Adoption of Tor Browser Using Behavioral Science",
+
     "user": "pabs3",
     "time": 1662446581,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://blog.torproject.org/boosting-adoption-tb-behavioral-science/",
@@ -2948,13 +3190,13 @@
   },
   {
     "id": 32733744,
-    "title": "RustConf 2022 talks are now available on YouTube",
-    "points": 1,
+    "content": "RustConf 2022 talks are now available on YouTube",
+
     "user": "pjmlp",
     "time": 1662446537,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.youtube.com/playlist?list=PL85XCvVPmGQhXeH3QiYct6eMLH1un1dcu",
@@ -2962,26 +3204,26 @@
   },
   {
     "id": 32733743,
-    "title": "Ask HN: Which newsletter platform is best suited for static site generator?",
-    "points": 1,
+    "content": "Ask HN: Which newsletter platform is best suited for static site generator?",
+
     "user": "novoreorx",
     "time": 1662446533,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "<p>Hello! I’m trying to convert my blog to a newsletter. I use Hugo to generate the site, it’s hosted on GitHub pages. When I want to create a new page, I add a markdown file and push the changes to GitHub, it will then be built and published automatically.<p>So I’m wondering which platform is best suited for this workflow. In my understanding there’s only two API endpoints needed to build a fully functional newsletter:<p>1.  An API that adds an email to the subscription list. It will be integrated with the input form on the home page.\n2.  An API that receives HTML content to make a proper email and sends it to all the subscribers. It will be integrated with the automation script when a new post is published.<p>Any suggestions?<p>P.S. here’s my site if you are interested https:&#x2F;&#x2F;reorx.com.",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "item?id=32733743"
   },
   {
     "id": 32733737,
-    "title": "Standardising Observability and Incident Management at Miro",
-    "points": 1,
+    "content": "Standardising Observability and Incident Management at Miro",
+
     "user": "Thisisaadi",
     "time": 1662446450,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.infoq.com/news/2022/09/observability-incident-mgmt-miro/",
@@ -2989,13 +3231,13 @@
   },
   {
     "id": 32733718,
-    "title": "Oracle Faces Class-Action Lawsuit for Profiling the Data of 5B Users",
-    "points": 4,
+    "content": "Oracle Faces Class-Action Lawsuit for Profiling the Data of 5B Users",
+
     "user": "adrian_mrd",
     "time": 1662446332,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.spiceworks.com/it-security/data-governance/news/oracle-class-action-lawsuit/",
@@ -3003,26 +3245,26 @@
   },
   {
     "id": 32733710,
-    "title": "Ask HN: How do you prioritize the update of vulnerable 3rd party packages?",
-    "points": 4,
+    "content": "Ask HN: How do you prioritize the update of vulnerable 3rd party packages?",
+
     "user": "niros_valtos",
     "time": 1662446253,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "<p>More specifically:\n1. How do you know if the vulnerable package is called in a way that it can be exploited? For example, if the package has a critical vulnerability in a method &quot;myFunc&quot; but it is never called by your code, it won&#x27;t be exploitable.<p>2. How do you know if it is safe to upgrade a package and it won&#x27;t break changes? For example, if version 1.2.3 has &quot;myFunc(p1,p2)&quot; and it is called by your code, but the vulnerability was fixed in version 1.2.4, which has &quot;myFunc(p1,p2,p3)&quot;.<p>3. What do you do if the vulnerable package is a sub-package of another package used by your code?",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "item?id=32733710"
   },
   {
     "id": 32733704,
-    "title": "Modern Alternatives to BEM (CSS)",
-    "points": 1,
+    "content": "Modern Alternatives to BEM (CSS)",
+
     "user": "angelmm",
     "time": 1662446208,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://daverupert.com/2022/08/modern-alternatives-to-bem/",
@@ -3030,13 +3272,13 @@
   },
   {
     "id": 32733697,
-    "title": "Biases: Understanding Human Mental Shorcuts",
-    "points": 1,
+    "content": "Biases: Understanding Human Mental Shorcuts",
+
     "user": "angelmm",
     "time": 1662446163,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://thedecisionlab.com/biases",
@@ -3044,13 +3286,13 @@
   },
   {
     "id": 32733690,
-    "title": "Finnish Log-House Maker Stops Daytime Production to Cut Power Bill",
-    "points": 2,
+    "content": "Finnish Log-House Maker Stops Daytime Production to Cut Power Bill",
+
     "user": "helsinkiandrew",
     "time": 1662446116,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3073,13 +3315,13 @@
   },
   {
     "id": 32733678,
-    "title": "VW Seeks to Defy Market Gloom Going Ahead with Porsche IPO",
-    "points": 1,
+    "content": "VW Seeks to Defy Market Gloom Going Ahead with Porsche IPO",
+
     "user": "robin_reala",
     "time": 1662446008,
     "time_ago": "2 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.bloomberg.com/news/articles/2022-08-26/porsche-lines-up-ipo-demand-at-up-to-85-billion-valuation",
@@ -3087,13 +3329,13 @@
   },
   {
     "id": 32733213,
-    "title": "Synthetic embryos complete gastrulation to neurulation and organogenesis",
-    "points": 30,
+    "content": "Synthetic embryos complete gastrulation to neurulation and organogenesis",
+
     "user": "jdmark",
     "time": 1662441978,
     "time_ago": "3 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3146,13 +3388,13 @@
   },
   {
     "id": 32733170,
-    "title": "American Dream (2003)",
-    "points": 1,
+    "content": "American Dream (2003)",
+
     "user": "Tomte",
     "time": 1662441589,
     "time_ago": "3 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://github.com/bibanon/bibanon/wiki/American-Dream",
@@ -3160,13 +3402,13 @@
   },
   {
     "id": 32733168,
-    "title": "Vespa – the big data serving engine",
-    "points": 2,
+    "content": "Vespa – the big data serving engine",
+
     "user": "thunderbong",
     "time": 1662441539,
     "time_ago": "3 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://vespa.ai/",
@@ -3174,13 +3416,13 @@
   },
   {
     "id": 32733159,
-    "title": "Street Racing and Night-time noise",
-    "points": 1,
+    "content": "Street Racing and Night-time noise",
+
     "user": "memorable",
     "time": 1662441485,
     "time_ago": "3 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://erinbern.com/street-noise-night/",
@@ -3188,13 +3430,13 @@
   },
   {
     "id": 32733134,
-    "title": "Orton (Photography)",
-    "points": 2,
+    "content": "Orton (Photography)",
+
     "user": "thunderbong",
     "time": 1662441150,
     "time_ago": "3 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://en.wikipedia.org/wiki/Orton_(photography)",
@@ -3202,13 +3444,13 @@
   },
   {
     "id": 32733131,
-    "title": "Berlin is emerging as a tech hub with German startups raising a record 18.1B",
-    "points": 2,
+    "content": "Berlin is emerging as a tech hub with German startups raising a record 18.1B",
+
     "user": "rustoo",
     "time": 1662441138,
     "time_ago": "3 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3231,13 +3473,13 @@
   },
   {
     "id": 32733098,
-    "title": "Genomics solves the mystery of a medieval mass burial",
-    "points": 1,
+    "content": "Genomics solves the mystery of a medieval mass burial",
+
     "user": "Vigier",
     "time": 1662440857,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.nature.com/articles/d41586-022-02246-1",
@@ -3245,13 +3487,13 @@
   },
   {
     "id": 32733079,
-    "title": "American Redoubt",
-    "points": 1,
+    "content": "American Redoubt",
+
     "user": "pigtailgirl",
     "time": 1662440637,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://en.wikipedia.org/wiki/American_Redoubt",
@@ -3259,13 +3501,13 @@
   },
   {
     "id": 32733069,
-    "title": "Lunatic: Erlang-Inspired Runtime for WebAssembly",
-    "points": 37,
+    "content": "Lunatic: Erlang-Inspired Runtime for WebAssembly",
+
     "user": "cab404",
     "time": 1662440568,
     "time_ago": "3 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3315,13 +3557,13 @@
   },
   {
     "id": 32733062,
-    "title": "Every Developer Should Start Building SaaS This Week",
-    "points": 3,
+    "content": "Every Developer Should Start Building SaaS This Week",
+
     "user": "raunometsa",
     "time": 1662440506,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3359,13 +3601,13 @@
   },
   {
     "id": 32733059,
-    "title": "External Influences",
-    "points": 1,
+    "content": "External Influences",
+
     "user": "abhaynayar",
     "time": 1662440487,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://abhaynayar.substack.com/p/external-influences",
@@ -3373,13 +3615,13 @@
   },
   {
     "id": 32733054,
-    "title": "A Long-Lost Branch of the Nile Helped in Building Egypt’s Pyramids",
-    "points": 2,
+    "content": "A Long-Lost Branch of the Nile Helped in Building Egypt’s Pyramids",
+
     "user": "diodorus",
     "time": 1662440476,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.nytimes.com/2022/08/30/science/pyramids-nile-river-construction-egypt.html",
@@ -3387,13 +3629,13 @@
   },
   {
     "id": 32733040,
-    "title": "Flightradar24 – Live Air Traffic",
-    "points": 1,
+    "content": "Flightradar24 – Live Air Traffic",
+
     "user": "alraj",
     "time": 1662440380,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3416,13 +3658,13 @@
   },
   {
     "id": 32733026,
-    "title": "Cloudflare stops services to 'revolting' far right hate site",
-    "points": 5,
+    "content": "Cloudflare stops services to 'revolting' far right hate site",
+
     "user": "docmechanic",
     "time": 1662440200,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3446,13 +3688,13 @@
   },
   {
     "id": 32733023,
-    "title": "Show HN: A clean crypto price and news terminal",
-    "points": 3,
+    "content": "Show HN: A clean crypto price and news terminal",
+
     "user": "Sealy",
     "time": 1662440189,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "<p>A few friends and I were discussing how frustrated we were at how messy crypto price websites are. Flooded with adverts and designed to increase time on site, we decided to do the opposite.<p>We created DefiDive so that the information users wanted would be displayed as quickly as possible in a clean interface. Our news section is designed to pull in a list of major crypto news sources, YouTube and Twitter accounts and have a filterable view based on the cryptos you are interested in.<p><a href=\"https:&#x2F;&#x2F;defidive.com&#x2F;news\" rel=\"nofollow\">https:&#x2F;&#x2F;defidive.com&#x2F;news</a><p>This is just the start, we would love feedback from the HN community on how we can help you ease the pain in your crypto related daily workflow.<p>What additional features would you like?",
+
     "comments": {
       "create": [
         {
@@ -3475,13 +3717,13 @@
   },
   {
     "id": 32732989,
-    "title": "Fat Leonard,’ set to finally be sentenced in Navy bribery scheme, is on the lam",
-    "points": 3,
+    "content": "Fat Leonard,’ set to finally be sentenced in Navy bribery scheme, is on the lam",
+
     "user": "scapecast",
     "time": 1662439941,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.sandiegouniontribune.com/news/courts/story/2022-09-05/fat-leonard-fugitive",
@@ -3489,13 +3731,13 @@
   },
   {
     "id": 32732968,
-    "title": "Linear Method – Practices for Building",
-    "points": 1,
+    "content": "Linear Method – Practices for Building",
+
     "user": "juunge",
     "time": 1662439711,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://linear.app/method",
@@ -3503,13 +3745,13 @@
   },
   {
     "id": 32732956,
-    "title": "Dead people could be authors of Confluence docs but that can't be changed",
-    "points": 2,
+    "content": "Dead people could be authors of Confluence docs but that can't be changed",
+
     "user": "docmechanic",
     "time": 1662439593,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.theregister.com/2022/09/06/atlassian_confluence_feature_request_confcloud_7247/",
@@ -3517,13 +3759,13 @@
   },
   {
     "id": 32732913,
-    "title": "You Hear What You Hear",
-    "points": 2,
+    "content": "You Hear What You Hear",
+
     "user": "brudgers",
     "time": 1662439259,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://www.whyyouhearwhatyouhear.com/",
@@ -3531,13 +3773,13 @@
   },
   {
     "id": 32732898,
-    "title": "Open source databases: What are they and why do they matter?",
-    "points": 1,
+    "content": "Open source databases: What are they and why do they matter?",
+
     "user": "docmechanic",
     "time": 1662439095,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3572,13 +3814,13 @@
   },
   {
     "id": 32732892,
-    "title": "Gas prices are expected to continue falling and some states could see below $3",
-    "points": 2,
+    "content": "Gas prices are expected to continue falling and some states could see below $3",
+
     "user": "MilnerRoute",
     "time": 1662439018,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3601,13 +3843,13 @@
   },
   {
     "id": 32732875,
-    "title": "Developing Software with Fewer Bugs",
-    "points": 2,
+    "content": "Developing Software with Fewer Bugs",
+
     "user": "jajool",
     "time": 1662438856,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": { "create": [] },
     "comments_count": 0,
     "url": "https://newsletter.alireza.es/issues/bugs-kinda-random-39-1307795",
@@ -3615,13 +3857,13 @@
   },
   {
     "id": 32732866,
-    "title": "Porkbun Registrar DNS outage",
-    "points": 1,
+    "content": "Porkbun Registrar DNS outage",
+
     "user": "el_snark",
     "time": 1662438723,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
@@ -3656,13 +3898,13 @@
   },
   {
     "id": 32732857,
-    "title": "Russia Delivers Energy Ultimatum as Nord Stream Pipeline Shut Down",
-    "points": 1,
+    "content": "Russia Delivers Energy Ultimatum as Nord Stream Pipeline Shut Down",
+
     "user": "exabrial",
     "time": 1662438681,
     "time_ago": "4 hours ago",
     "type": "link",
-    "content": "",
+
     "comments": {
       "create": [
         {
