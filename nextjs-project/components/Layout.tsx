@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-
 import { Box, Typography, Drawer, ThemeProvider, CssBaseline, Button } from '@mui/material';
 import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
 import { theme } from '../styles/theme';
@@ -18,7 +17,6 @@ export default function Layout({ children }) {
         <Drawer variant="permanent" anchor="left">
           <div>
             <AllInclusiveIcon />
-
             <Button sx={{ width: '90%' }}>
               <Link href="/site">
                 <Typography variant="button">Site</Typography>
@@ -37,9 +35,7 @@ export default function Layout({ children }) {
           </div>
         </Drawer>
         <Box component="main" sx={{ flexGrow: 1 }}></Box>
-
         <MainSec color="background">{children}</MainSec>
-
         <Box />
       </ThemeProvider>
     </Box>

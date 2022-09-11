@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { TodoList } from '../types/types';
 import { observer } from 'mobx-react-lite';
 import { Checkbox, Paper, Container, Typography } from '@mui/material';
@@ -20,7 +19,6 @@ const List: React.FC = observer(() => {
             onChange={() => store.completeItem(itemList.key)}
           />
           <Typography variant="h5" onChange={(e) => DOMRectReadOnly}>{`${itemList.item}`}</Typography>
-
           <Checkbox icon={<DeleteOutlineIcon />} onClick={() => store.deleteItem(itemList.key)} />
         </Container>
       ))}

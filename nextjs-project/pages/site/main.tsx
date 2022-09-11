@@ -4,7 +4,7 @@ import { Button, Paper, Typography, Checkbox, Input } from '@mui/material';
 import Image from 'next/image';
 import pic from '../../components/img/pic.jpg';
 import profpic from '../../components/img/profpic.jpg';
-import SiteLayout from './SiteLayout';
+import SiteLayout from '../../components/SiteLayout';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 
