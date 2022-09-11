@@ -1,24 +1,17 @@
-import Layout from '../../components/vaincomp/Layout';
-import Todolist from '../../components/todocomp/Todolist';
-import List from '../../components/todocomp/List';
-import styled from 'styled-components';
+import Layout from '../../components/Layout';
+import Todolist from '../../components/Todolist';
+import List from '../../components/TodoItemList';
 
-/* const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: raw;
-  background-color: Plum;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 5px Violet;
-`; */
+import { Paper, Typography } from '@mui/material';
+
 export default function Todo() {
   return (
     <Layout>
-      <div>Eto todo</div>
-
-      <Todolist />
-      <List />
+      <Typography variant="h1">Todo list</Typography>
+      <Paper sx={{ alignItems: 'center', width: '60%', padding: '15px' }}>
+        <Todolist />
+        <List />
+      </Paper>
     </Layout>
   );
 }

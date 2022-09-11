@@ -1,4 +1,4 @@
-import Layout from '../components/vaincomp/Layout';
+import Layout from '../components/Layout';
 import React, { useEffect } from 'react';
 import Router from 'next/router';
 
@@ -9,6 +9,7 @@ export default function Home() {
       Router.push('/site');
     }
   });
+
   return (
     <>
       <Layout>

@@ -1,43 +1,16 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { NewsItem } from '../../components/hackcomp/types';
+import { NewsItem } from '../../types/types';
+import { Button, Container, Paper, Typography } from '@mui/material';
 
 const Ul = styled.ul`
   list-style-type: none;
   padding: 0;
 `;
-const Item = styled.div`
-  margin-bottom: 15px;
-  background-color: lightpink;
-  padding: 15px 15px 15px 20px;
-  border-radius: 5px;
-  box-shadow: -1px -1px 2px black;
-  font-size: 0.95em;
-`;
-const Username = styled.div`
-  font-weight: bold;
-`;
-const ItemInfo = styled.div`
-  display: flex;
-  justify-content: start;
-  padding-left: 20px;
-  font-size: 0.9em;
-`;
+
 const Div = styled.div`
   margin-top: 10px;
   padding-left: 30px;
-`;
-const Button = styled.button`
-  margin-left: 10px;
-  border-radius: 5px;
-  border-style: none;
-  box-shadow: -1px -1px 2px black;
-  background-color: pink;
-  &:hover {
-    cursor: pointer;
-    box-shadow: 1px 1px 2px MediumVioletRed;
-    color: MediumVioletRed;
-  }
 `;
 
 interface CommentProps {
@@ -67,13 +40,30 @@ const TreeNode: React.FC<NodeProps> = ({ nodeItem }) => {
   };
   return (
     <li>
-      <Item>
-        <Username>{nodeItem.user}</Username>
-        <div dangerouslySetInnerHTML={{ __html: nodeItem.content }} />
-        <ItemInfo>
+      <Paper sx={{ boxShadow: '-1px -1px 2px black' }}>
+        <Typography variant="h6">{nodeItem.user}</Typography>
+        <Typography variant="h5" dangerouslySetInnerHTML={{ __html: nodeItem.content }} />
+        <Container
+          sx={{
+            justifyContent: 'start',
+            paddingLeft: '20px',
+            boxShadow: 'none',
+            backgroundColor: 'inherit',
+            padding: '15px',
+            fontSize: '0.9em',
+          }}
+        >
           {nodeItem.time_ago} | {nodeItem.comments_count} {nodeItem.comments_count == 1 ? 'comment' : 'comments'}
-          {hasChild ? <Button onClick={() => changeVisibility()}>{childVisible ? 'hide' : 'show'} </Button> : ''}
-        </ItemInfo>
+          {hasChild ? (
+            <Button sx={{ padding: '0px', margin: '0 0 0 15px' }} onClick={() => changeVisibility()}>
+              <Typography variant="button" sx={{ fontSize: '0.8em' }}>
+                {childVisible ? 'hide' : 'show'}
+              </Typography>
+            </Button>
+          ) : (
+            ''
+          )}
+        </Container>
         <Div>
           {hasChild && childVisible && (
             <Ul key={nodeItem.id}>
@@ -81,7 +71,7 @@ const TreeNode: React.FC<NodeProps> = ({ nodeItem }) => {
             </Ul>
           )}
         </Div>
-      </Item>
+      </Paper>
     </li>
   );
 };

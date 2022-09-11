@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from '../../components/vaincomp/Layout';
+import Layout from '../../components/Layout';
 import New from './New';
-import NewData from './news';
+import NewData from './CommList';
 import { QueryClient, QueryClientProvider } from 'react-query';
 const queryClient = new QueryClient();
 export default function Hackers() {

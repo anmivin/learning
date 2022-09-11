@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-/* import { YMaps, Map, Placemark } from 'react-yandex-maps'; */
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import { Hearts } from 'react-loader-spinner';
 import SiteLayout from './SiteLayout';
-import Layout from '../../components/vaincomp/Layout';
+import Layout from '../../components/Layout';
 
 const Wrapp = styled.div`
   width: 70vw;
@@ -20,32 +20,32 @@ const LoaderWrapp = styled.div`
 `;
 
 const Mapp: React.FC = () => {
-  /*  const [load, setLoad] = useState<boolean>(true); */
+  const [load, setLoad] = useState<boolean>(true);
 
   return (
     <Layout>
       <SiteLayout>
-        {/* {load && */} (
-        <LoaderWrapp>
-          <Hearts height="50%" width="50%" color="violet" />
-        </LoaderWrapp>
-        ){/* } */}
+        {load && (
+          <LoaderWrapp>
+            <Hearts height="50%" width="50%" color="violet" />
+          </LoaderWrapp>
+        )}
         <Wrapp>
-          {/* <YMaps>
-          <Map
-            onLoad={() => {
-              setLoad(false);
-            }}
-            width="100%"
-            height="100%"
-            defaultState={{
-              center: [56.01242, 37.474915],
-              zoom: 12,
-            }}
-          >
-            <Placemark geometry={[56.01242, 37.474915]} />
-          </Map>
-        </YMaps> */}
+          <YMaps>
+            <Map
+              onLoad={() => {
+                setLoad(false);
+              }}
+              width="100%"
+              height="100%"
+              defaultState={{
+                center: [56.01242, 37.474915],
+                zoom: 12,
+              }}
+            >
+              <Placemark geometry={[56.01242, 37.474915]} />
+            </Map>
+          </YMaps>
         </Wrapp>
       </SiteLayout>
     </Layout>

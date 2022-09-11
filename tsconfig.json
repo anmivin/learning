@@ -17,6 +17,6 @@
     "experimentalDecorators": true,
     "sourceMap": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "images.d.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/img/images.d.ts"],
   "exclude": ["node_modules"]
 }

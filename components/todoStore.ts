@@ -1,6 +1,6 @@
-import { makeAutoObservable, configure } from 'mobx';
+import { makeAutoObservable, configure, reaction } from 'mobx';
 
-import { TodoList } from './hackcomp/types';
+import { TodoList } from '../types/types';
 configure({
   enforceActions: 'never',
 });
@@ -23,19 +23,24 @@ class Store {
   addItem() {
     this.todoList.push(this.todoItem);
     this.todoItem = this.resetItem();
-    console.log(this.todoItem);
   }
 
   deleteItem = (key: number) => {
     this.todoList = this.todoList.filter((todoItem) => todoItem.key !== key);
-    console.log('del');
   };
 
   completeItem(key: number) {
     this.todoList = this.todoList.map((todoItem) =>
       todoItem.key === key ? { ...todoItem, isChecked: !todoItem.isChecked } : { ...todoItem },
     );
-    console.log('chek');
   }
 }
-export default new Store();
+const store = new Store();
+reaction(
+  () => JSON.stringify(store),
+  (json) => {
+    localStorage.setItem('store', json);
+  },
+);
+
+export default store;
