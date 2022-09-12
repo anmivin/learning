@@ -66,7 +66,7 @@ const Main: React.FC = observer(() => {
           <Typography variant="h5">Сектор без баб</Typography>
         </Paper>
         <Paper>
-          <Typography variant="h2">Ваше слово</Typography>
+          <Typography variant="h2"> Плоское и высокое пряничное изделие</Typography>
           <Typography variant="h5" onChange={(e) => e.target}>
             {word.yourword}
           </Typography>
