@@ -4,7 +4,9 @@ import path from 'path';
 
 const prisma = new PrismaClient();
 
+
 const seedNewsList: NewsList[] = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'seedNewsList.json'), 'utf8'));
+
 
 async function NewsListSeed() {
   console.log(`Start seeding ...`);

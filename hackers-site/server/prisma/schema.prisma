@@ -20,6 +20,7 @@ model NewsList {
   type           String
   url            String?
   domain         String?
+
 }
 
 model Comment {
@@ -29,8 +30,10 @@ model Comment {
   time_ago       String
   type           String
   content        String
+
   
   comments_count Int
+
   level          Int?
   url            String?
   domain         String?
@@ -40,3 +43,4 @@ model Comment {
   news NewsList? @relation(fields: [newsId], references: [id])
   newsId Int?
 }
+

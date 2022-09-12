@@ -82,7 +82,7 @@ const NewData: React.FC = () => {
         <Button onClick={() => goMain()}>Main page</Button>
       </NavBar>
       <New key={data!.id}>
-        <Title>{data!.title}</Title>
+        <Title>{data!.content}</Title>
         <Section>
           <div> {data!.url} </div>
           <div>
