@@ -5,6 +5,7 @@ class Word {
   letter: string = '';
   theword: string[] = ['К', 'О', 'В', 'Р', 'И', 'Ж', 'К', 'А'];
   yourword: string[] = [' _ ', ' _ ', ' _ ', ' _ ', ' _ ', ' _ ', ' _ ', ' _ '];
+  visibility: boolean = false;
   constructor() {
     makeAutoObservable(this);
   }
@@ -30,7 +31,11 @@ class Word {
     }
     if (JSON.stringify(this.theword) === JSON.stringify(this.yourword)) {
       alert('И У НАС ЕСТЬ ПОБЕДИТЕЛЬ');
+      this.visibility = true;
     }
+  }
+  hidePicture() {
+    this.visibility = false;
   }
 }
 const word = new Word();

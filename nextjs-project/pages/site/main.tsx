@@ -9,6 +9,7 @@ import StarRateIcon from '@mui/icons-material/StarRate';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import word from '../../components/poleChudes';
 import { observer } from 'mobx-react-lite';
+import kov from '../../components/img/kov.jpg';
 
 const Inputs = styled.div`
   display: flex;
@@ -18,6 +19,22 @@ const Inputs = styled.div`
 const Main: React.FC = observer(() => {
   return (
     <SiteLayout>
+      {word.visibility && (
+        <Paper
+          sx={{
+            position: 'absolute',
+            left: '20%',
+            top: '20%',
+            zIndex: 9,
+            width: '70%',
+            background: 'rgba(0, 0, 0, 0.8)',
+            padding: '50px',
+          }}
+        >
+          <Image alt="КОВРИЖКА" src={kov} onClick={() => word.hidePicture()} />
+        </Paper>
+      )}
+
       <Paper sx={{ flexGrow: 1, backgroundColor: '#d8bfd8', boxShadow: 'none' }}>
         <Paper>
           <Image alt="pic" src={pic} />

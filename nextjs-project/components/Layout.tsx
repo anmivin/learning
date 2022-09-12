@@ -1,17 +1,12 @@
 import Link from 'next/link';
-import styled from 'styled-components';
+
 import { Box, Typography, Drawer, ThemeProvider, CssBaseline, Button } from '@mui/material';
 import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
 import { theme } from '../styles/theme';
 
-const MainSec = styled.div`
-  margin: 20px;
-  width: 80vw;
-`;
-
 export default function Layout({ children }) {
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Drawer variant="permanent" anchor="left">
@@ -34,9 +29,9 @@ export default function Layout({ children }) {
             </Button>
           </div>
         </Drawer>
-        <Box component="main" sx={{ flexGrow: 1 }}></Box>
-        <MainSec color="background">{children}</MainSec>
-        <Box />
+        <Box component="main" sx={{ flexGrow: 1, marginLeft: 10 }}>
+          {children}
+        </Box>
       </ThemeProvider>
     </Box>
   );
