@@ -7,13 +7,15 @@ import profpic from '../../components/img/profpic.jpg';
 import SiteLayout from '../../components/SiteLayout';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
+import word from '../../components/poleChudes';
+import { observer } from 'mobx-react-lite';
 
 const Inputs = styled.div`
   display: flex;
   flex-direction: raw;
 `;
 
-const Main: React.FC = () => {
+const Main: React.FC = observer(() => {
   return (
     <SiteLayout>
       <Paper sx={{ flexGrow: 1, backgroundColor: '#d8bfd8', boxShadow: 'none' }}>
@@ -47,22 +49,30 @@ const Main: React.FC = () => {
           <Typography variant="h5">Сектор без баб</Typography>
         </Paper>
         <Paper>
+          <Typography variant="h2">Ваше слово</Typography>
+          <Typography variant="h5" onChange={(e) => e.target}>
+            {word.yourword}
+          </Typography>
+        </Paper>
+        <Paper>
           <Typography variant="h2">Назовите букву</Typography>
           <Inputs>
-            <Input placeholder="Ваша буква" />
-            <Button size="small" onClick={() => alert('Да что вы!')}>
+            <Input placeholder="Ваша буква" value={word.letter} onChange={(e) => (word.letter = e.target.value)} />
+            <Button size="small" onClick={() => word.addLetter()}>
               <Typography variant="button">Угадать</Typography>
             </Button>
           </Inputs>
         </Paper>
 
-        <Paper sx={{ flexDirection: 'raw' }}>
-          <Checkbox icon={<StarBorderIcon />} checkedIcon={<StarRateIcon />} />
-          <Typography variant="h5">Передать подарки</Typography>
+        <Paper>
+          <Inputs>
+            <Checkbox icon={<StarBorderIcon />} checkedIcon={<StarRateIcon />} />
+            <Typography variant="h5">Передать подарки</Typography>
+          </Inputs>
         </Paper>
       </Paper>
     </SiteLayout>
   );
-};
+});
 
 export default Main;

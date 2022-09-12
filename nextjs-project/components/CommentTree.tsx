@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { NewsItem } from '../../types/types';
+import { NewsItem } from '../types/types';
 import { Button, Container, Paper, Typography } from '@mui/material';
 
 const Ul = styled.ul`

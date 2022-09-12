@@ -1,14 +1,14 @@
 import React from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/router';
 import { useQuery } from 'react-query';
-import Tree from './CommentTree';
-import { useParams } from 'react-router-dom';
+import Tree from '../../components/CommentTree';
 import { NewsItem } from '../../types/types';
 import { Button, Container, Paper, Typography } from '@mui/material';
 
 const NewData: React.FC = () => {
-  const { id } = useParams();
+  const navigate = useRouter();
+  const id = navigate.query.newItem;
 
   const { isLoading, error, data, refetch } = useQuery<NewsItem, Error>(
     ['newsitem'],
@@ -25,9 +25,9 @@ const NewData: React.FC = () => {
   const refreshPage = () => {
     refetch();
   };
-  const navigate = useNavigate();
+
   const goMain = () => {
-    navigate('/hackers');
+    navigate.push('/hackers');
   };
 
   if (error) return <h1>OH SHIT</h1>;

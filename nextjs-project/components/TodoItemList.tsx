@@ -18,7 +18,9 @@ const List: React.FC = observer(() => {
             checked={itemList.isChecked}
             onChange={() => store.completeItem(itemList.key)}
           />
-          <Typography variant="h5" onChange={(e) => DOMRectReadOnly}>{`${itemList.item}`}</Typography>
+          <Typography variant="h5" onChange={(e) => e.target}>
+            {itemList.item}
+          </Typography>
           <Checkbox icon={<DeleteOutlineIcon />} onClick={() => store.deleteItem(itemList.key)} />
         </Container>
       ))}
