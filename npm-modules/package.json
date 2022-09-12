@@ -1,11 +1,13 @@
 {
   "name": "npm-modules",
   "version": "0.1.0",
+
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
     "build": "rollup -c"
+
   },
   "eslintConfig": {
     "extends": [
@@ -24,6 +26,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
@@ -45,4 +48,5 @@
   "files": [
     "dist"
   ]
+
 }
