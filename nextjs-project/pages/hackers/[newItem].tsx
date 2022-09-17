@@ -13,7 +13,8 @@ const NewData: React.FC = () => {
   const { isLoading, error, data, refetch } = useQuery<NewsItem, Error>(
     ['newsitem'],
     async (): Promise<NewsItem> => {
-      const res = await axios.get<NewsItem>(`http://localhost:5000/news/${id}`);
+      const res = await axios.get<NewsItem>(`https://api.hnpwa.com/v0/item/${id}.json`);
+      //`http://localhost:5000/news/${id}`
 
       return res.data;
     },
@@ -35,7 +36,7 @@ const NewData: React.FC = () => {
 
   return (
     <div>
-      <Container>
+      <Container sx={{ backgroundColor: 'primary.main' }}>
         <Button onClick={() => refreshPage()}>
           <Typography variant="button">Refresh</Typography>
         </Button>
@@ -43,17 +44,17 @@ const NewData: React.FC = () => {
           <Typography variant="button">Main page</Typography>
         </Button>
       </Container>
-      <Paper key={data!.id}>
-        <Typography variant="h5">{data!.content}</Typography>
+      <Paper key={data!.id} sx={{ backgroundColor: 'primary.dark' }}>
+        <Typography variant="h5">{data!.title /* content */}</Typography>
         <Container sx={{ boxShadow: 'none', backgroundColor: 'inherit', padding: '15px', fontSize: '0.9em' }}>
-          <div> {data!.url} </div>
-          <div>
+          <Typography variant="body2"> {data!.url} </Typography>
+          <Typography variant="body2">
             by {data!.user} | {data!.time_ago} | {data!.comments_count}{' '}
             {data!.comments_count == 1 ? 'comment' : 'comments'}
-          </div>
+          </Typography>
         </Container>
       </Paper>
-      <Paper>
+      <Paper sx={{ backgroundColor: 'primary.dark' }}>
         <Typography variant="h6">Comments</Typography>
       </Paper>
       {<Tree commentItem={data!.comments} />}

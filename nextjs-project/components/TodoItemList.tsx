@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { TodoList } from '../types/types';
 import { observer } from 'mobx-react-lite';
 import { Checkbox, Paper, Container, Typography } from '@mui/material';
@@ -9,9 +10,9 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 const List: React.FC = observer(() => {
   return (
-    <Paper sx={{ boxShadow: 'none' }}>
+    <Paper sx={{ boxShadow: 'none', backgroundColor: 'inherit' }}>
       {store.todoList.map((itemList: TodoList) => (
-        <Container sx={{ backgroundColor: 'Plum', boxShadow: 'none' }} key={itemList.key}>
+        <Container sx={{ backgroundColor: 'inherit', boxShadow: 'none' }} key={itemList.key}>
           <Checkbox
             icon={<StarBorderIcon />}
             checkedIcon={<StarRateIcon />}

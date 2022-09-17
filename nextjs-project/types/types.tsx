@@ -21,3 +21,14 @@ export interface TodoList {
   key: number;
   item: string;
 }
+export interface Adding {
+  name: string;
+  orName: string;
+  picture: string;
+  discription: string;
+  rating: string;
+}
+
+export interface Titles extends Adding {
+  id: number;
+}

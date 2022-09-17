@@ -17,7 +17,8 @@ const New: React.FC = () => {
   const { isLoading, error, data, refetch } = useQuery<NewsListItem[], Error>(
     ['newses'],
     async () => {
-      const res = await axios.get<NewsListItem[]>('http://localhost:5000/');
+      const res = await axios.get<NewsListItem[]>('https://api.hnpwa.com/v0/newest/1.json');
+      //'http://localhost:5000/'
       return res.data;
     },
     {
@@ -49,6 +50,7 @@ const New: React.FC = () => {
                     '&:hover': {
                       cursor: 'pointer',
                     },
+                    backgroundColor: 'primary.dark',
                   }}
                 >
                   <Link href={{ pathname: 'hackers/[newItem]', query: { newItem: newses.id } }}>

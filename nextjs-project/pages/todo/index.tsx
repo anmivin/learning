@@ -6,7 +6,14 @@ export default function Todo() {
   return (
     <>
       <Typography variant="h1">Todo list</Typography>
-      <Paper sx={{ alignItems: 'center', width: '60%', padding: '15px' }}>
+      <Paper
+        sx={{
+          alignItems: 'center',
+          width: '60%',
+          padding: '15px',
+          backgroundColor: 'primary.dark',
+        }}
+      >
         <Todolist />
         <List />
       </Paper>

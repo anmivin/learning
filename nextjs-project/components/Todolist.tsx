@@ -7,7 +7,7 @@ import { Button, Container, Input, Typography } from '@mui/material';
 const App: React.FC = observer(() => {
   return (
     <>
-      <Container sx={{ margin: '10px' }}>
+      <Container sx={{ margin: '20px', backgroundColor: 'primary.main' }}>
         <Input
           placeholder="Add task"
           value={store.todoItem.item}
