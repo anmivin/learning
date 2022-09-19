@@ -88,7 +88,11 @@ const Main: React.FC = observer(() => {
 
         <Paper sx={{ backgroundColor: 'primary.dark' }}>
           <Inputs>
-            <Checkbox color="default" icon={<StarBorderIcon />} checkedIcon={<StarRateIcon />} />
+            <Checkbox
+              color="default"
+              icon={<StarBorderIcon color="secondary" />}
+              checkedIcon={<StarRateIcon color="secondary" />}
+            />
             <Typography variant="h5">Передать подарки</Typography>
           </Inputs>
         </Paper>

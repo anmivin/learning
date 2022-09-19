@@ -1,4 +1,4 @@
-import { makeAutoObservable, configure } from 'mobx';
+import { makeAutoObservable, configure, reaction } from 'mobx';
 import { Titles, Adding } from '../types/types';
 
 configure({
@@ -11,75 +11,75 @@ class TitlesStore {
   titles = [
     {
       id: 1,
-      name: 'Жожа',
+      item: 'Жожа',
       orName: 'JoJo no Kimyou na Bouken',
-      picture: 'jojo',
+      picture: 'jojo.jpg',
       discription: 'Мужики из местной качалки понтуются и учат правильно позировать на фото',
       rating: '10/10',
     },
     {
       id: 2,
-      name: 'Тетрадь',
+      item: 'Тетрадь',
       orName: 'Death Note',
-      picture: 'dn',
+      picture: 'dn.jpg',
       discription:
         'Отличник с психическими отклонениями драматично ест чипсы и пытается подавить свои чувства к загадочному эмо-бою',
       rating: '10/10',
     },
     {
       id: 3,
-      name: 'Атака',
+      item: 'Атака',
       orName: 'Shingeki no Kyojin',
-      picture: 'at',
+      picture: 'at.jpg',
       discription: 'Родившейся в очень странной семье мальчик знает весь сюжет, но не спойлерит другим',
       rating: '10/10',
     },
     {
       id: 4,
-      name: 'Сэйломун',
+      item: 'Сэйлормун',
       orName: 'Bishojo Senshi Sera Mun',
-      picture: 'sm',
+      picture: 'sm.jpg',
       discription:
         'Обычные японские школьницы спасают планету, влияют на фэшн-индустрию и формируют дисморфофобию у зрителей',
       rating: '10/10',
     },
     {
       id: 5,
-      name: 'Хигураши',
+      item: 'Хигураши',
       orName: 'Higurashi no Naku Koro ni',
-      picture: 'hnnkn',
+      picture: 'hnnkn.jpg',
       discription: 'Группа школьников пытается пережить летний фестиваль. Гаремник с подвохом',
       rating: '10/10',
     },
     {
       id: 6,
-      name: 'дзюндзи ито',
+      item: 'Дзюндзи Ито',
       orName: 'Itou Junji: Collection',
-      picture: 'jic',
+      picture: 'jic.jpg',
       discription: ' Школьник безобидно шутит над своими одноклассниками и другие истории из жизни в японской глубинке',
       rating: '10/10',
     },
     {
       id: 7,
-      name: 'Путь домохозяина',
+      item: 'Путь домохозяина',
       orName: 'Gokushufudou',
-      picture: 'hw',
+      picture: 'hw.jpg',
       discription: 'Мафиозник и его идеальная жизнь',
       rating: '10/10',
     },
     {
       id: 8,
-      name: 'Токийские мстители',
+      item: 'Токийские мстители',
       orName: 'Tokyo Ribenjazu',
-      picture: 'tr',
+      picture: 'tr.jpg',
       discription: 'Самые горячие мужики в мире дерутся и умирают, а потом не умирают, а потом опять умирают',
       rating: '10/10',
     },
     {
       id: 9,
-      name: 'Наруто',
+      item: 'Наруто',
       orName: 'Naruto',
-      picture: 'nr',
+      picture: 'nr.jpg',
       discription: 'Гиперактивный сирота побеждает всех силой дружбы и становится председателем сельсовета',
       rating: '10/10',
     },
@@ -87,19 +87,19 @@ class TitlesStore {
   search: string = '';
   adding: Adding = this.resetAdd();
   itname: string = '';
+  pic: string = '';
 
   resetAdd() {
     return {
-      name: '',
+      item: '',
       orName: '',
       discription: '',
       rating: '',
-      picture: '',
     };
   }
 
   addTitle() {
-    const newItem: Titles = { ...this.adding, id: 19 };
+    const newItem: Titles = { ...this.adding, picture: this.pic, id: Date.now() };
     this.titles.push(newItem);
     this.adding = this.resetAdd();
   }
@@ -107,7 +107,7 @@ class TitlesStore {
   get filtered() {
     const searchList: Titles[] = [];
     this.titles.forEach((item) => {
-      if (item.name.toLowerCase().includes(this.search) || item.discription.toLowerCase().includes(this.search)) {
+      if (item.item.toLowerCase().includes(this.search) || item.discription.toLowerCase().includes(this.search)) {
         searchList.push(item);
       }
     });
@@ -120,4 +120,11 @@ class TitlesStore {
   }
 }
 const titlesStore = new TitlesStore();
+reaction(
+  () => JSON.stringify(titlesStore),
+  (json) => {
+    localStorage.setItem('titles', json);
+  },
+);
+
 export default titlesStore;

@@ -1,22 +1,51 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
-import titlesStore from './baza';
+import titlesStore from './titlesStore';
 import { Titles } from '../types/types';
-import { MenuItem, Button, Select, Input } from '@mui/material';
+import { MenuItem, Button, Input, Typography, TextField } from '@mui/material';
 
 const Form: React.FC = () => {
-  const { register, handleSubmit } = useForm<Titles>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<Titles>();
   const onSubmit: SubmitHandler<Titles> = (data) => {
-    console.log(data);
+    titlesStore.pic = data.picture[0].name;
+    titlesStore.adding = data;
     titlesStore.addTitle();
+    reset();
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <Input {...register('name', { required: true })} placeholder="name" />
-      <Input {...register('orName')} placeholder="orname" />
-      <Input {...register('discription')} placeholder="disc" />
-      <Input {...register('picture')} placeholder="picture" />
-      <Select {...register('rating')}>
+    <form style={{ display: 'flex', flexDirection: 'column' }} onSubmit={handleSubmit(onSubmit)}>
+      <Typography variant="body1">Name:</Typography>
+      <Input color="secondary" {...register('item', { required: 'Обязательно заполните' })} />
+      <Typography variant="body2" color="secondary">
+        {errors?.item && errors?.item?.message}
+      </Typography>
+      <Typography variant="body1">Original name:</Typography>
+      <Input color="secondary" {...register('orName')} />
+      <Typography variant="body1">Description:</Typography>
+      <Input color="secondary" {...register('discription')} />
+      <Typography variant="body1">Picture:</Typography>
+      <Input type="file" {...register('picture', { required: 'Добавьте картиночку' })} />
+      <Typography variant="body2" color="secondary">
+        {errors?.picture && errors?.picture?.message}
+      </Typography>
+      <Typography variant="body1">Rating:</Typography>
+      <TextField
+        label="How do you like it"
+        select
+        sx={{
+          marginTop: '10px',
+          '& .MuiInputBase-root': {
+            color: 'primary.light',
+          },
+        }}
+        color="secondary"
+        {...register('rating')}
+      >
         <MenuItem value="0/10">Словил кринж</MenuItem>
         <MenuItem value="1/10">Кринжанул</MenuItem>
         <MenuItem value="2/10">Норм</MenuItem>
@@ -28,9 +57,8 @@ const Form: React.FC = () => {
         <MenuItem value="8/10">Ультра хорош</MenuItem>
         <MenuItem value="9/10">Супер дупер мега хорош</MenuItem>
         <MenuItem value="10/10">Восхитителен</MenuItem>
-      </Select>
-
-      <Button type="submit"> Добавить</Button>
+      </TextField>
+      <Button type="submit"> Add</Button>
     </form>
   );
 };

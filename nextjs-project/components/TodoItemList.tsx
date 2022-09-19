@@ -14,15 +14,15 @@ const List: React.FC = observer(() => {
       {store.todoList.map((itemList: TodoList) => (
         <Container sx={{ backgroundColor: 'inherit', boxShadow: 'none' }} key={itemList.key}>
           <Checkbox
-            icon={<StarBorderIcon />}
-            checkedIcon={<StarRateIcon />}
+            icon={<StarBorderIcon color="secondary" />}
+            checkedIcon={<StarRateIcon color="secondary" />}
             checked={itemList.isChecked}
             onChange={() => store.completeItem(itemList.key)}
           />
           <Typography variant="h5" onChange={(e) => e.target}>
             {itemList.item}
           </Typography>
-          <Checkbox icon={<DeleteOutlineIcon />} onClick={() => store.deleteItem(itemList.key)} />
+          <Checkbox icon={<DeleteOutlineIcon color="secondary" />} onClick={() => store.deleteItem(itemList.key)} />
         </Container>
       ))}
     </Paper>

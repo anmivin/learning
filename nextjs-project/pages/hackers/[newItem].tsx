@@ -13,8 +13,7 @@ const NewData: React.FC = () => {
   const { isLoading, error, data, refetch } = useQuery<NewsItem, Error>(
     ['newsitem'],
     async (): Promise<NewsItem> => {
-      const res = await axios.get<NewsItem>(`https://api.hnpwa.com/v0/item/${id}.json`);
-      //`http://localhost:5000/news/${id}`
+      const res = await axios.get<NewsItem>(`http://localhost:5000/news/${id}`);
 
       return res.data;
     },
@@ -37,27 +36,39 @@ const NewData: React.FC = () => {
   return (
     <div>
       <Container sx={{ backgroundColor: 'primary.main' }}>
-        <Button onClick={() => refreshPage()}>
-          <Typography variant="button">Refresh</Typography>
-        </Button>
         <Button onClick={() => goMain()}>
           <Typography variant="button">Main page</Typography>
         </Button>
+        <Button onClick={() => refreshPage()}>
+          <Typography variant="button">Refresh</Typography>
+        </Button>
       </Container>
-      <Paper key={data!.id} sx={{ backgroundColor: 'primary.dark' }}>
-        <Typography variant="h5">{data!.title /* content */}</Typography>
-        <Container sx={{ boxShadow: 'none', backgroundColor: 'inherit', padding: '15px', fontSize: '0.9em' }}>
-          <Typography variant="body2"> {data!.url} </Typography>
-          <Typography variant="body2">
-            by {data!.user} | {data!.time_ago} | {data!.comments_count}{' '}
-            {data!.comments_count == 1 ? 'comment' : 'comments'}
-          </Typography>
-        </Container>
+      <Paper
+        sx={{
+          boxShadow: 'none',
+          margin: '0px',
+          width: '80%',
+          backgroundColor: 'background.default',
+        }}
+      >
+        <Paper key={data!.id} sx={{ backgroundColor: 'primary.dark' }}>
+          <Typography variant="h5">{data!.content}</Typography>
+          <Container sx={{ boxShadow: 'none', backgroundColor: 'inherit', padding: '15px', fontSize: '0.9em' }}>
+            <Typography variant="body2" sx={{ fontSize: '0.9em' }}>
+              {data!.url}
+            </Typography>
+            <Typography variant="body2" sx={{ fontSize: '0.9em' }}>
+              by {data!.user} | {data!.time_ago} | {data!.comments_count}{' '}
+              {data!.comments_count == 1 ? 'comment' : 'comments'}
+            </Typography>
+          </Container>
+        </Paper>
+
+        <Paper sx={{ backgroundColor: 'primary.dark' }}>
+          <Typography variant="h6">Comments</Typography>
+        </Paper>
+        {<Tree commentItem={data!.comments} />}
       </Paper>
-      <Paper sx={{ backgroundColor: 'primary.dark' }}>
-        <Typography variant="h6">Comments</Typography>
-      </Paper>
-      {<Tree commentItem={data!.comments} />}
     </div>
   );
 };

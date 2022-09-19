@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
 import { Switch, Box, Typography, Drawer, ThemeProvider, CssBaseline, Button } from '@mui/material';
-import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
+
 import themes from '../styles/theme';
 import { useState } from 'react';
 
@@ -18,7 +18,6 @@ export default function Layout({ children }) {
         <CssBaseline />
         <Drawer variant="permanent" anchor="left">
           <div>
-            <AllInclusiveIcon />
             <Switch
               color="default"
               icon={<AutoAwesomeIcon />}
@@ -47,7 +46,7 @@ export default function Layout({ children }) {
             </Button>
           </div>
         </Drawer>
-        <Box component="main" sx={{ flexGrow: 1, marginLeft: 10 }}>
+        <Box component="main" sx={{ flexGrow: 1, marginLeft: 20 }}>
           {children}
         </Box>
       </ThemeProvider>

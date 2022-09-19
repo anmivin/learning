@@ -40,7 +40,7 @@ const TreeNode: React.FC<NodeProps> = ({ nodeItem }) => {
   };
   return (
     <li>
-      <Paper sx={{ boxShadow: '-1px -1px 2px black', backgroundColor: 'primary.dark' }}>
+      <Paper sx={{ boxShadow: '-1px -1px 2px primary.light', backgroundColor: 'primary.dark' }}>
         <Typography variant="h6">{nodeItem.user}</Typography>
         <Typography variant="h5" dangerouslySetInnerHTML={{ __html: nodeItem.content }} />
         <Container
@@ -52,7 +52,7 @@ const TreeNode: React.FC<NodeProps> = ({ nodeItem }) => {
             padding: '15px',
           }}
         >
-          <Typography variant="body2">
+          <Typography variant="body1" sx={{ fontSize: '0.9em' }}>
             {nodeItem.time_ago} | {nodeItem.comments_count} {nodeItem.comments_count == 1 ? 'comment' : 'comments'}
           </Typography>
           {hasChild ? (
