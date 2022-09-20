@@ -4,9 +4,9 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "cd nextjs-project": {
-      "name": "cd nextjs-project",
-      "command": "cd nextjs-project",
+    "run next": {
+      "name": "run next",
+      "command": "cd nextjs-project && npm ci --force && npm run dev",
       "runAtStart": true
     }
   }
