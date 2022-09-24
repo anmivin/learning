@@ -52,12 +52,12 @@ const TreeNode: React.FC<NodeProps> = ({ nodeItem }) => {
             padding: '15px',
           }}
         >
-          <Typography variant="body1" sx={{ fontSize: '0.9em' }}>
+          <Typography variant="body1" sx={{ fontSize: 12 }}>
             {nodeItem.time_ago} | {nodeItem.comments_count} {nodeItem.comments_count == 1 ? 'comment' : 'comments'}
           </Typography>
           {hasChild ? (
             <Button sx={{ padding: '0px', margin: '0 0 0 15px' }} onClick={() => changeVisibility()}>
-              <Typography variant="button" sx={{ fontSize: '0.8em' }}>
+              <Typography variant="button" sx={{ fontSize: 10 }}>
                 {childVisible ? 'hide' : 'show'}
               </Typography>
             </Button>

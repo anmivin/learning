@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Link from 'next/link';
-/* import { useNavigate } from 'react-router'; */
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { NewsListItem } from '../../types/types';
@@ -13,7 +12,6 @@ const New: React.FC = () => {
     ['newses'],
     async () => {
       const res = await axios.get<NewsListItem[]>('http://localhost:5000/');
-
       return res.data;
     },
     {
@@ -62,7 +60,7 @@ const New: React.FC = () => {
                     </Link>
                   </Paper>
                   <Container sx={{ boxShadow: 'none', padding: '0px ' }}>
-                    <Typography variant="body2" sx={{ fontSize: '0.9em' }}>
+                    <Typography variant="body1" sx={{ fontSize: 12 }}>
                       by {newses.user} | {newses.time_ago} | {newses.points} {newses.points == 1 ? 'point' : 'points'} |{' '}
                       {newses.comments_count} {newses.comments_count == 1 ? 'comment' : 'comments'}
                     </Typography>

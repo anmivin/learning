@@ -1,6 +1,6 @@
 import React from 'react';
 
-import store from './todoStore';
+import store from './TodoStore';
 import { observer } from 'mobx-react-lite';
 import { Button, Container, Input, Typography } from '@mui/material';
 

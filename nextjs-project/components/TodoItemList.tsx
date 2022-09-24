@@ -4,7 +4,7 @@ import { TodoList } from '../types/types';
 import { observer } from 'mobx-react-lite';
 import { Checkbox, Paper, Container, Typography } from '@mui/material';
 import StarRateIcon from '@mui/icons-material/StarRate';
-import store from './todoStore';
+import store from './TodoStore';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 

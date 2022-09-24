@@ -1,15 +1,30 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Typography, Input, Container, Drawer, Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import titlesStore from '../../components/titlesStore';
+import titlesStore from '../../components/TitlesStore';
 import { observer } from 'mobx-react-lite';
-import Form from '../../components/form';
+import Form from '../../components/Form';
 import { motion } from 'framer-motion';
+import axios from 'axios';
+import { Titles } from '../../types/types';
 
 const Main: React.FC = observer(() => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
-  const inputRef = useRef(null);
+  const [currenValue, setCurrentValue] = useState('');
+
+  useEffect(() => {
+    axios.get<Titles[]>('http://localhost:3000/api/').then((response) => {
+      let existing = localStorage.getItem('titles');
+      if (!existing) {
+        localStorage.setItem('titles', JSON.stringify(response.data));
+        titlesStore.titles = JSON.parse(localStorage.getItem('titles'));
+      } else {
+        titlesStore.titles = JSON.parse(localStorage.getItem('titles'));
+      }
+    });
+  }, [titlesStore.isAdd]);
+
   const openDrawer = () => {
     setOpen(!open);
   };
@@ -36,20 +51,20 @@ const Main: React.FC = observer(() => {
         </div>
       </Drawer>
 
-      <Container sx={{ flexDirection: 'column', backgroundColor: 'primary.main' }}>
+      <Container sx={{ flexDirection: 'column', backgroundColor: 'primary.main', boxSizing: 'content-box' }}>
         <Container sx={{ margin: '0px', padding: '0px', boxShadow: 'none' }}>
           <Container sx={{ marginBottom: '20px', justifyContent: 'start', boxShadow: 'none' }}>
-            <Input color="secondary" inputRef={inputRef} placeholder="Find" />
-            <Button onClick={() => (titlesStore.search = inputRef.current.value)}>Search</Button>
+            <Input color="secondary" onChange={(e) => setCurrentValue(e.target.value)} placeholder="Find" />
+            <Button onClick={() => (titlesStore.search = currenValue)}>Search</Button>
           </Container>
           <Container sx={{ marginBottom: '20px', justifyContent: 'end', boxShadow: 'none' }}>
             <Button onClick={openDrawer}>Add title</Button>
           </Container>
         </Container>
-
-        <Grid container spacing={6}>
+        {titlesStore.isFailire ? <Typography variant="h2">Ничего не нашлось</Typography> : ''}
+        <Grid container spacing={4}>
           {titlesStore.filtered.map((title) => (
-            <Grid item xs={12} md={4} xl={3} key={title.id}>
+            <Grid item xs={12} sm={6} md={3} xl={2} key={title.id}>
               <motion.div
                 style={{
                   backgroundColor: `${theme.palette.background.default}`,
@@ -59,6 +74,7 @@ const Main: React.FC = observer(() => {
                   justifyContent: 'space-between',
                   flexDirection: 'column',
                   borderRadius: 10,
+                  height: '600px',
                 }}
                 whileHover={{
                   backgroundImage: 'url(/stars1.gif)',
@@ -69,23 +85,26 @@ const Main: React.FC = observer(() => {
                 <Typography variant="h6" sx={{ textAlign: 'center' }}>
                   {title.item}
                 </Typography>
-                <Typography variant="body1" sx={{ textAlign: 'center', fontSize: '0.9em' }}>
+                <Typography variant="body1" sx={{ textAlign: 'center', fontSize: 12 }}>
                   {title.orName}
                 </Typography>
+
                 <motion.div
                   whileHover={{
                     skewX: 2,
                     background: `url(/stars.gif), url(/${title.picture}) `,
                     backgroundBlendMode: 'overlay',
                     backgroundSize: 'cover',
+                    backgroundPosition: '50% 30%',
                     boxShadow: `4px 4px 5px ${theme.palette.primary.light},  -4px -4px 5px ${theme.palette.primary.light}`,
                   }}
                   style={{
-                    width: '90%',
-                    height: '300px',
+                    width: '95%',
+                    height: '250px',
                     background: `url(/${title.picture})`,
                     backgroundSize: 'cover',
                     margin: 'auto',
+                    backgroundPosition: '50% 30%',
                   }}
                 />
                 <Container sx={{ height: '20vh', justifyContent: 'center', alignItems: 'center', boxShadow: 'none' }}>

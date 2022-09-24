@@ -7,7 +7,7 @@ import profpic from '../../public/profpic.jpg';
 import SiteLayout from '../../components/SiteLayout';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-import word from '../../components/poleChudes';
+import word from '../../components/PoleChudes';
 import { observer } from 'mobx-react-lite';
 import kov from '../../public/kov.jpg';
 

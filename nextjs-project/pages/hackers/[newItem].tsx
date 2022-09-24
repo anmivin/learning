@@ -53,11 +53,11 @@ const NewData: React.FC = () => {
       >
         <Paper key={data!.id} sx={{ backgroundColor: 'primary.dark' }}>
           <Typography variant="h5">{data!.content}</Typography>
-          <Container sx={{ boxShadow: 'none', backgroundColor: 'inherit', padding: '15px', fontSize: '0.9em' }}>
-            <Typography variant="body2" sx={{ fontSize: '0.9em' }}>
+          <Container sx={{ boxShadow: 'none', backgroundColor: 'inherit', padding: '15px' }}>
+            <Typography variant="body1" sx={{ fontSize: 12 }}>
               {data!.url}
             </Typography>
-            <Typography variant="body2" sx={{ fontSize: '0.9em' }}>
+            <Typography variant="body1" sx={{ fontSize: 12 }}>
               by {data!.user} | {data!.time_ago} | {data!.comments_count}{' '}
               {data!.comments_count == 1 ? 'comment' : 'comments'}
             </Typography>

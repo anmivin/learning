@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import React from 'react';
 import { Button, Container, Typography } from '@mui/material';
 
 const SiteLayout = ({ children }) => {
