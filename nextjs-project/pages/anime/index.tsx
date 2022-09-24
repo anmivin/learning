@@ -92,7 +92,7 @@ const Main: React.FC = observer(() => {
                 <motion.div
                   whileHover={{
                     skewX: 2,
-                    background: `url(/stars.gif), url(/${title.picture}) `,
+                    background: `url(/stars.gif), url(/${title.path}${title.picture}) `,
                     backgroundBlendMode: 'overlay',
                     backgroundSize: 'cover',
                     backgroundPosition: '50% 30%',
@@ -101,7 +101,7 @@ const Main: React.FC = observer(() => {
                   style={{
                     width: '95%',
                     height: '250px',
-                    background: `url(/${title.picture})`,
+                    background: `url(/${title.path}${title.picture}) `,
                     backgroundSize: 'cover',
                     margin: 'auto',
                     backgroundPosition: '50% 30%',

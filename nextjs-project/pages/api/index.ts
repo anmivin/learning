@@ -7,6 +7,7 @@ export default function handler(req, res) {
       picture: 'jojo.jpg',
       discription: 'Мужики из местной качалки понтуются и учат правильно позировать на фото',
       rating: '10/10',
+      path: '',
     },
     {
       id: 2,
@@ -16,6 +17,7 @@ export default function handler(req, res) {
       discription:
         'Отличник с психическими отклонениями драматично ест чипсы и пытается подавить свои чувства к загадочному эмо-бою',
       rating: '10/10',
+      path: '',
     },
     {
       id: 3,
@@ -24,6 +26,7 @@ export default function handler(req, res) {
       picture: 'at.jpg',
       discription: 'Родившейся в очень странной семье мальчик знает весь сюжет, но не спойлерит другим',
       rating: '10/10',
+      path: '',
     },
     {
       id: 4,
@@ -33,6 +36,7 @@ export default function handler(req, res) {
       discription:
         'Обычные японские школьницы спасают планету, влияют на фэшн-индустрию и формируют дисморфофобию у зрителей',
       rating: '10/10',
+      path: '',
     },
     {
       id: 5,
@@ -41,6 +45,7 @@ export default function handler(req, res) {
       picture: 'hnnkn.jpg',
       discription: 'Группа школьников пытается пережить летний фестиваль. Гаремник с подвохом',
       rating: '10/10',
+      path: '',
     },
     {
       id: 6,
@@ -49,6 +54,7 @@ export default function handler(req, res) {
       picture: 'jic.jpg',
       discription: ' Школьник безобидно шутит над своими одноклассниками и другие истории из жизни в японской глубинке',
       rating: '10/10',
+      path: '',
     },
     {
       id: 7,
@@ -57,6 +63,7 @@ export default function handler(req, res) {
       picture: 'hw.jpg',
       discription: 'Мафиозник и его идеальная жизнь',
       rating: '10/10',
+      path: '',
     },
     {
       id: 8,
@@ -65,6 +72,7 @@ export default function handler(req, res) {
       picture: 'tr.jpg',
       discription: 'Самые горячие мужики в мире дерутся и умирают, а потом не умирают, а потом опять умирают',
       rating: '10/10',
+      path: '',
     },
     {
       id: 9,
@@ -73,6 +81,7 @@ export default function handler(req, res) {
       picture: 'nr.jpg',
       discription: 'Гиперактивный сирота побеждает всех силой дружбы и становится председателем сельсовета',
       rating: '10/10',
+      path: '',
     },
   ]);
 }

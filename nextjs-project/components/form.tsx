@@ -1,10 +1,13 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { Titles } from '../types/types';
 import { MenuItem, Button, Input, Typography, TextField } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import titlesStore from './TitlesStore';
+import axios from 'axios';
 
 const Form: React.FC = () => {
+  const [image, setImage] = useState(null);
+
   const {
     register,
     handleSubmit,
@@ -18,7 +21,8 @@ const Form: React.FC = () => {
       item: data.item,
       orName: data.orName,
       discription: data.discription,
-      picture: data.picture[0].name,
+      path: 'uploads/',
+      picture: image.name,
       rating: data.rating,
     };
     let existing = JSON.parse(localStorage.getItem('titles'));
@@ -28,6 +32,17 @@ const Form: React.FC = () => {
     reset();
   };
 
+  const uploadToClient = (e) => {
+    if (e.target.files && e.target.files[0]) {
+      const i = e.target.files[0];
+      setImage(i);
+    }
+  };
+  const uploadToServer = async (e) => {
+    const body = new FormData();
+    body.append('file', image);
+    await axios.post('/api/upload', body);
+  };
   return (
     <>
       <form style={{ display: 'flex', flexDirection: 'column' }} onSubmit={handleSubmit(onSubmit)}>
@@ -40,11 +55,7 @@ const Form: React.FC = () => {
         <Input color="secondary" {...register('orName')} />
         <Typography variant="body1">Description:</Typography>
         <Input color="secondary" {...register('discription')} />
-        <Typography variant="body1">Picture:</Typography>
-        <Input type="file" {...register('picture', { required: 'Добавьте картиночку' })} />
-        <Typography variant="body2" color="secondary">
-          {errors?.picture && errors?.picture?.message}
-        </Typography>
+
         <Typography variant="body1">Rating:</Typography>
         <TextField
           label="How do you like it"
@@ -70,8 +81,12 @@ const Form: React.FC = () => {
           <MenuItem value="9/10">Супер дупер мега хорош</MenuItem>
           <MenuItem value="10/10">Восхитителен</MenuItem>
         </TextField>
+        <Typography variant="body1">Picture:</Typography>
 
-        <Button type="submit">Add</Button>
+        <input type="file" name="image" onChange={uploadToClient} />
+        <Button type="submit" onClick={uploadToServer}>
+          Add
+        </Button>
       </form>
     </>
   );
