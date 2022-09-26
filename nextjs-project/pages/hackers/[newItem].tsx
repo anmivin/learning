@@ -35,28 +35,40 @@ const NewData: React.FC = () => {
 
   return (
     <div>
-      <Container>
-        <Button onClick={() => refreshPage()}>
-          <Typography variant="button">Refresh</Typography>
-        </Button>
+      <Container sx={{ backgroundColor: 'primary.main' }}>
         <Button onClick={() => goMain()}>
           <Typography variant="button">Main page</Typography>
         </Button>
+        <Button onClick={() => refreshPage()}>
+          <Typography variant="button">Refresh</Typography>
+        </Button>
       </Container>
-      <Paper key={data!.id}>
-        <Typography variant="h5">{data!.content}</Typography>
-        <Container sx={{ boxShadow: 'none', backgroundColor: 'inherit', padding: '15px', fontSize: '0.9em' }}>
-          <div> {data!.url} </div>
-          <div>
-            by {data!.user} | {data!.time_ago} | {data!.comments_count}{' '}
-            {data!.comments_count == 1 ? 'comment' : 'comments'}
-          </div>
-        </Container>
+      <Paper
+        sx={{
+          boxShadow: 'none',
+          margin: '0px',
+          width: '80%',
+          backgroundColor: 'background.default',
+        }}
+      >
+        <Paper key={data!.id} sx={{ backgroundColor: 'primary.dark' }}>
+          <Typography variant="h5">{data!.content}</Typography>
+          <Container sx={{ boxShadow: 'none', backgroundColor: 'inherit', padding: '15px' }}>
+            <Typography variant="body1" sx={{ fontSize: 12 }}>
+              {data!.url}
+            </Typography>
+            <Typography variant="body1" sx={{ fontSize: 12 }}>
+              by {data!.user} | {data!.time_ago} | {data!.comments_count}{' '}
+              {data!.comments_count == 1 ? 'comment' : 'comments'}
+            </Typography>
+          </Container>
+        </Paper>
+
+        <Paper sx={{ backgroundColor: 'primary.dark' }}>
+          <Typography variant="h6">Comments</Typography>
+        </Paper>
+        {<Tree commentItem={data!.comments} />}
       </Paper>
-      <Paper>
-        <Typography variant="h6">Comments</Typography>
-      </Paper>
-      {<Tree commentItem={data!.comments} />}
     </div>
   );
 };

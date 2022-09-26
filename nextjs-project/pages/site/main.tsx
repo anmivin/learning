@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button, Paper, Typography, Checkbox, Input } from '@mui/material';
 import Image from 'next/image';
-import pic from '../../components/img/pic.jpg';
-import profpic from '../../components/img/profpic.jpg';
+import pic from '../../public/pic.jpg';
+import profpic from '../../public/profpic.jpg';
 import SiteLayout from '../../components/SiteLayout';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-import word from '../../components/poleChudes';
+import word from '../../components/PoleChudes';
 import { observer } from 'mobx-react-lite';
-import kov from '../../components/img/kov.jpg';
+import kov from '../../public/kov.jpg';
 
 const Inputs = styled.div`
   display: flex;
@@ -35,8 +35,8 @@ const Main: React.FC = observer(() => {
         </Paper>
       )}
 
-      <Paper sx={{ flexGrow: 1, backgroundColor: '#d8bfd8', boxShadow: 'none' }}>
-        <Paper>
+      <Paper sx={{ flexGrow: 1, backgroundColor: 'primary.main', boxShadow: 'none' }}>
+        <Paper sx={{ backgroundColor: 'primary.dark' }}>
           <Image alt="pic" src={pic} />
           <div>
             <Typography variant="h2">Цитата дня</Typography>
@@ -44,46 +44,55 @@ const Main: React.FC = observer(() => {
             <Typography variant="h4">Perfect</Typography>
           </div>
         </Paper>
-        <Paper>
+        <Paper sx={{ backgroundColor: 'primary.dark' }}>
           <div>
             <Typography variant="h3">Деньги не делают тебя беднее, они лишь делают тебя богаче.</Typography>
             <Typography variant="h4">Nice</Typography>
           </div>
         </Paper>
-        <Paper>
+        <Paper sx={{ backgroundColor: 'primary.dark' }}>
           <div>
             <Typography variant="h3">Если тебе тяжело идти, значит ты жирный</Typography>
             <Typography variant="h4">Good</Typography>
           </div>
         </Paper>
       </Paper>
-      <Paper sx={{ width: '25%', flexShrink: 0, backgroundColor: '#d8bfd8', boxShadow: 'none' }}>
-        <Paper>
+      <Paper sx={{ width: '25%', flexShrink: 0, backgroundColor: 'primary.main', boxShadow: 'none' }}>
+        <Paper sx={{ backgroundColor: 'primary.dark' }}>
           <Image alt="profpic" src={profpic} />
           <Typography variant="h2">Вращайте барбан</Typography>
           <Typography variant="h5">Сектор приз</Typography>
           <Typography variant="h5">Сектор плюс</Typography>
           <Typography variant="h5">Сектор без баб</Typography>
         </Paper>
-        <Paper>
+        <Paper sx={{ backgroundColor: 'primary.dark' }}>
           <Typography variant="h2"> Плоское и высокое пряничное изделие</Typography>
           <Typography variant="h5" onChange={(e) => e.target}>
             {word.yourword}
           </Typography>
         </Paper>
-        <Paper>
+        <Paper sx={{ backgroundColor: 'primary.dark' }}>
           <Typography variant="h2">Назовите букву</Typography>
           <Inputs>
-            <Input placeholder="Ваша буква" value={word.letter} onChange={(e) => (word.letter = e.target.value)} />
+            <Input
+              color="secondary"
+              placeholder="Ваша буква"
+              value={word.letter}
+              onChange={(e) => (word.letter = e.target.value)}
+            />
             <Button size="small" onClick={() => word.addLetter()}>
               <Typography variant="button">Угадать</Typography>
             </Button>
           </Inputs>
         </Paper>
 
-        <Paper>
+        <Paper sx={{ backgroundColor: 'primary.dark' }}>
           <Inputs>
-            <Checkbox icon={<StarBorderIcon />} checkedIcon={<StarRateIcon />} />
+            <Checkbox
+              color="default"
+              icon={<StarBorderIcon color="secondary" />}
+              checkedIcon={<StarRateIcon color="secondary" />}
+            />
             <Typography variant="h5">Передать подарки</Typography>
           </Inputs>
         </Paper>

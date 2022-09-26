@@ -1,11 +1,11 @@
 import Link from 'next/link';
-
+import React from 'react';
 import { Button, Container, Typography } from '@mui/material';
 
 const SiteLayout = ({ children }) => {
   return (
     <>
-      <Container>
+      <Container sx={{ backgroundColor: 'primary.main', marginBottom: '20px' }}>
         <div>
           <Button>
             <Link href="/site">
@@ -36,7 +36,7 @@ const SiteLayout = ({ children }) => {
         </div>
       </Container>
 
-      <Container>{children}</Container>
+      <Container sx={{ backgroundColor: 'primary.main' }}>{children}</Container>
     </>
   );
 };
