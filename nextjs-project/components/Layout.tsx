@@ -12,41 +12,50 @@ export default function Layout({ children }) {
   const changeTheme = () => {
     isDarkTheme(!darkTheme);
   };
+  const [drawer, setDrawer] = useState(false);
 
   return (
     <ThemeProvider theme={darkTheme ? themes.dark : themes.light}>
       <CssBaseline />
-
-      <Drawer variant="permanent" anchor="left">
-        <div>
-          <Switch
-            color="default"
-            icon={<AutoAwesomeIcon />}
-            checkedIcon={<BedtimeIcon />}
-            onChange={() => changeTheme()}
-          />
-          <Button sx={{ width: '90%' }}>
-            <Link href="/site">
-              <Typography variant="button">Site</Typography>
-            </Link>
-          </Button>
-          <Button sx={{ width: '90%' }}>
-            <Link href="/todo">
-              <Typography variant="button">Todo</Typography>
-            </Link>
-          </Button>
-          <Button sx={{ width: '90%' }}>
-            <Link href="/hackers">
-              <Typography variant="button">Hackers</Typography>
-            </Link>
-          </Button>
-          <Button sx={{ width: '90%' }}>
-            <Link href="/anime">
-              <Typography variant="button">Anime</Typography>
-            </Link>
-          </Button>
-        </div>
-      </Drawer>
+      <Button onClick={() => setDrawer(!drawer)}>Open</Button>
+      {drawer && (
+        <Drawer variant="temporary" anchor="left" open={drawer}>
+          <div>
+            <Button onClick={() => setDrawer(!drawer)}>Close</Button>
+            <Switch
+              color="default"
+              icon={<AutoAwesomeIcon />}
+              checkedIcon={<BedtimeIcon />}
+              onChange={() => changeTheme()}
+            />
+            <Button sx={{ width: '90%' }}>
+              <Link href="/site">
+                <Typography variant="button">Site</Typography>
+              </Link>
+            </Button>
+            <Button sx={{ width: '90%' }}>
+              <Link href="/todo">
+                <Typography variant="button">Todo</Typography>
+              </Link>
+            </Button>
+            <Button sx={{ width: '90%' }}>
+              <Link href="/hackers">
+                <Typography variant="button">Hackers</Typography>
+              </Link>
+            </Button>
+            <Button sx={{ width: '90%' }}>
+              <Link href="/anime">
+                <Typography variant="button">Anime</Typography>
+              </Link>
+            </Button>
+            <Button sx={{ width: '90%' }}>
+              <Link href="/chat">
+                <Typography variant="button">Chat</Typography>
+              </Link>
+            </Button>
+          </div>
+        </Drawer>
+      )}
       <Box component="main" sx={{ marginLeft: '15%', marginRight: '5%' }}>
         {children}
       </Box>
