@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import Send from '../public/Send.svg';
+import Send from '../public/icons/Send.svg';
 import { db } from '../components/ChatDb';
 import '@fontsource/roboto';
 import EmojiTable from '../components/Emoji';
@@ -8,7 +8,7 @@ import { observer } from 'mobx-react-lite';
 import mobxchat from '../components/ChatStore';
 import OpenChat from '../components/OpenChat';
 import { motion } from 'framer-motion';
-import Hide from '../public/Hide.svg';
+import Hide from '../public/icons/Hide.svg';
 
 const Title = styled.p`
   font-size: 20px;

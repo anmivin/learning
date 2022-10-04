@@ -1,8 +1,8 @@
 import React from 'react';
-import Vector from '../public/Vector.svg';
-import Left from '../public/Left.svg';
-import Right from '../public/Right.svg';
-import Ok from '../public/Ok.svg';
+import Vector from '../public/icons/Vector.svg';
+import Left from '../public/icons/Left.svg';
+import Right from '../public/icons/Right.svg';
+import Ok from '../public/icons/Ok.svg';
 import { motion } from 'framer-motion';
 
 const OpenChat: React.FC = () => {
