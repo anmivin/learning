@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import mobchat from './ChatStore';
+import mobxchat from './ChatStore';
+import { emojis } from './ChatDb';
 
 const Container = styled.div`
   width: 100px;
@@ -13,7 +14,7 @@ const Container = styled.div`
   padding: 5px;
   background-color: white;
   position: absolute;
-  bottom: calc(100%);
+  bottom: 100%;
 `;
 
 const Emo = styled.div`
@@ -24,14 +25,10 @@ const Emo = styled.div`
   }
 `;
 const EmojiTable = () => {
-  const chooseEmoji = (key: number) => {
-    mobchat.input = mobchat.input + mobchat.emojis.find((it) => it.id === key).emo;
-    mobchat.emojiVisibility = !mobchat.emojiVisibility;
-  };
   return (
     <Container>
-      {mobchat.emojis.map((emo) => (
-        <Emo key={emo.id} onClick={() => chooseEmoji(emo.id)}>
+      {emojis.map((emo) => (
+        <Emo key={emo.id} onClick={() => mobxchat.chooseEmoji(emo.id)}>
           {emo.emo}
         </Emo>
       ))}
