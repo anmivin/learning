@@ -57,6 +57,9 @@ const Button = styled.button`
     cursor: pointer;
     background-color: #e0ffff;
   }
+  @media (max-width: 410px) {
+    width: 95%;
+  }
 `;
 const Section = styled.div`
   padding: 10px;
@@ -239,7 +242,12 @@ const Chat: React.FC = observer(() => {
         </Form>
       )}
       <Close onClick={() => mobxchat.changeVisibility()}>
-        <motion.div style={{ position: 'relative', top: '30%', left: '30%', scale: 0.5 }} animate={{ scale: 1 }}>
+        <motion.div
+          style={{ position: 'relative', top: '30%', left: '30%', scale: 0.5, transformOrigin: '10px 10px' }}
+          animate={{ scale: 1, rotate: 180 }}
+          exit={{ scale: 0.5, rotate: -180 }}
+          transition={{ duration: 1 }}
+        >
           <Hide />
         </motion.div>
       </Close>
